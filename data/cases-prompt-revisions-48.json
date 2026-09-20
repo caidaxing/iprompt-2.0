@@ -1,0 +1,734 @@
+{
+  "meta": {
+    "source": "data/cases.json",
+    "generatedAt": "2026-09-12",
+    "total": 48,
+    "mainPerType": 3,
+    "backupPerType": 1,
+    "note": "Original prompts are preserved; revisedPrompt appends a case-specific variation only. No global style parameter is applied."
+  },
+  "groups": [
+    {
+      "sceneType": "商品广告",
+      "total": 4,
+      "main": [
+        33,
+        178,
+        190
+      ],
+      "backup": [
+        237
+      ]
+    },
+    {
+      "sceneType": "社交媒体",
+      "total": 4,
+      "main": [
+        2,
+        21,
+        260
+      ],
+      "backup": [
+        335
+      ]
+    },
+    {
+      "sceneType": "品牌视觉",
+      "total": 4,
+      "main": [
+        136,
+        342,
+        362
+      ],
+      "backup": [
+        160
+      ]
+    },
+    {
+      "sceneType": "海报排版",
+      "total": 4,
+      "main": [
+        9,
+        175,
+        253
+      ],
+      "backup": [
+        343
+      ]
+    },
+    {
+      "sceneType": "UI界面",
+      "total": 4,
+      "main": [
+        7,
+        177,
+        387
+      ],
+      "backup": [
+        261
+      ]
+    },
+    {
+      "sceneType": "信息图教育",
+      "total": 4,
+      "main": [
+        8,
+        222,
+        544
+      ],
+      "backup": [
+        334
+      ]
+    },
+    {
+      "sceneType": "人像写真",
+      "total": 4,
+      "main": [
+        31,
+        187,
+        219
+      ],
+      "backup": [
+        321
+      ]
+    },
+    {
+      "sceneType": "建筑空间",
+      "total": 4,
+      "main": [
+        211,
+        381,
+        411
+      ],
+      "backup": [
+        489
+      ]
+    },
+    {
+      "sceneType": "生活摄影",
+      "total": 4,
+      "main": [
+        28,
+        221,
+        383
+      ],
+      "backup": [
+        414
+      ]
+    },
+    {
+      "sceneType": "奇幻叙事",
+      "total": 4,
+      "main": [
+        224,
+        238,
+        392
+      ],
+      "backup": [
+        537
+      ]
+    },
+    {
+      "sceneType": "历史古风",
+      "total": 4,
+      "main": [
+        44,
+        206,
+        226
+      ],
+      "backup": [
+        337
+      ]
+    },
+    {
+      "sceneType": "实验艺术",
+      "total": 4,
+      "main": [
+        193,
+        281,
+        356
+      ],
+      "backup": [
+        409
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "num": 33,
+      "title": "电商商品展示设计",
+      "sceneType": "商品广告",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case33.jpg",
+      "originalCategory": "🛍️ 商品与电商",
+      "source": "[@yurunekofree](https://x.com/yurunekofree)",
+      "originalPrompt": "A 3D render of a cute kawaii {argument name=\"subject\" default=\"cloud\"} character on a pure white background. The character has a soft, matte, squishy texture resembling clay or a stress toy. It features large glossy black eyes with white highlights, a simple curved smile, and round pink blush on its cheeks. The edges and bottom of the figure have a subtle pastel gradient of {argument name=\"accent colors\" default=\"pink, blue, and purple\"}. Soft studio lighting, minimalist icon style, casting a gentle shadow.",
+      "revision": "Keep the product category and commercial purpose. Shift to a slightly elevated three-quarter camera angle, place the product off-center, and add one restrained context prop related to its use. Avoid repeating the source composition.",
+      "revisedPrompt": "A 3D render of a cute kawaii {argument name=\"subject\" default=\"cloud\"} character on a pure white background. The character has a soft, matte, squishy texture resembling clay or a stress toy. It features large glossy black eyes with white highlights, a simple curved smile, and round pink blush on its cheeks. The edges and bottom of the figure have a subtle pastel gradient of {argument name=\"accent colors\" default=\"pink, blue, and purple\"}. Soft studio lighting, minimalist icon style, casting a gentle shadow.\n\nOriginality adjustment for this regeneration:\nKeep the product category and commercial purpose. Shift to a slightly elevated three-quarter camera angle, place the product off-center, and add one restrained context prop related to its use. Avoid repeating the source composition."
+    },
+    {
+      "num": 178,
+      "title": "亚马逊详情图设计",
+      "sceneType": "商品广告",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case178.jpg",
+      "originalCategory": "🛍️ 商品与电商",
+      "source": "[@xin\\_pai88825](https://x.com/xin_pai88825/status/2046576100592201946)",
+      "originalPrompt": "[中文]\n生成一套亚马逊 A+=详情图\n\n[English]\nGenerate a set of Amazon A+= detail images",
+      "revision": "Reframe the marketplace detail page as a clearer three-part product story: hero view, close-up feature, and usage detail. Vary the product angle, spacing, and callout placement while keeping the information readable.",
+      "revisedPrompt": "[中文]\n生成一套亚马逊 A+=详情图\n\n[English]\nGenerate a set of Amazon A+= detail images\n\nOriginality adjustment for this regeneration:\nReframe the marketplace detail page as a clearer three-part product story: hero view, close-up feature, and usage detail. Vary the product angle, spacing, and callout placement while keeping the information readable."
+    },
+    {
+      "num": 190,
+      "title": "全自动咖啡机产品展示",
+      "sceneType": "商品广告",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case190.jpg",
+      "originalCategory": "🛍️ 商品与电商",
+      "source": "[@MrLarus](https://x.com/MrLarus/status/2046544209117634735)",
+      "originalPrompt": "[中文]\n全自动咖啡机电商详情图\n\n[English]\nFully automatic coffee machine e-commerce detail image",
+      "revision": "Show the coffee machine on a tidy lived-in morning counter, with a subtle cup and a small trace of steam. Use a lower camera position and soft side light; keep the machine as the sole visual hero.",
+      "revisedPrompt": "[中文]\n全自动咖啡机电商详情图\n\n[English]\nFully automatic coffee machine e-commerce detail image\n\nOriginality adjustment for this regeneration:\nShow the coffee machine on a tidy lived-in morning counter, with a subtle cup and a small trace of steam. Use a lower camera position and soft side light; keep the machine as the sole visual hero."
+    },
+    {
+      "num": 237,
+      "title": "夏日柑橘苏打高转化广告图",
+      "sceneType": "商品广告",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case237.jpg",
+      "originalCategory": "🛍️ 商品与电商",
+      "source": "[@old\\_pgmrs\\_will](https://x.com/old_pgmrs_will/status/2045852114673635507)",
+      "originalPrompt": "[中文]\n图像生成: 商品广告照片, 适合夏天的季节商品, 碳酸饮料, 名称=\"夏柑SODA\", 形状=PET瓶500ml, 研究2025年作为饮料广告的高CTA设计后设计并生成图像规格, 宽高比3:4\n\n[English]\nImage generation: Product advertising photo, Seasonal product suitable for summer, Carbonated beverage, Name=\"Summer Citrus SODA\", Shape=500ml PET bottle, Design and generate image specifications after researching high CTA design as a beverage advertisement in 2025, Aspect ratio 3:4",
+      "revision": "Keep the summer citrus soda advertising purpose, but use a diagonal top-down arrangement with condensation, sliced citrus, and one deliberate area of negative space. Do not reuse the original packshot layout.",
+      "revisedPrompt": "[中文]\n图像生成: 商品广告照片, 适合夏天的季节商品, 碳酸饮料, 名称=\"夏柑SODA\", 形状=PET瓶500ml, 研究2025年作为饮料广告的高CTA设计后设计并生成图像规格, 宽高比3:4\n\n[English]\nImage generation: Product advertising photo, Seasonal product suitable for summer, Carbonated beverage, Name=\"Summer Citrus SODA\", Shape=500ml PET bottle, Design and generate image specifications after researching high CTA design as a beverage advertisement in 2025, Aspect ratio 3:4\n\nOriginality adjustment for this regeneration:\nKeep the summer citrus soda advertising purpose, but use a diagonal top-down arrangement with condensation, sliced citrus, and one deliberate area of negative space. Do not reuse the original packshot layout."
+    },
+    {
+      "num": 2,
+      "title": "社媒界面截图",
+      "sceneType": "社交媒体",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case2.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "小红书号4264014889",
+      "originalPrompt": "画一张 X 的内容截图，深色模式，@OpenAI 蓝勾认证账号发推。 \n 正文的中文内容： \n 今天想推荐一位很棒的 AI Builder：Ailln AI。 \n 他持续在小红书分享 AI 工具、Agent 工作流、自动化实践和真实项目经验，把复杂的 AI 能力讲得清楚、实用、可落地。 \n 如果你正在关注 AI 产品、效率工具、个人自动化、内容创作和未来工作方式，Ailln AI 是一个非常值得关注的创作者。 \n 在小红书搜索：Ailln AI \n 底部添加一张深色官方宣传风格海报，简洁黑客质感，图片中文本准确显示。 \n 海报大字： 「Ailln AI」 \n 副标题： 「A brilliant AI Builder worth following」 \n 互动数据位于最下方： 评论 8.9K、转发 42K、点赞 298K（亮起）、收藏 34K（亮起）、浏览 32.4M。 \n 图片比例为3:4，不包含软件其他部分。",
+      "revision": "Create a new social-post screenshot hierarchy with a fictional creator account, a shorter post body, and a different arrangement of the attached promotional visual. Do not reproduce real account identity, exact metrics, or the source layout.",
+      "revisedPrompt": "画一张 X 的内容截图，深色模式，@OpenAI 蓝勾认证账号发推。 \n 正文的中文内容： \n 今天想推荐一位很棒的 AI Builder：Ailln AI。 \n 他持续在小红书分享 AI 工具、Agent 工作流、自动化实践和真实项目经验，把复杂的 AI 能力讲得清楚、实用、可落地。 \n 如果你正在关注 AI 产品、效率工具、个人自动化、内容创作和未来工作方式，Ailln AI 是一个非常值得关注的创作者。 \n 在小红书搜索：Ailln AI \n 底部添加一张深色官方宣传风格海报，简洁黑客质感，图片中文本准确显示。 \n 海报大字： 「Ailln AI」 \n 副标题： 「A brilliant AI Builder worth following」 \n 互动数据位于最下方： 评论 8.9K、转发 42K、点赞 298K（亮起）、收藏 34K（亮起）、浏览 32.4M。 \n 图片比例为3:4，不包含软件其他部分。\n\nOriginality adjustment for this regeneration:\nCreate a new social-post screenshot hierarchy with a fictional creator account, a shorter post body, and a different arrangement of the attached promotional visual. Do not reproduce real account identity, exact metrics, or the source layout."
+    },
+    {
+      "num": 21,
+      "title": "直播界面设计图",
+      "sceneType": "社交媒体",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case21.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "[@sjbbxhz](https://x.com/sjbbxhz)",
+      "originalPrompt": "{\n  \"type\": \"live stream UI mockup\",\n  \"subject\": {\n    \"description\": \"portrait of {argument name=\\\"host name\\\" default=\\\"Elon Musk\\\"}, smiling, wearing a black t-shirt with a white technical schematic graphic\",\n    \"background\": \"left side shows a screen with '{argument name=\\\"left background logo\\\" default=\\\"SPACEX\\\"}' text, right side shows a red '{argument name=\\\"right background logo\\\" default=\\\"Tesla T logo\\\"}' and a dark car\"\n  },\n  \"ui_overlay\": {\n    \"top_header\": {\n      \"host_info\": \"avatar, name '{argument name=\\\"host name\\\" default=\\\"Elon Musk\\\"}', subtext '55.6万本场点赞', red '关注' button\",\n      \"rank_badge\": \"gold coin icon with '全站第1名'\",\n      \"viewer_stats\": \"3 top viewer avatars with '12.3w', '8.6w', '5.7w', total '68.7万', 'X' close button\",\n      \"right_links\": \"'更多直播 >', '礼物展馆 0/24' with blue '经典' tag\"\n    },\n    \"mid_left_gifts\": {\n      \"count\": 2,\n      \"items\": [\n        \"avatar '科技爱好者', '送小心心', heart icon x 1314\",\n        \"avatar '星辰大海', '送火箭', rocket icon x 666\"\n      ]\n    },\n    \"bottom_left_chat\": {\n      \"system_message\": \"level 37 badge '宇宙漫游者 加入了直播间'\",\n      \"message_count\": 7,\n      \"messages\": [\n        \"小火箭: 马斯克！未来可期！🚀\",\n        \"future: 特斯拉Model 2什么时候出？\",\n        \"星空梦想家: SpaceX今年能上火星吗？\",\n        \"AI探索者: Neuralink进展如何？\",\n        \"帅气的网友: 马总好！\",\n        \"Mars: 第一次来你的直播，超激动！\",\n        \"用户123: 讲讲AI吧，会取代人类吗？\"\n      ]\n    },\n    \"bottom_right_product_card\": {\n      \"hot_tag\": \"orange '热卖 x 1888'\",\n      \"image\": \"Tesla Cybertruck\",\n      \"title\": \"{argument name=\\\"product name\\\" default=\\\"特斯拉Cybertruck 电动皮卡\\\"}\",\n      \"price\": \"{argument name=\\\"product price\\\" default=\\\"¥ 1,618,000\\\"}\",\n      \"button\": \"red '抢' button\",\n      \"floating_animation\": \"translucent hearts floating up the right edge\"\n    },\n    \"bottom_bar\": {\n      \"input_field\": \"'说点什么...'\",\n      \"icons\": [\"smiley face\", \"three dots\", \"shopping cart\", \"gift box\", \"share\"]\n    }\n  }\n}",
+      "revision": "Place the livestream interface inside a vertical mobile frame with a different host pose, a calmer comment rhythm, and a redesigned lower action bar. Preserve the recognizable livestream use case without copying the original screen.",
+      "revisedPrompt": "{\n  \"type\": \"live stream UI mockup\",\n  \"subject\": {\n    \"description\": \"portrait of {argument name=\\\"host name\\\" default=\\\"Elon Musk\\\"}, smiling, wearing a black t-shirt with a white technical schematic graphic\",\n    \"background\": \"left side shows a screen with '{argument name=\\\"left background logo\\\" default=\\\"SPACEX\\\"}' text, right side shows a red '{argument name=\\\"right background logo\\\" default=\\\"Tesla T logo\\\"}' and a dark car\"\n  },\n  \"ui_overlay\": {\n    \"top_header\": {\n      \"host_info\": \"avatar, name '{argument name=\\\"host name\\\" default=\\\"Elon Musk\\\"}', subtext '55.6万本场点赞', red '关注' button\",\n      \"rank_badge\": \"gold coin icon with '全站第1名'\",\n      \"viewer_stats\": \"3 top viewer avatars with '12.3w', '8.6w', '5.7w', total '68.7万', 'X' close button\",\n      \"right_links\": \"'更多直播 >', '礼物展馆 0/24' with blue '经典' tag\"\n    },\n    \"mid_left_gifts\": {\n      \"count\": 2,\n      \"items\": [\n        \"avatar '科技爱好者', '送小心心', heart icon x 1314\",\n        \"avatar '星辰大海', '送火箭', rocket icon x 666\"\n      ]\n    },\n    \"bottom_left_chat\": {\n      \"system_message\": \"level 37 badge '宇宙漫游者 加入了直播间'\",\n      \"message_count\": 7,\n      \"messages\": [\n        \"小火箭: 马斯克！未来可期！🚀\",\n        \"future: 特斯拉Model 2什么时候出？\",\n        \"星空梦想家: SpaceX今年能上火星吗？\",\n        \"AI探索者: Neuralink进展如何？\",\n        \"帅气的网友: 马总好！\",\n        \"Mars: 第一次来你的直播，超激动！\",\n        \"用户123: 讲讲AI吧，会取代人类吗？\"\n      ]\n    },\n    \"bottom_right_product_card\": {\n      \"hot_tag\": \"orange '热卖 x 1888'\",\n      \"image\": \"Tesla Cybertruck\",\n      \"title\": \"{argument name=\\\"product name\\\" default=\\\"特斯拉Cybertruck 电动皮卡\\\"}\",\n      \"price\": \"{argument name=\\\"product price\\\" default=\\\"¥ 1,618,000\\\"}\",\n      \"button\": \"red '抢' button\",\n      \"floating_animation\": \"translucent hearts floating up the right edge\"\n    },\n    \"bottom_bar\": {\n      \"input_field\": \"'说点什么...'\",\n      \"icons\": [\"smiley face\", \"three dots\", \"shopping cart\", \"gift box\", \"share\"]\n    }\n  }\n}\n\nOriginality adjustment for this regeneration:\nPlace the livestream interface inside a vertical mobile frame with a different host pose, a calmer comment rhythm, and a redesigned lower action bar. Preserve the recognizable livestream use case without copying the original screen."
+    },
+    {
+      "num": 260,
+      "title": "社媒界面截图",
+      "sceneType": "社交媒体",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case260.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "[@MrLarus](https://x.com/MrLarus/status/2045373105041007013)",
+      "originalPrompt": "[中文]\n生成抖音内容截图，主题：跟上AI浪潮9.9包教会，iPhone尺寸\n\n[English]\nGenerate a screenshot of Douyin content, theme: Catch up with the AI wave, 9.9 to learn it all, iPhone size",
+      "revision": "Rebuild the social feed with a different profile header, card order, and interaction row. Keep the content-publishing context and readable interface structure, but change the visual hierarchy and spacing.",
+      "revisedPrompt": "[中文]\n生成抖音内容截图，主题：跟上AI浪潮9.9包教会，iPhone尺寸\n\n[English]\nGenerate a screenshot of Douyin content, theme: Catch up with the AI wave, 9.9 to learn it all, iPhone size\n\nOriginality adjustment for this regeneration:\nRebuild the social feed with a different profile header, card order, and interaction row. Keep the content-publishing context and readable interface structure, but change the visual hierarchy and spacing."
+    },
+    {
+      "num": 335,
+      "title": "朋友圈截图生成",
+      "sceneType": "社交媒体",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case335.png",
+      "originalCategory": "🧩 UI与界面",
+      "source": "苍何原创实测（公众号文章《我逆向了 329 条 GPT-Image2 提示词模板，全部开源！》）",
+      "originalPrompt": "原文未公开，重点展示 GPT-Image2 在高仿社交截图与中文排版场景中的能力。",
+      "revision": "Turn the idea into a fictional messaging-thread screenshot with a different conversation flow, timestamp rhythm, and message grouping. Keep the screenshot believable and avoid using the exact original copy or arrangement.",
+      "revisedPrompt": "原文未公开，重点展示 GPT-Image2 在高仿社交截图与中文排版场景中的能力。\n\nOriginality adjustment for this regeneration:\nTurn the idea into a fictional messaging-thread screenshot with a different conversation flow, timestamp rhythm, and message grouping. Keep the screenshot believable and avoid using the exact original copy or arrangement."
+    },
+    {
+      "num": 136,
+      "title": "品牌视觉识别图",
+      "sceneType": "品牌视觉",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case136.jpg",
+      "originalCategory": "🏷️ 品牌与标志",
+      "source": "[@ryuya\\_\\_31](https://x.com/ryuya__31)",
+      "originalPrompt": "{\n  \"type\": \"e-commerce landing page hero section\",\n  \"brand\": \"{argument name=\\\"brand name\\\" default=\\\"CLEAR RESET\\\"}\",\n  \"theme\": \"refreshing skincare, clean aesthetic, water bubbles background\",\n  \"color_palette\": [\"white\", \"{argument name=\\\"primary color\\\" default=\\\"teal\\\"}\", \"light blue\"],\n  \"layout\": {\n    \"header\": {\n      \"logo\": \"CLEAR RESET\",\n      \"navigation_links\": {\"count\": 5, \"labels\": [\"About Product\", \"About Pores/Acne\", \"Ingredients\", \"How to Use\", \"FAQ\"]},\n      \"action_buttons\": {\"count\": 2, \"labels\": [\"Buy Now\", \"My Page\"]}\n    },\n    \"hero_content\": {\n      \"headline\": \"{argument name=\\\"main headline\\\" default=\\\"毛穴・ニキビ悩みに、すっきり澄んだ肌へ。\\\"}\",\n      \"subheadline\": \"Balances sebum and clears pores. Non-sticky, medicated skincare for comfortable daily use.\",\n      \"vertical_copy\": \"Prevents recurring rough skin and acne, leading to smooth, clear skin.\"\n    },\n    \"visuals\": {\n      \"model\": \"{argument name=\\\"model description\\\" default=\\\"young Asian woman with clear radiant skin, hair tied up, smiling softly\\\"}\",\n      \"products\": {\n        \"count\": 2,\n        \"description\": \"{argument name=\\\"product type\\\" default=\\\"acne care gel tube and lotion bottle\\\"}\",\n        \"placement\": \"center\"\n      },\n      \"background\": \"light blue gradient with floating water bubbles\"\n    },\n    \"feature_highlights\": {\n      \"count\": 4,\n      \"style\": \"circular icons with text below\",\n      \"labels\": [\"Quasi-drug\", \"Pore Care\", \"Non-sticky\", \"Daily Use Morning/Night OK\"]\n    },\n    \"call_to_action\": {\n      \"banner_text\": \"Limited to first-time buyers\",\n      \"buttons\": {\"count\": 2, \"labels\": [\"Try it at a discount\", \"See details\"]}\n    },\n    \"statistics_cards\": {\n      \"count\": 4,\n      \"style\": \"white rectangular cards with large teal numbers\",\n      \"labels\": [\"Satisfaction 92%\", \"Pore visibility -23%\", \"Acne prevention 87%\", \"Want to repeat 97%\"]\n    }\n  }\n}",
+      "revision": "Develop a distinct brand identity presentation with a new logo geometry, a different lockup arrangement, and two practical touchpoints. Keep the identity-system purpose while avoiding the source mark and exact board composition.",
+      "revisedPrompt": "{\n  \"type\": \"e-commerce landing page hero section\",\n  \"brand\": \"{argument name=\\\"brand name\\\" default=\\\"CLEAR RESET\\\"}\",\n  \"theme\": \"refreshing skincare, clean aesthetic, water bubbles background\",\n  \"color_palette\": [\"white\", \"{argument name=\\\"primary color\\\" default=\\\"teal\\\"}\", \"light blue\"],\n  \"layout\": {\n    \"header\": {\n      \"logo\": \"CLEAR RESET\",\n      \"navigation_links\": {\"count\": 5, \"labels\": [\"About Product\", \"About Pores/Acne\", \"Ingredients\", \"How to Use\", \"FAQ\"]},\n      \"action_buttons\": {\"count\": 2, \"labels\": [\"Buy Now\", \"My Page\"]}\n    },\n    \"hero_content\": {\n      \"headline\": \"{argument name=\\\"main headline\\\" default=\\\"毛穴・ニキビ悩みに、すっきり澄んだ肌へ。\\\"}\",\n      \"subheadline\": \"Balances sebum and clears pores. Non-sticky, medicated skincare for comfortable daily use.\",\n      \"vertical_copy\": \"Prevents recurring rough skin and acne, leading to smooth, clear skin.\"\n    },\n    \"visuals\": {\n      \"model\": \"{argument name=\\\"model description\\\" default=\\\"young Asian woman with clear radiant skin, hair tied up, smiling softly\\\"}\",\n      \"products\": {\n        \"count\": 2,\n        \"description\": \"{argument name=\\\"product type\\\" default=\\\"acne care gel tube and lotion bottle\\\"}\",\n        \"placement\": \"center\"\n      },\n      \"background\": \"light blue gradient with floating water bubbles\"\n    },\n    \"feature_highlights\": {\n      \"count\": 4,\n      \"style\": \"circular icons with text below\",\n      \"labels\": [\"Quasi-drug\", \"Pore Care\", \"Non-sticky\", \"Daily Use Morning/Night OK\"]\n    },\n    \"call_to_action\": {\n      \"banner_text\": \"Limited to first-time buyers\",\n      \"buttons\": {\"count\": 2, \"labels\": [\"Try it at a discount\", \"See details\"]}\n    },\n    \"statistics_cards\": {\n      \"count\": 4,\n      \"style\": \"white rectangular cards with large teal numbers\",\n      \"labels\": [\"Satisfaction 92%\", \"Pore visibility -23%\", \"Acne prevention 87%\", \"Want to repeat 97%\"]\n    }\n  }\n}\n\nOriginality adjustment for this regeneration:\nDevelop a distinct brand identity presentation with a new logo geometry, a different lockup arrangement, and two practical touchpoints. Keep the identity-system purpose while avoiding the source mark and exact board composition."
+    },
+    {
+      "num": 342,
+      "title": "四季包装 Campaign 宫格",
+      "sceneType": "品牌视觉",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case342.jpg",
+      "originalCategory": "🏷️ 品牌与标志",
+      "source": "[@SRKDAN](https://x.com/SRKDAN/status/2048582939504431195)",
+      "originalPrompt": "PHASE 1 - PRODUCT: [ITEM] in [MATERIAL] packaging, minimal label design\nPHASE 2 - GRID: 2x2 seasonal grid, four distinct brand worlds\nPHASE 3 - COMPOSITION: each quadrant a full campaign scene with props and environment\nPHASE 4 - CONSISTENCY: same product silhouette, four distinct palettes\n\nSwap: [ITEM] / [MATERIAL] / [LABEL STYLE]",
+      "revision": "Show the seasonal packaging campaign through a new grid rhythm and a different set of pack angles. Keep the campaign system coherent, but vary the package hierarchy, supporting props, and negative space.",
+      "revisedPrompt": "PHASE 1 - PRODUCT: [ITEM] in [MATERIAL] packaging, minimal label design\nPHASE 2 - GRID: 2x2 seasonal grid, four distinct brand worlds\nPHASE 3 - COMPOSITION: each quadrant a full campaign scene with props and environment\nPHASE 4 - CONSISTENCY: same product silhouette, four distinct palettes\n\nSwap: [ITEM] / [MATERIAL] / [LABEL STYLE]\n\nOriginality adjustment for this regeneration:\nShow the seasonal packaging campaign through a new grid rhythm and a different set of pack angles. Keep the campaign system coherent, but vary the package hierarchy, supporting props, and negative space."
+    },
+    {
+      "num": 362,
+      "title": "抹茶品牌触点系统视觉板",
+      "sceneType": "品牌视觉",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case362.jpg",
+      "originalCategory": "🏷️ 品牌与标志",
+      "source": "[@Preda2005](https://x.com/Preda2005/status/2049846981271699685)",
+      "originalPrompt": "Create a premium “Matcha Brand Touchpoint System” visual board for a modern lifestyle brand called:\n\n“MATCHA MODE”\n\nBuild a full brand identity system, not a single image.\n\nHERO SCENE:\n\nA hyper-realistic matcha drink in a ceramic cup placed on a clean natural surface.\n\n– vibrant green matcha foam with micro-bubbles\n– bamboo whisk (chasen) nearby\n– soft natural light\n– slight matcha powder dust on the surface\n– minimal Japanese aesthetic\nATMOSPHERE:\n– calm, warm, soft daylight\n– clean background (off-white or beige)\n– subtle shadows and reflections\n– feeling of wellness and luxury\nFULL BRAND SYSTEM:\n– takeout cups (paper + glass bottles)\n– packaging boxes (minimalist design)\n– tote bags (premium lifestyle)\n– labels, stickers, seals\n– menu cards with pricing ($6.50, $8.90, etc.)\n– small typography everywhere\n– subtle imperfections (realism)\n\nDESIGN LANGUAGE:\n\n– modern minimalist typography\n– Japanese-inspired layout\n– soft green palette\n– elegant spacing\n\nINCLUDE:\n– matcha latte\n– iced matcha\n– matcha desserts\n– combo sets\n– lifestyle shots\nThe composition must feel like a high-end design agency presentation.\n\nUltra-detailed, realistic, clean, aesthetic, and highly shareable.",
+      "revision": "Present the matcha brand touchpoint system as a new editorial board: vary the placement of packaging, printed collateral, and digital touchpoints while preserving the brand-world exploration goal.",
+      "revisedPrompt": "Create a premium “Matcha Brand Touchpoint System” visual board for a modern lifestyle brand called:\n\n“MATCHA MODE”\n\nBuild a full brand identity system, not a single image.\n\nHERO SCENE:\n\nA hyper-realistic matcha drink in a ceramic cup placed on a clean natural surface.\n\n– vibrant green matcha foam with micro-bubbles\n– bamboo whisk (chasen) nearby\n– soft natural light\n– slight matcha powder dust on the surface\n– minimal Japanese aesthetic\nATMOSPHERE:\n– calm, warm, soft daylight\n– clean background (off-white or beige)\n– subtle shadows and reflections\n– feeling of wellness and luxury\nFULL BRAND SYSTEM:\n– takeout cups (paper + glass bottles)\n– packaging boxes (minimalist design)\n– tote bags (premium lifestyle)\n– labels, stickers, seals\n– menu cards with pricing ($6.50, $8.90, etc.)\n– small typography everywhere\n– subtle imperfections (realism)\n\nDESIGN LANGUAGE:\n\n– modern minimalist typography\n– Japanese-inspired layout\n– soft green palette\n– elegant spacing\n\nINCLUDE:\n– matcha latte\n– iced matcha\n– matcha desserts\n– combo sets\n– lifestyle shots\nThe composition must feel like a high-end design agency presentation.\n\nUltra-detailed, realistic, clean, aesthetic, and highly shareable.\n\nOriginality adjustment for this regeneration:\nPresent the matcha brand touchpoint system as a new editorial board: vary the placement of packaging, printed collateral, and digital touchpoints while preserving the brand-world exploration goal."
+    },
+    {
+      "num": 160,
+      "title": "品牌吉祥物设定图",
+      "sceneType": "品牌视觉",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case160.jpg",
+      "originalCategory": "🏷️ 品牌与标志",
+      "source": "[@TanShilong](https://x.com/TanShilong)",
+      "originalPrompt": "Generate a set of icons for {argument name=\"device\" default=\"vintage electronic equipment\"} in {argument name=\"style\" default=\"retro skeuomorphic style\"}, including icon names in the image.",
+      "revision": "Design a new brand mascot direction with a different silhouette, pose set, and application example. Keep the mascot approachable and brand-ready, but do not reproduce the source character design.",
+      "revisedPrompt": "Generate a set of icons for {argument name=\"device\" default=\"vintage electronic equipment\"} in {argument name=\"style\" default=\"retro skeuomorphic style\"}, including icon names in the image.\n\nOriginality adjustment for this regeneration:\nDesign a new brand mascot direction with a different silhouette, pose set, and application example. Keep the mascot approachable and brand-ready, but do not reproduce the source character design."
+    },
+    {
+      "num": 9,
+      "title": "主题海报版式设计",
+      "sceneType": "海报排版",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case9.jpg",
+      "originalCategory": "📰 海报与排版",
+      "source": "小红书号z890738050",
+      "originalPrompt": "2026中国城市系列宣传海报，主题为【北京】。现代、多彩、明亮通透的国潮风，竖版9:16。大面积白色纹理留白背景，一条从右下向左上盘旋的红色丝绸形成S型主构图。右下角一位东方女性挥舞红绸，服饰需结合北京地域文化定制。红绸延展为城市长卷，融合天坛、长城、鸟巢、喇叭沟门原始森林公园、什刹海、京味相声。左侧排版SPRING 2026、竖排Beijing和小印章“北京”。要求统一系列感，但不能雷同，细节丰富，城市辨识度强。文字清晰且精美布局，高端图形设计。",
+      "revision": "Keep the city-series poster purpose, but use a new city-specific visual metaphor, a different figure-to-landmark relationship, and a more asymmetric type block. Preserve clear typography without copying the original composition.",
+      "revisedPrompt": "2026中国城市系列宣传海报，主题为【北京】。现代、多彩、明亮通透的国潮风，竖版9:16。大面积白色纹理留白背景，一条从右下向左上盘旋的红色丝绸形成S型主构图。右下角一位东方女性挥舞红绸，服饰需结合北京地域文化定制。红绸延展为城市长卷，融合天坛、长城、鸟巢、喇叭沟门原始森林公园、什刹海、京味相声。左侧排版SPRING 2026、竖排Beijing和小印章“北京”。要求统一系列感，但不能雷同，细节丰富，城市辨识度强。文字清晰且精美布局，高端图形设计。\n\nOriginality adjustment for this regeneration:\nKeep the city-series poster purpose, but use a new city-specific visual metaphor, a different figure-to-landmark relationship, and a more asymmetric type block. Preserve clear typography without copying the original composition."
+    },
+    {
+      "num": 175,
+      "title": "封面排版设计图",
+      "sceneType": "海报排版",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case175.jpg",
+      "originalCategory": "📰 海报与排版",
+      "source": "[@cellier\\_](https://x.com/cellier_/status/2046615173411262959)",
+      "originalPrompt": "[中文]\n创建一个高级的 4:3 演示文稿封面幻灯片，介绍来自 http://chroniclehq.com 的 AI 原生演示平台 Chronicle。  \n\nStyle: \n优雅，极简，现代，高级初创企业美学。类似于高端品牌指南封面（如 Apple / Linear / Notion 风格）。带有微妙深度感的柔和渐变背景，干净的留白，精致的排版，经过打磨的编辑式布局。  \n\nMain title: \nCHRONICLE  \n\nSubtitle: \nAI PRESENTATION PLATFORM  \n\nBody copy (small elegant text): \n将原始想法转化为经过打磨的、高影响力的演示文稿。 \n从笔记、文档、链接或现有幻灯片开始。 \n使用 AI 生成美观的、符合品牌调性的幻灯片。 \n在灵活的画布上自由编辑。 \n导出为 PPT、PDF，或发布为网站。  \n\nFeature highlights (small premium labels): \nSTORY-FIRST \nON-BRAND DESIGN \nAI EDITING \nFREEFORM CANVAS \nPPT EXPORT \nTEAM COLLABORATION  \n\nBottom-right elegant logo text: \nchronicle  \n\nVisual feeling: \n商务级高级感，战略级幻灯片质量，咨询级演示文稿，略带未来感但高度专业。  \n\nComposition: \n干净的编辑式平衡，不对称布局，强烈的留白，演示软件主视觉感。  \n\nAspect ratio: \n4:3  \n\nLanguage: \n仅限英文\n\n[English]\nCreate a premium 4:3 presentation cover slide introducing Chronicle, the AI-native presentation platform from http://chroniclehq.com.  \n\nStyle: \nelegant, minimal, modern, premium startup aesthetic. Similar to high-end brand guideline covers (like Apple / Linear / Notion style). Soft gradient background with subtle depth, clean whitespace, refined typography, polished editorial layout.  \n\nMain title: \nCHRONICLE  \n\nSubtitle: \nAI PRESENTATION PLATFORM  \n\nBody copy (small elegant text): \nTurn raw ideas into polished, high-impact presentations. \nStart from notes, docs, links, or existing decks. \nGenerate beautiful, on-brand slides with AI. \nEdit freely on a flexible canvas. \nExport to PPT, PDF, or publish as a website.  \n\nFeature highlights (small premium labels): \nSTORY-FIRST \nON-BRAND DESIGN \nAI EDITING \nFREEFORM CANVAS \nPPT EXPORT \nTEAM COLLABORATION  \n\nBottom-right elegant logo text: \nchronicle  \n\nVisual feeling: \nbusiness-class premium, strategy deck quality, consulting-grade presentation, slightly futuristic but highly professional.  \n\nComposition: \nclean editorial balance, asymmetrical layout, strong whitespace, presentation software hero shot feeling.  \n\nAspect ratio: \n4:3  \n\nLanguage: \nEnglish only",
+      "revision": "Create a new cover layout with a shifted focal image, a different title scale, and a quieter secondary information area. Keep the editorial cover function and readable hierarchy.",
+      "revisedPrompt": "[中文]\n创建一个高级的 4:3 演示文稿封面幻灯片，介绍来自 http://chroniclehq.com 的 AI 原生演示平台 Chronicle。  \n\nStyle: \n优雅，极简，现代，高级初创企业美学。类似于高端品牌指南封面（如 Apple / Linear / Notion 风格）。带有微妙深度感的柔和渐变背景，干净的留白，精致的排版，经过打磨的编辑式布局。  \n\nMain title: \nCHRONICLE  \n\nSubtitle: \nAI PRESENTATION PLATFORM  \n\nBody copy (small elegant text): \n将原始想法转化为经过打磨的、高影响力的演示文稿。 \n从笔记、文档、链接或现有幻灯片开始。 \n使用 AI 生成美观的、符合品牌调性的幻灯片。 \n在灵活的画布上自由编辑。 \n导出为 PPT、PDF，或发布为网站。  \n\nFeature highlights (small premium labels): \nSTORY-FIRST \nON-BRAND DESIGN \nAI EDITING \nFREEFORM CANVAS \nPPT EXPORT \nTEAM COLLABORATION  \n\nBottom-right elegant logo text: \nchronicle  \n\nVisual feeling: \n商务级高级感，战略级幻灯片质量，咨询级演示文稿，略带未来感但高度专业。  \n\nComposition: \n干净的编辑式平衡，不对称布局，强烈的留白，演示软件主视觉感。  \n\nAspect ratio: \n4:3  \n\nLanguage: \n仅限英文\n\n[English]\nCreate a premium 4:3 presentation cover slide introducing Chronicle, the AI-native presentation platform from http://chroniclehq.com.  \n\nStyle: \nelegant, minimal, modern, premium startup aesthetic. Similar to high-end brand guideline covers (like Apple / Linear / Notion style). Soft gradient background with subtle depth, clean whitespace, refined typography, polished editorial layout.  \n\nMain title: \nCHRONICLE  \n\nSubtitle: \nAI PRESENTATION PLATFORM  \n\nBody copy (small elegant text): \nTurn raw ideas into polished, high-impact presentations. \nStart from notes, docs, links, or existing decks. \nGenerate beautiful, on-brand slides with AI. \nEdit freely on a flexible canvas. \nExport to PPT, PDF, or publish as a website.  \n\nFeature highlights (small premium labels): \nSTORY-FIRST \nON-BRAND DESIGN \nAI EDITING \nFREEFORM CANVAS \nPPT EXPORT \nTEAM COLLABORATION  \n\nBottom-right elegant logo text: \nchronicle  \n\nVisual feeling: \nbusiness-class premium, strategy deck quality, consulting-grade presentation, slightly futuristic but highly professional.  \n\nComposition: \nclean editorial balance, asymmetrical layout, strong whitespace, presentation software hero shot feeling.  \n\nAspect ratio: \n4:3  \n\nLanguage: \nEnglish only\n\nOriginality adjustment for this regeneration:\nCreate a new cover layout with a shifted focal image, a different title scale, and a quieter secondary information area. Keep the editorial cover function and readable hierarchy."
+    },
+    {
+      "num": 253,
+      "title": "2026谷雨节气唯美海报设计",
+      "sceneType": "海报排版",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case253.jpg",
+      "originalCategory": "📰 海报与排版",
+      "source": "[@akokoi1](https://x.com/akokoi1/status/2045693939584516441)",
+      "originalPrompt": "[中文]\n生成一张2026年谷雨节气的海报\n\n[English]\nGenerate a poster for the Guyu solar term in 2026",
+      "revision": "Retain the seasonal festival-poster purpose, but change the main seasonal symbol, the perspective, and the placement of the date/title. Leave generous breathing room and avoid the reference layout.",
+      "revisedPrompt": "[中文]\n生成一张2026年谷雨节气的海报\n\n[English]\nGenerate a poster for the Guyu solar term in 2026\n\nOriginality adjustment for this regeneration:\nRetain the seasonal festival-poster purpose, but change the main seasonal symbol, the perspective, and the placement of the date/title. Leave generous breathing room and avoid the reference layout."
+    },
+    {
+      "num": 343,
+      "title": "高定时尚杂志封面",
+      "sceneType": "海报排版",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case343.jpg",
+      "originalCategory": "📰 海报与排版",
+      "source": "[@SPEEDAI07](https://x.com/SPEEDAI07/status/2048573343066992919)",
+      "originalPrompt": "Ultra high-fashion magazine cover, Louis Vuitton-style editorial. Close-up portrait of a confident woman with soft rose-gold hair and natural airy bangs, slightly wind-blown for movement. She is wearing a luxury summer outfit: a structured lightweight linen or silk jacket in warm golden-yellow tones, layered over a modest high-neck top, paired with a bold gold choker necklace and subtle statement earrings.\n\nFabric flows naturally with a summer breeze, slightly textured and breathable, capturing a premium seasonal feel. Styling is elegant, modest, and refined — no revealing clothing.\n\nLighting is high-end studio mixed with natural golden hour glow: warm highlights, soft shadows, luminous skin with glossy editorial finish.\n\nBackground is a rich summer gradient (sunset gold fading into soft coral or warm beige), clean but visually striking.\n\nComposition is dynamic and slightly cinematic: hair in motion, shallow depth of field, sharp focus on face.\n\nTypography: large elegant serif masthead \"Louis Vuitton\" at the top, bold cover line \"YOUR CHOICE ENDS HERE\" in premium editorial layout, minimal supporting text.\n\nUltra-realistic, hyper-detailed skin texture, 8K resolution, sharp focus, glossy magazine print quality, cinematic color grading, luxury fashion photography, no nudity, tasteful and editorial.",
+      "revision": "Rework the fashion magazine cover as a different editorial cover story: change the crop, headline hierarchy, and supporting microtext placement while keeping a premium fashion-publication feel.",
+      "revisedPrompt": "Ultra high-fashion magazine cover, Louis Vuitton-style editorial. Close-up portrait of a confident woman with soft rose-gold hair and natural airy bangs, slightly wind-blown for movement. She is wearing a luxury summer outfit: a structured lightweight linen or silk jacket in warm golden-yellow tones, layered over a modest high-neck top, paired with a bold gold choker necklace and subtle statement earrings.\n\nFabric flows naturally with a summer breeze, slightly textured and breathable, capturing a premium seasonal feel. Styling is elegant, modest, and refined — no revealing clothing.\n\nLighting is high-end studio mixed with natural golden hour glow: warm highlights, soft shadows, luminous skin with glossy editorial finish.\n\nBackground is a rich summer gradient (sunset gold fading into soft coral or warm beige), clean but visually striking.\n\nComposition is dynamic and slightly cinematic: hair in motion, shallow depth of field, sharp focus on face.\n\nTypography: large elegant serif masthead \"Louis Vuitton\" at the top, bold cover line \"YOUR CHOICE ENDS HERE\" in premium editorial layout, minimal supporting text.\n\nUltra-realistic, hyper-detailed skin texture, 8K resolution, sharp focus, glossy magazine print quality, cinematic color grading, luxury fashion photography, no nudity, tasteful and editorial.\n\nOriginality adjustment for this regeneration:\nRework the fashion magazine cover as a different editorial cover story: change the crop, headline hierarchy, and supporting microtext placement while keeping a premium fashion-publication feel."
+    },
+    {
+      "num": 7,
+      "title": "应用界面样机图",
+      "sceneType": "UI界面",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case7.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "小红书号944846927",
+      "originalPrompt": "生成一张竖版手机截图风格的图片，整体比例接近 9:16。画面中心偏上是一位真人 coser，扮演上传图片中的二次元角色。人物为写实风格，但五官略带动漫感，皮肤细腻，眼睛稍大，表情温柔地看向镜头，坐在室内的休闲场景中，例如咖啡厅或酒吧吧台前，背景有符合场景的道具。画面最上方加入手机系统状态栏 UI，包括时间、电量、信号、网络等图标，让整张图看起来像手机截图。画面底部叠加一块宽大的半透明 galgame 风格对话框，对话框左侧放一个与画面人物对应的动漫或 Q 版头像；对话框右侧排版文字：第一行用较大字体显示与前面相同的角色名字，下面一到两行显示一段适合这个角色人设的、温柔治愈风格的简体中文台词，由你自动创作。再在对话框下方加一条操作栏，仿照 galgame UI。整体风格高清、细节丰富、光线柔和、二次元与真人写真自然融合。",
+      "revision": "Keep the mobile app mockup use case, but change the device angle, screen sequence, and surrounding context. Use a distinct interaction state and a different visual hierarchy while keeping the interface legible.",
+      "revisedPrompt": "生成一张竖版手机截图风格的图片，整体比例接近 9:16。画面中心偏上是一位真人 coser，扮演上传图片中的二次元角色。人物为写实风格，但五官略带动漫感，皮肤细腻，眼睛稍大，表情温柔地看向镜头，坐在室内的休闲场景中，例如咖啡厅或酒吧吧台前，背景有符合场景的道具。画面最上方加入手机系统状态栏 UI，包括时间、电量、信号、网络等图标，让整张图看起来像手机截图。画面底部叠加一块宽大的半透明 galgame 风格对话框，对话框左侧放一个与画面人物对应的动漫或 Q 版头像；对话框右侧排版文字：第一行用较大字体显示与前面相同的角色名字，下面一到两行显示一段适合这个角色人设的、温柔治愈风格的简体中文台词，由你自动创作。再在对话框下方加一条操作栏，仿照 galgame UI。整体风格高清、细节丰富、光线柔和、二次元与真人写真自然融合。\n\nOriginality adjustment for this regeneration:\nKeep the mobile app mockup use case, but change the device angle, screen sequence, and surrounding context. Use a distinct interaction state and a different visual hierarchy while keeping the interface legible."
+    },
+    {
+      "num": 177,
+      "title": "吉利银河暗黑中控界面",
+      "sceneType": "UI界面",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case177.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "[@xin\\_pai88825](https://x.com/xin_pai88825/status/2046576100592201946)",
+      "originalPrompt": "[中文]\n帮我生成一个吉利银河m9的中控界面，尺寸为21:9，暗色系\n\n[English]\nHelp me generate a central control interface of Geely Galaxy M9, size 21:9, dark color scheme.",
+      "revision": "Recompose the vehicle cockpit interface as a different dark dashboard state: change the control grouping, information emphasis, and camera perspective while preserving the automotive-screen purpose.",
+      "revisedPrompt": "[中文]\n帮我生成一个吉利银河m9的中控界面，尺寸为21:9，暗色系\n\n[English]\nHelp me generate a central control interface of Geely Galaxy M9, size 21:9, dark color scheme.\n\nOriginality adjustment for this regeneration:\nRecompose the vehicle cockpit interface as a different dark dashboard state: change the control grouping, information emphasis, and camera perspective while preserving the automotive-screen purpose."
+    },
+    {
+      "num": 387,
+      "title": "Netflix 首页主视觉 UI",
+      "sceneType": "UI界面",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case387.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "[@aimikoda](https://x.com/aimikoda/status/2051420440451801240)",
+      "originalPrompt": "Create a Netflix homepage UI featuring a main hero film with its title and still generated from the uploaded reference.",
+      "revision": "Create a streaming-service home screen with a new content row structure, a different hero title treatment, and a changed thumbnail rhythm. Keep the recognizable browsing interaction without recreating the source screen.",
+      "revisedPrompt": "Create a Netflix homepage UI featuring a main hero film with its title and still generated from the uploaded reference.\n\nOriginality adjustment for this regeneration:\nCreate a streaming-service home screen with a new content row structure, a different hero title treatment, and a changed thumbnail rhythm. Keep the recognizable browsing interaction without recreating the source screen."
+    },
+    {
+      "num": 261,
+      "title": "智能视频生成器暗黑界面设计",
+      "sceneType": "UI界面",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case261.jpg",
+      "originalCategory": "🧩 UI与界面",
+      "source": "[@austinit](https://x.com/austinit/status/2044968740782272596)",
+      "originalPrompt": "[中文]\n渲染一个专业的IOS APP首页UI图，该主题为AI Video Generator,英文界面。专业级设计，专业风格，暗黑色主题。\n\n[English]\nRender a professional iOS APP homepage UI image, the theme is AI Video Generator, English interface. Professional-level design, professional style, dark theme.",
+      "revision": "Redesign the generative-video tool interface with a different panel hierarchy, prompt area, and preview state. Keep it as a credible creative software screen and avoid the original layout.",
+      "revisedPrompt": "[中文]\n渲染一个专业的IOS APP首页UI图，该主题为AI Video Generator,英文界面。专业级设计，专业风格，暗黑色主题。\n\n[English]\nRender a professional iOS APP homepage UI image, the theme is AI Video Generator, English interface. Professional-level design, professional style, dark theme.\n\nOriginality adjustment for this regeneration:\nRedesign the generative-video tool interface with a different panel hierarchy, prompt area, and preview state. Keep it as a credible creative software screen and avoid the original layout."
+    },
+    {
+      "num": 8,
+      "title": "科普百科图",
+      "sceneType": "信息图教育",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case8.jpg",
+      "originalCategory": "📊 图表与信息可视化",
+      "source": "小红书号1055699679",
+      "originalPrompt": "根据【主题】生成一张高质量竖版「科普百科图」。 \n这张图不是普通海报，也不是单纯插画，而是一张兼具图鉴感、百科感、信息结构感和收藏感的模块化科普信息图。整体风格参考高级博物图鉴、现代百科书页、生活方式知识卡，以及社交媒体上更容易传播的信息图风格。 \n让画面包含： \n一个清晰好看的主题主视觉 \n若干局部特征放大细节 \n多个圆角模块化信息分区 \n清楚的标题层级与重点标签 \n简洁但信息丰富的百科内容 \n可视化评分、要点总结或 Top 5 模块 \n内容栏目请根据主题自动适配，优先从这些方向里选择并合理组合： \n基础档案、分类信息、外观特征、习性生态、形成机制或结构组成、生长或使用条件、养护或维护建议、风险与注意事项、适合人群或适用场景、优缺点对比、快速评分卡。 \n视觉要求： \n浅色干净背景，柔和配色，轻阴影，精致小图标，圆角信息框，整体排版整洁清爽。信息密度要丰富，但不能显得拥挤，阅读体验要舒服。最终效果要像真正可以发布、阅读、收藏、批量做成系列内容的科普百科卡，而不是广告感很重的宣传海报。 \n不要做成普通商业宣传海报，要重点突出“知识整理”“模块信息”“图鉴式展示”这几个特征。",
+      "revision": "Keep the encyclopedia-card purpose, but reorganize the information into a new reading path with a different hero diagram, feature callouts, and score module. Preserve clarity and educational usefulness.",
+      "revisedPrompt": "根据【主题】生成一张高质量竖版「科普百科图」。 \n这张图不是普通海报，也不是单纯插画，而是一张兼具图鉴感、百科感、信息结构感和收藏感的模块化科普信息图。整体风格参考高级博物图鉴、现代百科书页、生活方式知识卡，以及社交媒体上更容易传播的信息图风格。 \n让画面包含： \n一个清晰好看的主题主视觉 \n若干局部特征放大细节 \n多个圆角模块化信息分区 \n清楚的标题层级与重点标签 \n简洁但信息丰富的百科内容 \n可视化评分、要点总结或 Top 5 模块 \n内容栏目请根据主题自动适配，优先从这些方向里选择并合理组合： \n基础档案、分类信息、外观特征、习性生态、形成机制或结构组成、生长或使用条件、养护或维护建议、风险与注意事项、适合人群或适用场景、优缺点对比、快速评分卡。 \n视觉要求： \n浅色干净背景，柔和配色，轻阴影，精致小图标，圆角信息框，整体排版整洁清爽。信息密度要丰富，但不能显得拥挤，阅读体验要舒服。最终效果要像真正可以发布、阅读、收藏、批量做成系列内容的科普百科卡，而不是广告感很重的宣传海报。 \n不要做成普通商业宣传海报，要重点突出“知识整理”“模块信息”“图鉴式展示”这几个特征。\n\nOriginality adjustment for this regeneration:\nKeep the encyclopedia-card purpose, but reorganize the information into a new reading path with a different hero diagram, feature callouts, and score module. Preserve clarity and educational usefulness."
+    },
+    {
+      "num": 222,
+      "title": "精致模块化科普百科图鉴",
+      "sceneType": "信息图教育",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case222.jpg",
+      "originalCategory": "📊 图表与信息可视化",
+      "source": "[@MrLarus](https://x.com/MrLarus/status/2046231542817497392)",
+      "originalPrompt": "[中文]\n请根据【主题】生成一张高质量竖版「科普百科图」。 \n\n这张图不是普通海报，也不是单纯插画，而是一张兼具“图鉴感、百科感、信息结构感、收藏感”的模块化科普信息图。整体风格参考高级博物图鉴、现代百科书页、生活方式知识卡和社交媒体高传播信息图的结合。\n\n请让画面包含：\n- 一个清晰漂亮的主题主视觉\n- 若干局部特征放大细节\n- 多个圆角模块化信息分区\n- 清楚的标题层级与重点标签\n- 简洁但丰富的百科内容\n- 可视化评分、要点总结或Top 5模块\n\n内容栏目请根据主题自动适配，优先从这些方向中选择并合理组合：\n基础档案、分类信息、外观特征、习性/生态、形成机制/结构组成、生长或使用条件、养护或维护建议、风险与注意事项、适合人群或适用场景、优缺点对比、快速评分卡。\n\n视觉要求：\n浅色干净背景，柔和配色，轻阴影，精致小图标，圆角信息框，整洁排版，信息密度高但不拥挤，阅读体验好。整体必须像真正可以发布、阅读、收藏、系列化生产的科普百科卡，而不是广告图。\n\n请不要做成普通商业宣传海报。要突出“知识整理 + 模块信息 + 图鉴式展示”的特征。\n\n[English]\nPlease generate a high-quality vertical \"Popular Science Encyclopedia Infographic\" based on the [Topic]. \n\nThis image is not an ordinary poster, nor a simple illustration, but a modular popular science infographic with a sense of \"illustrated guide, encyclopedia, information structure, and collectibility\". The overall style references a combination of high-end natural history illustrated guides, modern encyclopedia pages, lifestyle knowledge cards, and highly shared social media infographics.\n\nPlease make the image contain:\n- A clear and beautiful theme main visual\n- Several enlarged details of local features\n- Multiple rounded modular information sections\n- Clear title hierarchy and key tags\n- Concise but rich encyclopedia content\n- Visualized scoring, key point summaries, or Top 5 modules\n\nContent columns should automatically adapt to the topic, prioritizing selection and reasonable combination from these directions:\nBasic profile, classification information, appearance features, habits/ecology, formation mechanism/structural composition, growth or usage conditions, care or maintenance suggestions, risks and precautions, suitable groups or applicable scenarios, pros and cons comparison, quick scorecard.\n\nVisual requirements:\nLight-colored clean background, soft color palette, light shadows, exquisite small icons, rounded information boxes, neat typography, high information density but not crowded, good reading experience. The overall look must be like a real popular science encyclopedia card that can be published, read, collected, and serialized, rather than an advertisement.\n\nPlease do not make it into an ordinary commercial promotional poster. It must highlight the characteristics of \"knowledge organization + modular information + illustrated guide style display\".",
+      "revision": "Build a new modular science reference card with a different central subject view, supporting comparison blocks, and a new information order. Keep the content-rich but comfortable reading experience.",
+      "revisedPrompt": "[中文]\n请根据【主题】生成一张高质量竖版「科普百科图」。 \n\n这张图不是普通海报，也不是单纯插画，而是一张兼具“图鉴感、百科感、信息结构感、收藏感”的模块化科普信息图。整体风格参考高级博物图鉴、现代百科书页、生活方式知识卡和社交媒体高传播信息图的结合。\n\n请让画面包含：\n- 一个清晰漂亮的主题主视觉\n- 若干局部特征放大细节\n- 多个圆角模块化信息分区\n- 清楚的标题层级与重点标签\n- 简洁但丰富的百科内容\n- 可视化评分、要点总结或Top 5模块\n\n内容栏目请根据主题自动适配，优先从这些方向中选择并合理组合：\n基础档案、分类信息、外观特征、习性/生态、形成机制/结构组成、生长或使用条件、养护或维护建议、风险与注意事项、适合人群或适用场景、优缺点对比、快速评分卡。\n\n视觉要求：\n浅色干净背景，柔和配色，轻阴影，精致小图标，圆角信息框，整洁排版，信息密度高但不拥挤，阅读体验好。整体必须像真正可以发布、阅读、收藏、系列化生产的科普百科卡，而不是广告图。\n\n请不要做成普通商业宣传海报。要突出“知识整理 + 模块信息 + 图鉴式展示”的特征。\n\n[English]\nPlease generate a high-quality vertical \"Popular Science Encyclopedia Infographic\" based on the [Topic]. \n\nThis image is not an ordinary poster, nor a simple illustration, but a modular popular science infographic with a sense of \"illustrated guide, encyclopedia, information structure, and collectibility\". The overall style references a combination of high-end natural history illustrated guides, modern encyclopedia pages, lifestyle knowledge cards, and highly shared social media infographics.\n\nPlease make the image contain:\n- A clear and beautiful theme main visual\n- Several enlarged details of local features\n- Multiple rounded modular information sections\n- Clear title hierarchy and key tags\n- Concise but rich encyclopedia content\n- Visualized scoring, key point summaries, or Top 5 modules\n\nContent columns should automatically adapt to the topic, prioritizing selection and reasonable combination from these directions:\nBasic profile, classification information, appearance features, habits/ecology, formation mechanism/structural composition, growth or usage conditions, care or maintenance suggestions, risks and precautions, suitable groups or applicable scenarios, pros and cons comparison, quick scorecard.\n\nVisual requirements:\nLight-colored clean background, soft color palette, light shadows, exquisite small icons, rounded information boxes, neat typography, high information density but not crowded, good reading experience. The overall look must be like a real popular science encyclopedia card that can be published, read, collected, and serialized, rather than an advertisement.\n\nPlease do not make it into an ordinary commercial promotional poster. It must highlight the characteristics of \"knowledge organization + modular information + illustrated guide style display\".\n\nOriginality adjustment for this regeneration:\nBuild a new modular science reference card with a different central subject view, supporting comparison blocks, and a new information order. Keep the content-rich but comfortable reading experience."
+    },
+    {
+      "num": 544,
+      "title": "幼儿词汇拆解学习卡",
+      "sceneType": "信息图教育",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case544.jpg",
+      "originalCategory": "📊 图表与信息可视化",
+      "source": "[@Naiknelofar788](https://x.com/Naiknelofar788/status/2092993830220120231)",
+      "originalPrompt": "Create a clean, child-friendly educational vocabulary poster for preschool/kindergarten children, inspired by a simple visual learning card.\n\nFeature [FRUIT] as the main large realistic object on the left, and show a [PART / SLICE / SEGMENT] of the same fruit on the right. Connect the two with a playful dotted curved arrow and a tiny simple stick-figure child pointing toward the smaller part.\n\nAdd the word “[FRUIT NAME]” in large bold uppercase letters at the top and “[PART NAME]” in large bold uppercase letters underneath the smaller image. Use a soft white and very light pastel-blue background, rounded image panels, clean spacing, realistic fruit photography, simple blue typography, and minimal playful illustrations.\n\nThe overall design should feel bright, educational, modern, uncluttered, and easy for young children to understand, like a premium preschool vocabulary learning card. Vertical 4:5 composition, high resolution, soft lighting, clear labels, no unnecessary decorations.",
+      "revision": "Keep the preschool vocabulary-learning purpose, but change the object-part relationship, child gesture, panel proportions, and label placement. Use new fictional example words and do not copy the source card composition.",
+      "revisedPrompt": "Create a clean, child-friendly educational vocabulary poster for preschool/kindergarten children, inspired by a simple visual learning card.\n\nFeature [FRUIT] as the main large realistic object on the left, and show a [PART / SLICE / SEGMENT] of the same fruit on the right. Connect the two with a playful dotted curved arrow and a tiny simple stick-figure child pointing toward the smaller part.\n\nAdd the word “[FRUIT NAME]” in large bold uppercase letters at the top and “[PART NAME]” in large bold uppercase letters underneath the smaller image. Use a soft white and very light pastel-blue background, rounded image panels, clean spacing, realistic fruit photography, simple blue typography, and minimal playful illustrations.\n\nThe overall design should feel bright, educational, modern, uncluttered, and easy for young children to understand, like a premium preschool vocabulary learning card. Vertical 4:5 composition, high resolution, soft lighting, clear labels, no unnecessary decorations.\n\nOriginality adjustment for this regeneration:\nKeep the preschool vocabulary-learning purpose, but change the object-part relationship, child gesture, panel proportions, and label placement. Use new fictional example words and do not copy the source card composition."
+    },
+    {
+      "num": 334,
+      "title": "RAG 技术详解图",
+      "sceneType": "信息图教育",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case334.png",
+      "originalCategory": "📊 图表与信息可视化",
+      "source": "苍何原创实测（公众号文章《我逆向了 329 条 GPT-Image2 提示词模板，全部开源！》）",
+      "originalPrompt": "帮我生成一张 RAG 技术的详细讲解图",
+      "revision": "Explain the RAG system through a different pipeline arrangement, clearer input/output grouping, and a new set of example labels. Keep the technical teaching purpose and make the information hierarchy distinct.",
+      "revisedPrompt": "帮我生成一张 RAG 技术的详细讲解图\n\nOriginality adjustment for this regeneration:\nExplain the RAG system through a different pipeline arrangement, clearer input/output grouping, and a new set of example labels. Keep the technical teaching purpose and make the information hierarchy distinct."
+    },
+    {
+      "num": 31,
+      "title": "人像写实摄影图",
+      "sceneType": "人像写真",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case31.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@jun\\_kongo](https://x.com/jun_kongo)",
+      "originalPrompt": "A highly detailed, photorealistic anime-style portrait of a young woman crouching down and looking slightly down at the camera from a low angle. She has long, flowing {argument name=\"hair color\" default=\"ash-blonde\"} hair blowing gently in the wind, pale skin, and large, expressive eyes. She is wearing a {argument name=\"outfit\" default=\"Japanese school uniform with a light grey cardigan, white shirt, dark plaid bow tie, dark plaid pleated skirt, dark knee-high socks, and black leather loafers\"}. Her arms are resting casually on her knees. The background is a bright {argument name=\"sky condition\" default=\"clear blue sky with scattered white clouds\"}, with a blurred {argument name=\"background setting\" default=\"chain-link fence and green trees\"} visible at the very bottom, suggesting a schoolyard. The lighting is bright, natural daylight with soft, cinematic shadows, emphasizing the realistic textures of her clothing and skin.",
+      "revision": "Keep the portrait-photography purpose, but change the subject pose, crop, light direction, and background relationship. Preserve natural skin and realistic camera language without recreating the source portrait.",
+      "revisedPrompt": "A highly detailed, photorealistic anime-style portrait of a young woman crouching down and looking slightly down at the camera from a low angle. She has long, flowing {argument name=\"hair color\" default=\"ash-blonde\"} hair blowing gently in the wind, pale skin, and large, expressive eyes. She is wearing a {argument name=\"outfit\" default=\"Japanese school uniform with a light grey cardigan, white shirt, dark plaid bow tie, dark plaid pleated skirt, dark knee-high socks, and black leather loafers\"}. Her arms are resting casually on her knees. The background is a bright {argument name=\"sky condition\" default=\"clear blue sky with scattered white clouds\"}, with a blurred {argument name=\"background setting\" default=\"chain-link fence and green trees\"} visible at the very bottom, suggesting a schoolyard. The lighting is bright, natural daylight with soft, cinematic shadows, emphasizing the realistic textures of her clothing and skin.\n\nOriginality adjustment for this regeneration:\nKeep the portrait-photography purpose, but change the subject pose, crop, light direction, and background relationship. Preserve natural skin and realistic camera language without recreating the source portrait."
+    },
+    {
+      "num": 187,
+      "title": "韩系极简氛围感少女写真",
+      "sceneType": "人像写真",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case187.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@BubbleBrain](https://x.com/BubbleBrain/status/2046434670724907395)",
+      "originalPrompt": "[中文]\n9:16 竖版 — 杂志人像，单一主体  柔和的黑色迷雾滤镜，微妙的薄雾，柔和的高光泛光，柔和的色调  极简的室内空间，干净的背景，轻微的纹理  年轻韩国女性，淡妆，自然的皮肤纹理  服装：贴身的罗纹针织上衣或柔软的吊带背心叠穿在宽松衬衫下，搭配高腰短裤或裙子；面料轻微贴合身体曲线，柔软自然，无暴露元素  头发：略显凌乱，自然的蓬松度  姿势：坐在地板上，一条腿弯曲，另一条腿放松，身体微微倾斜，肩膀不对称，头部倾斜  构图：主体略微偏离中心，存在留白  表情：平静，略显疏离，自然的嘴唇  光线：柔和的侧光，温和的阴影衰减  氛围：低调，安静，通过自然的身体线条展现微妙的性感，放松且非摆拍  画质：细腻颗粒，轻微的柔和感，写实外观\n\n[English]\n9:16 vertical — editorial portrait, single subject  soft black mist filter, subtle haze, gentle highlight bloom, muted tones  minimal indoor space, clean background, slight texture  young Korean woman, minimal makeup, natural skin texture  outfit: fitted ribbed knit top or soft camisole layered under a loose shirt, paired with high-waisted shorts or skirt; fabric slightly clings to body shape, soft and natural, no revealing elements  hair: slightly messy, natural volume  pose: sitting on floor with one leg bent and the other relaxed, body slightly leaning, shoulders not aligned, head tilted  composition: subject slightly off-center, negative space present  expression: calm, slightly distant, natural lips  lighting: soft side light, gentle shadow falloff  mood: understated, quiet, subtly sensual through natural body lines, relaxed and unposed  quality: fine grain, slight softness, realistic look",
+      "revision": "Create a new Korean-minimal portrait session with a different styling detail, three-quarter pose, and soft window-light direction. Keep the quiet fashion-editorial mood but vary the framing and set.",
+      "revisedPrompt": "[中文]\n9:16 竖版 — 杂志人像，单一主体  柔和的黑色迷雾滤镜，微妙的薄雾，柔和的高光泛光，柔和的色调  极简的室内空间，干净的背景，轻微的纹理  年轻韩国女性，淡妆，自然的皮肤纹理  服装：贴身的罗纹针织上衣或柔软的吊带背心叠穿在宽松衬衫下，搭配高腰短裤或裙子；面料轻微贴合身体曲线，柔软自然，无暴露元素  头发：略显凌乱，自然的蓬松度  姿势：坐在地板上，一条腿弯曲，另一条腿放松，身体微微倾斜，肩膀不对称，头部倾斜  构图：主体略微偏离中心，存在留白  表情：平静，略显疏离，自然的嘴唇  光线：柔和的侧光，温和的阴影衰减  氛围：低调，安静，通过自然的身体线条展现微妙的性感，放松且非摆拍  画质：细腻颗粒，轻微的柔和感，写实外观\n\n[English]\n9:16 vertical — editorial portrait, single subject  soft black mist filter, subtle haze, gentle highlight bloom, muted tones  minimal indoor space, clean background, slight texture  young Korean woman, minimal makeup, natural skin texture  outfit: fitted ribbed knit top or soft camisole layered under a loose shirt, paired with high-waisted shorts or skirt; fabric slightly clings to body shape, soft and natural, no revealing elements  hair: slightly messy, natural volume  pose: sitting on floor with one leg bent and the other relaxed, body slightly leaning, shoulders not aligned, head tilted  composition: subject slightly off-center, negative space present  expression: calm, slightly distant, natural lips  lighting: soft side light, gentle shadow falloff  mood: understated, quiet, subtly sensual through natural body lines, relaxed and unposed  quality: fine grain, slight softness, realistic look\n\nOriginality adjustment for this regeneration:\nCreate a new Korean-minimal portrait session with a different styling detail, three-quarter pose, and soft window-light direction. Keep the quiet fashion-editorial mood but vary the framing and set."
+    },
+    {
+      "num": 219,
+      "title": "韩系偶像九宫格写真集",
+      "sceneType": "人像写真",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case219.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@BubbleBrain](https://x.com/BubbleBrain/status/2046151898621993364)",
+      "originalPrompt": "[中文]\n9:16 竖版 — 一个 3x3 网格拼贴（九张图片）形成一系列韩国偶像肖像摄影。每一帧都呈现同一位年轻的韩国女性偶像，在所有九张镜头中保持 100% 一致的面部特征、比例、发型和身份。自然、超逼真的皮肤纹理，无修图，无磨皮。干净的偶像风格极简妆容，柔和的光泽，微妙的瑕疵。发型：长发、蓬松的黑发，微乱，在所有帧中保持一致（自然松散的垂落，轻微的动感）。服装：连贯的韩国偶像摄影造型 — 白色衬衫 + 短款下装（或简单的中性色调服装），青春、干净、略带休闲但有造型感。所有帧中穿着相同的服装。场景：极简的工作室或简单的室内环境（白墙，柔和的窗光，干净的背景）。聚焦于主体，而不是环境。光照：柔和漫反射的自然光，温柔的高光，低对比度，略带通透感的色调，微妙的胶片般柔和感。相机风格：亲密的肖像摄影，略带手持感，微妙的瑕疵（轻微的颗粒感，动态帧中的轻微模糊，不完美的构图）。帧分解（3x3 网格）：顶行：- 左上：自然站立，视线略微偏向一侧，表情放松 - 中上：面对镜头，随意的中间动作（头发或身体轻微移动） - 右上：轻微的侧面角度，柔和的注视，自然的抓拍感 中间行：- 中左：微微向上看，柔和的沉思表情 - 正中：特写肖像，直接的眼神接触，温柔的偶像微笑 - 中右：身体微微转动，中间动作的抓拍帧 底行：- 左下：随意坐着或倚靠着，放松的姿势 - 中下：背部部分转向，越过肩膀看向镜头 - 右下：靠近画框站立，略带俏皮或柔和的表情 氛围：韩国偶像写真集 / 小卡美学，亲密、柔和、自然、日常的魅力。质量：超写实，8K 细节，微妙的模拟胶片颗粒感，自然的瑕疵，柔和梦幻的色调\n\n[English]\n9:16 vertical — a 3x3 grid collage (nine images) forming a Korean idol portrait photoshoot series. Each frame features the same young Korean female idol, maintaining 100% consistency in facial features, proportions, hairstyle, and identity across all nine shots.   Natural, ultra-realistic skin texture, no retouching, no smoothing. Clean idol-style minimal makeup, soft glow, subtle imperfections.   Hair: long, voluminous dark hair, slightly tousled, consistent across all frames (natural loose flow, slight movement).  Outfit: cohesive Korean idol photoshoot styling — white shirt + short bottoms (or simple neutral-toned outfit), youthful, clean, slightly casual but styled. Same outfit across all frames.  Setting: minimal studio or simple indoor environment (plain wall, soft window light, clean background). Focus on subject, not environment.  Lighting: soft diffused natural light, gentle highlights, low contrast, slightly airy tones, subtle film-like softness.  Camera style: intimate portrait photography, slightly handheld feel, subtle imperfections (minor grain, slight blur in motion frames, imperfect framing).  Frame breakdown (3x3 grid):  Top row: - Top left: standing naturally, looking slightly away, relaxed expression - Top center: facing camera, casual mid-motion (hair or body slight movement) - Top right: slight side angle, soft gaze, natural candid feel  Middle row: - Center left: looking slightly upward, soft thoughtful expression - Center: close-up portrait, direct eye contact, gentle idol smile - Center right: turning body slightly, mid-motion candid frame  Bottom row: - Bottom left: seated or leaning casually, relaxed posture - Bottom center: back partially turned, looking over shoulder toward camera - Bottom right: standing close to frame, slightly playful or soft expression  Mood: Korean idol photobook / photocard aesthetic, intimate, soft, natural, everyday charm.  Quality: ultra-realistic, 8K detail, subtle analog film grain, natural imperfections, soft dreamy tone",
+      "revision": "Rebuild the nine-frame idol lookbook with a new grid rhythm, different micro-expressions, and varied portrait crops. Keep consistent identity across panels while changing the original panel order and poses.",
+      "revisedPrompt": "[中文]\n9:16 竖版 — 一个 3x3 网格拼贴（九张图片）形成一系列韩国偶像肖像摄影。每一帧都呈现同一位年轻的韩国女性偶像，在所有九张镜头中保持 100% 一致的面部特征、比例、发型和身份。自然、超逼真的皮肤纹理，无修图，无磨皮。干净的偶像风格极简妆容，柔和的光泽，微妙的瑕疵。发型：长发、蓬松的黑发，微乱，在所有帧中保持一致（自然松散的垂落，轻微的动感）。服装：连贯的韩国偶像摄影造型 — 白色衬衫 + 短款下装（或简单的中性色调服装），青春、干净、略带休闲但有造型感。所有帧中穿着相同的服装。场景：极简的工作室或简单的室内环境（白墙，柔和的窗光，干净的背景）。聚焦于主体，而不是环境。光照：柔和漫反射的自然光，温柔的高光，低对比度，略带通透感的色调，微妙的胶片般柔和感。相机风格：亲密的肖像摄影，略带手持感，微妙的瑕疵（轻微的颗粒感，动态帧中的轻微模糊，不完美的构图）。帧分解（3x3 网格）：顶行：- 左上：自然站立，视线略微偏向一侧，表情放松 - 中上：面对镜头，随意的中间动作（头发或身体轻微移动） - 右上：轻微的侧面角度，柔和的注视，自然的抓拍感 中间行：- 中左：微微向上看，柔和的沉思表情 - 正中：特写肖像，直接的眼神接触，温柔的偶像微笑 - 中右：身体微微转动，中间动作的抓拍帧 底行：- 左下：随意坐着或倚靠着，放松的姿势 - 中下：背部部分转向，越过肩膀看向镜头 - 右下：靠近画框站立，略带俏皮或柔和的表情 氛围：韩国偶像写真集 / 小卡美学，亲密、柔和、自然、日常的魅力。质量：超写实，8K 细节，微妙的模拟胶片颗粒感，自然的瑕疵，柔和梦幻的色调\n\n[English]\n9:16 vertical — a 3x3 grid collage (nine images) forming a Korean idol portrait photoshoot series. Each frame features the same young Korean female idol, maintaining 100% consistency in facial features, proportions, hairstyle, and identity across all nine shots.   Natural, ultra-realistic skin texture, no retouching, no smoothing. Clean idol-style minimal makeup, soft glow, subtle imperfections.   Hair: long, voluminous dark hair, slightly tousled, consistent across all frames (natural loose flow, slight movement).  Outfit: cohesive Korean idol photoshoot styling — white shirt + short bottoms (or simple neutral-toned outfit), youthful, clean, slightly casual but styled. Same outfit across all frames.  Setting: minimal studio or simple indoor environment (plain wall, soft window light, clean background). Focus on subject, not environment.  Lighting: soft diffused natural light, gentle highlights, low contrast, slightly airy tones, subtle film-like softness.  Camera style: intimate portrait photography, slightly handheld feel, subtle imperfections (minor grain, slight blur in motion frames, imperfect framing).  Frame breakdown (3x3 grid):  Top row: - Top left: standing naturally, looking slightly away, relaxed expression - Top center: facing camera, casual mid-motion (hair or body slight movement) - Top right: slight side angle, soft gaze, natural candid feel  Middle row: - Center left: looking slightly upward, soft thoughtful expression - Center: close-up portrait, direct eye contact, gentle idol smile - Center right: turning body slightly, mid-motion candid frame  Bottom row: - Bottom left: seated or leaning casually, relaxed posture - Bottom center: back partially turned, looking over shoulder toward camera - Bottom right: standing close to frame, slightly playful or soft expression  Mood: Korean idol photobook / photocard aesthetic, intimate, soft, natural, everyday charm.  Quality: ultra-realistic, 8K detail, subtle analog film grain, natural imperfections, soft dreamy tone\n\nOriginality adjustment for this regeneration:\nRebuild the nine-frame idol lookbook with a new grid rhythm, different micro-expressions, and varied portrait crops. Keep consistent identity across panels while changing the original panel order and poses."
+    },
+    {
+      "num": 321,
+      "title": "都市落日时尚大片",
+      "sceneType": "人像写真",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case321.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[OpenNana](https://opennana.com/awesome-prompt-gallery/urban-sunset-fashion-silhouette)",
+      "originalPrompt": "[中文]\n一张超现实电影感时尚照片，一位二十出头惊艳的年轻女性，全身可见，站在现代城市中心，黄金时段。  \n她随意地单肩靠在交通信号灯杆上，没有意识到相机的存在，仿佛这一刻是自然捕捉的。  \n她穿着紧身蓝色牛仔裤、棕色皮靴，以及一件短款棕色麂皮夹克，带有柔软羊皮翻领。夹克下，一件极简深色露脐上衣，隐约露出精致的乳沟和紧致的腹部。  \n\n她的体型天生女性化，均衡而优雅，姿态自信。  \n一只手穿过她丰盈的浅棕色长发，将其向后撩起，头部微微转向那一侧，眼睛自然地看向别处，没有摆拍。  \n\n肤色为轻微日晒后的奶油般柔和光泽，真实肌肤纹理，细腻毛孔与高光——毫无塑料感。  \n妆容醒目却精致：清晰的眼部、浓密睫毛、立体腮红、柔和修容，以及自然光泽唇——具备高端美妆广告质感。  \n光线为温暖金色时段阳光，包裹她的轮廓与发丝，营造柔和高光与电影感对比。  \n背景为城市街道，汽车与都市灯光以强烈散景呈现，浅景深——焦点锁定在女性身上。  \n\n使用全画幅电影摄影机拍摄，85mm镜头，f/1.8，超现实细节，高动态范围，电影级调色，胶片质感，顶级时尚大片美学，高预算电影剧照氛围。\n\n[English]\nA hyper-realistic cinematic fashion photograph of a stunning young woman in her early 20s, full body visible, standing in a modern city center during golden hour.\nShe leans casually with one shoulder against a traffic light pole, unaware of the camera, as if the moment was captured naturally.\nShe wears skinny blue jeans, brown leather boots, and a cropped brown suede jacket with a soft shearling collar. Under the jacket, a minimal dark crop top reveals a subtle cleavage and toned midriff.\n\nHer physique is naturally feminine, balanced and elegant, with confident posture.\nOne hand runs through her long, voluminous curly light-brown hair, lifting it back in motion. Her head is turned slightly toward that side, eyes looking away naturally, not posing.\n\nSkin tone is lightly sun-kissed with a soft creamy glow, realistic skin texture, subtle pores and highlights — no plastic look.\nMakeup is striking but refined: defined eyes, bold lashes, sculpted cheeks, soft contour, and natural glossy lips — editorial beauty campaign quality.\nLighting is warm golden hour sunlight, wrapping around her silhouette and hair, creating soft highlights and cinematic contrast.\nBackground is an urban street with cars and city lights rendered in strong bokeh, shallow depth of field — focus locked on the woman.\n\nShot on a full-frame cinema camera, 85mm lens, f/1.8, ultra-realistic detail, high dynamic range, cinematic color grading, film-like tones, premium fashion editorial aesthetic, high-budget movie still feeling.",
+      "revision": "Keep the urban sunset fashion-campaign purpose, but change the location, stance, lens height, and color contrast. Make the subject feel editorial and natural without repeating the source image arrangement.",
+      "revisedPrompt": "[中文]\n一张超现实电影感时尚照片，一位二十出头惊艳的年轻女性，全身可见，站在现代城市中心，黄金时段。  \n她随意地单肩靠在交通信号灯杆上，没有意识到相机的存在，仿佛这一刻是自然捕捉的。  \n她穿着紧身蓝色牛仔裤、棕色皮靴，以及一件短款棕色麂皮夹克，带有柔软羊皮翻领。夹克下，一件极简深色露脐上衣，隐约露出精致的乳沟和紧致的腹部。  \n\n她的体型天生女性化，均衡而优雅，姿态自信。  \n一只手穿过她丰盈的浅棕色长发，将其向后撩起，头部微微转向那一侧，眼睛自然地看向别处，没有摆拍。  \n\n肤色为轻微日晒后的奶油般柔和光泽，真实肌肤纹理，细腻毛孔与高光——毫无塑料感。  \n妆容醒目却精致：清晰的眼部、浓密睫毛、立体腮红、柔和修容，以及自然光泽唇——具备高端美妆广告质感。  \n光线为温暖金色时段阳光，包裹她的轮廓与发丝，营造柔和高光与电影感对比。  \n背景为城市街道，汽车与都市灯光以强烈散景呈现，浅景深——焦点锁定在女性身上。  \n\n使用全画幅电影摄影机拍摄，85mm镜头，f/1.8，超现实细节，高动态范围，电影级调色，胶片质感，顶级时尚大片美学，高预算电影剧照氛围。\n\n[English]\nA hyper-realistic cinematic fashion photograph of a stunning young woman in her early 20s, full body visible, standing in a modern city center during golden hour.\nShe leans casually with one shoulder against a traffic light pole, unaware of the camera, as if the moment was captured naturally.\nShe wears skinny blue jeans, brown leather boots, and a cropped brown suede jacket with a soft shearling collar. Under the jacket, a minimal dark crop top reveals a subtle cleavage and toned midriff.\n\nHer physique is naturally feminine, balanced and elegant, with confident posture.\nOne hand runs through her long, voluminous curly light-brown hair, lifting it back in motion. Her head is turned slightly toward that side, eyes looking away naturally, not posing.\n\nSkin tone is lightly sun-kissed with a soft creamy glow, realistic skin texture, subtle pores and highlights — no plastic look.\nMakeup is striking but refined: defined eyes, bold lashes, sculpted cheeks, soft contour, and natural glossy lips — editorial beauty campaign quality.\nLighting is warm golden hour sunlight, wrapping around her silhouette and hair, creating soft highlights and cinematic contrast.\nBackground is an urban street with cars and city lights rendered in strong bokeh, shallow depth of field — focus locked on the woman.\n\nShot on a full-frame cinema camera, 85mm lens, f/1.8, ultra-realistic detail, high dynamic range, cinematic color grading, film-like tones, premium fashion editorial aesthetic, high-budget movie still feeling.\n\nOriginality adjustment for this regeneration:\nKeep the urban sunset fashion-campaign purpose, but change the location, stance, lens height, and color contrast. Make the subject feel editorial and natural without repeating the source image arrangement."
+    },
+    {
+      "num": 211,
+      "title": "天坛古建拆解全图",
+      "sceneType": "建筑空间",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case211.jpg",
+      "originalCategory": "🏛️ 建筑与空间",
+      "source": "[@TanShilong](https://x.com/TanShilong/status/2046524996013662380)",
+      "originalPrompt": "[中文]\n生成一个天坛的建筑拆解图，有详细的说明，中式美学风格\n\n[English]\nGenerate an architectural exploded view of the Temple of Heaven, with detailed annotations, Chinese aesthetic style",
+      "revision": "Keep the architectural exploded-view purpose, but use a new cutaway direction, annotation grouping, and layer spacing. Preserve the building’s recognizable structure while avoiding the source diagram arrangement.",
+      "revisedPrompt": "[中文]\n生成一个天坛的建筑拆解图，有详细的说明，中式美学风格\n\n[English]\nGenerate an architectural exploded view of the Temple of Heaven, with detailed annotations, Chinese aesthetic style\n\nOriginality adjustment for this regeneration:\nKeep the architectural exploded-view purpose, but use a new cutaway direction, annotation grouping, and layer spacing. Preserve the building’s recognizable structure while avoiding the source diagram arrangement."
+    },
+    {
+      "num": 381,
+      "title": "90 年代公寓场景参考板",
+      "sceneType": "建筑空间",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case381.jpg",
+      "originalCategory": "🏛️ 建筑与空间",
+      "source": "[@Iancu_ai](https://x.com/Iancu_ai/status/2051287273581203888) / [提示词回复](https://x.com/Iancu_ai/status/2051287283140096253)",
+      "originalPrompt": "{\n  \"type\": \"scene reference board — 90s apartment living room, cinematic night\",\n  \"style\": \"cinematic film photography, 35mm grain, warm amber shadow fill, deep chiaroscuro lighting, hyper-detailed interior, production design reference quality\",\n  \"layout\": {\n    \"main_panel_center_left\": {\n      \"label\": \"CAMERA A — FRONT VIEW\",\n      \"scene\": \"Wide shot, L-shaped tan sectional sofa, grey knit throw blanket, wooden coffee table (remote, mug, ashtray, Rolling Stone stack), lava lamp left, table lamp right, rain-streaked city window behind, Nirvana poster left wall. 35mm grain.\"\n    },\n    \"main_panel_center_right\": {\n      \"label\": \"CAMERA B — REVERSE VIEW\",\n      \"scene\": \"Wide reverse from behind sofa. CRT TV prominent right, grey static screen. Tall bookshelf, VHS tapes. Cool blue backlight from window behind camera. Deep shadow.\"\n    },\n    \"prop_strip_bottom\": \"6 close-up tiles: 1. LAVA LAMP — chrome base, blue-green wax blobs; 2. COFFEE TABLE — remote, mug, ashtray, magazines; 3. NIRVANA POSTER — black smiley face, wall texture; 4. CRT TELEVISION — static screen, VHS stack; 5. WINDOW/RAIN — city bokeh, water streaks; 6. THROW BLANKET — sofa corner, worn upholstery\",\n    \"top_right_inset\": \"SOURCE REF thumbnail — original photo\",\n    \"footer\": \"2700K PRACTICAL · 4100K CITY NIGHT · 24mm · 35MM\"\n  },\n  \"background\": \"deep charcoal #1a1a1a, thin white separators\",\n  \"dimensions\": \"wide landscape 3:1, high resolution\"\n}",
+      "revision": "Rebuild the 1990s apartment reference board with a different room angle, furniture grouping, and camera notes. Keep the production-design usefulness and period cues without copying the original board.",
+      "revisedPrompt": "{\n  \"type\": \"scene reference board — 90s apartment living room, cinematic night\",\n  \"style\": \"cinematic film photography, 35mm grain, warm amber shadow fill, deep chiaroscuro lighting, hyper-detailed interior, production design reference quality\",\n  \"layout\": {\n    \"main_panel_center_left\": {\n      \"label\": \"CAMERA A — FRONT VIEW\",\n      \"scene\": \"Wide shot, L-shaped tan sectional sofa, grey knit throw blanket, wooden coffee table (remote, mug, ashtray, Rolling Stone stack), lava lamp left, table lamp right, rain-streaked city window behind, Nirvana poster left wall. 35mm grain.\"\n    },\n    \"main_panel_center_right\": {\n      \"label\": \"CAMERA B — REVERSE VIEW\",\n      \"scene\": \"Wide reverse from behind sofa. CRT TV prominent right, grey static screen. Tall bookshelf, VHS tapes. Cool blue backlight from window behind camera. Deep shadow.\"\n    },\n    \"prop_strip_bottom\": \"6 close-up tiles: 1. LAVA LAMP — chrome base, blue-green wax blobs; 2. COFFEE TABLE — remote, mug, ashtray, magazines; 3. NIRVANA POSTER — black smiley face, wall texture; 4. CRT TELEVISION — static screen, VHS stack; 5. WINDOW/RAIN — city bokeh, water streaks; 6. THROW BLANKET — sofa corner, worn upholstery\",\n    \"top_right_inset\": \"SOURCE REF thumbnail — original photo\",\n    \"footer\": \"2700K PRACTICAL · 4100K CITY NIGHT · 24mm · 35MM\"\n  },\n  \"background\": \"deep charcoal #1a1a1a, thin white separators\",\n  \"dimensions\": \"wide landscape 3:1, high resolution\"\n}\n\nOriginality adjustment for this regeneration:\nRebuild the 1990s apartment reference board with a different room angle, furniture grouping, and camera notes. Keep the production-design usefulness and period cues without copying the original board."
+    },
+    {
+      "num": 411,
+      "title": "极简建筑地标海报",
+      "sceneType": "建筑空间",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case411.jpg",
+      "originalCategory": "🏛️ 建筑与空间",
+      "source": "[@iamaiistudio](https://x.com/iamaiistudio/status/2053084576520573269)",
+      "originalPrompt": "Design a luxury minimalist poster centered on a famous architectural landmark of your choice ([building name]). The focal element is an illustrated rendering of the building. Behind it, place one giant bold English word in a design-forward typeface whose character matches the building's identity, with smaller body copy nearby describing its design philosophy. The composition should read as an ultra high-end art poster. Use a restrained, low-key color palette where graphic elements interlock with the architecture, appearing as if they form part of its structural components or extend outward from its silhouette.",
+      "revision": "Create a new minimalist landmark poster with a different building silhouette, typographic relationship, and crop. Keep the architecture-led poster function and readable design philosophy copy.",
+      "revisedPrompt": "Design a luxury minimalist poster centered on a famous architectural landmark of your choice ([building name]). The focal element is an illustrated rendering of the building. Behind it, place one giant bold English word in a design-forward typeface whose character matches the building's identity, with smaller body copy nearby describing its design philosophy. The composition should read as an ultra high-end art poster. Use a restrained, low-key color palette where graphic elements interlock with the architecture, appearing as if they form part of its structural components or extend outward from its silhouette.\n\nOriginality adjustment for this regeneration:\nCreate a new minimalist landmark poster with a different building silhouette, typographic relationship, and crop. Keep the architecture-led poster function and readable design philosophy copy."
+    },
+    {
+      "num": 489,
+      "title": "城市地图微缩旅行海报",
+      "sceneType": "建筑空间",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case489.jpg",
+      "originalCategory": "🏛️ 建筑与空间",
+      "source": "[@SimplyAnnisa](https://x.com/SimplyAnnisa/status/2062358269172101240)",
+      "originalPrompt": "Create a highly detailed cinematic miniature tilt-shift travel scene of [CITY NAME] featuring a realistic [VEHICLE NAME] driving along a winding elevated road that emerges naturally from a printed vintage-style city map. The road should curve dramatically toward the background skyline and landmarks of [CITY NAME], while the vehicle remains the clear focal point in the foreground.\n\nBlend the real city seamlessly with the illustrated map surface so the road appears integrated into the map itself. Include recognizable local landmarks, waterways, architecture, vegetation, and atmosphere associated with [CITY NAME], but keep the composition clean and uncluttered.\n\nShow large bold typography of \"[CITY NAME]\" printed directly on the map in the foreground. Use warm golden-hour lighting, shallow depth of field, realistic textures, cinematic shadows, aerial perspective, and photorealistic detail. The overall aesthetic should feel like a premium Instagram travel poster mixed with a miniature diorama.\n\nAspect ratio 1:1.",
+      "revision": "Keep the miniature city-travel poster idea, but change the city, vehicle route, map relationship, and focal perspective. Make the road emerge naturally from the map without reproducing the source composition.",
+      "revisedPrompt": "Create a highly detailed cinematic miniature tilt-shift travel scene of [CITY NAME] featuring a realistic [VEHICLE NAME] driving along a winding elevated road that emerges naturally from a printed vintage-style city map. The road should curve dramatically toward the background skyline and landmarks of [CITY NAME], while the vehicle remains the clear focal point in the foreground.\n\nBlend the real city seamlessly with the illustrated map surface so the road appears integrated into the map itself. Include recognizable local landmarks, waterways, architecture, vegetation, and atmosphere associated with [CITY NAME], but keep the composition clean and uncluttered.\n\nShow large bold typography of \"[CITY NAME]\" printed directly on the map in the foreground. Use warm golden-hour lighting, shallow depth of field, realistic textures, cinematic shadows, aerial perspective, and photorealistic detail. The overall aesthetic should feel like a premium Instagram travel poster mixed with a miniature diorama.\n\nAspect ratio 1:1.\n\nOriginality adjustment for this regeneration:\nKeep the miniature city-travel poster idea, but change the city, vehicle route, map relationship, and focal perspective. Make the road emerge naturally from the map without reproducing the source composition."
+    },
+    {
+      "num": 28,
+      "title": "写实摄影风格创作",
+      "sceneType": "生活摄影",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case28.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@frankfu1688](https://x.com/frankfu1688)",
+      "originalPrompt": "{\n  \"type\": \"2x2 portrait grid\",\n  \"subject\": \"{argument name=\\\"subject description\\\" default=\\\"young adult East Asian male with short black hair and a slight smile\\\"}\",\n  \"style\": \"photorealistic, high-resolution, professional lighting, consistent facial identity across all panels\",\n  \"layout\": {\n    \"format\": \"2x2 grid\",\n    \"panel_count\": 4,\n    \"panels\": [\n      {\n        \"position\": \"top-left\",\n        \"description\": \"{argument name=\\\"profession 1\\\" default=\\\"Corporate professional wearing a dark navy suit, white shirt, and blue tie against a gray textured background\\\"}\"\n      },\n      {\n        \"position\": \"top-right\",\n        \"description\": \"{argument name=\\\"profession 2\\\" default=\\\"Casual attire wearing a dark blue crew neck t-shirt against a blurred outdoor park background\\\"}\"\n      },\n      {\n        \"position\": \"bottom-left\",\n        \"description\": \"{argument name=\\\"profession 3\\\" default=\\\"Construction worker wearing a yellow hard hat, navy blue work shirt, and bright orange high-visibility vest against a blurred warehouse background\\\"}\"\n      },\n      {\n        \"position\": \"bottom-right\",\n        \"description\": \"{argument name=\\\"profession 4\\\" default=\\\"Medical professional wearing a white lab coat over a light blue collared shirt against a blurred laboratory background\\\"}\"\n      }\n    ]\n  }\n}",
+      "revision": "Keep the realistic photography direction, but change the everyday subject, moment, lens distance, and light quality. Favor an observed, imperfect scene rather than repeating the original setup.",
+      "revisedPrompt": "{\n  \"type\": \"2x2 portrait grid\",\n  \"subject\": \"{argument name=\\\"subject description\\\" default=\\\"young adult East Asian male with short black hair and a slight smile\\\"}\",\n  \"style\": \"photorealistic, high-resolution, professional lighting, consistent facial identity across all panels\",\n  \"layout\": {\n    \"format\": \"2x2 grid\",\n    \"panel_count\": 4,\n    \"panels\": [\n      {\n        \"position\": \"top-left\",\n        \"description\": \"{argument name=\\\"profession 1\\\" default=\\\"Corporate professional wearing a dark navy suit, white shirt, and blue tie against a gray textured background\\\"}\"\n      },\n      {\n        \"position\": \"top-right\",\n        \"description\": \"{argument name=\\\"profession 2\\\" default=\\\"Casual attire wearing a dark blue crew neck t-shirt against a blurred outdoor park background\\\"}\"\n      },\n      {\n        \"position\": \"bottom-left\",\n        \"description\": \"{argument name=\\\"profession 3\\\" default=\\\"Construction worker wearing a yellow hard hat, navy blue work shirt, and bright orange high-visibility vest against a blurred warehouse background\\\"}\"\n      },\n      {\n        \"position\": \"bottom-right\",\n        \"description\": \"{argument name=\\\"profession 4\\\" default=\\\"Medical professional wearing a white lab coat over a light blue collared shirt against a blurred laboratory background\\\"}\"\n      }\n    ]\n  }\n}\n\nOriginality adjustment for this regeneration:\nKeep the realistic photography direction, but change the everyday subject, moment, lens distance, and light quality. Favor an observed, imperfect scene rather than repeating the original setup."
+    },
+    {
+      "num": 221,
+      "title": "窗边日系胶片女孩",
+      "sceneType": "生活摄影",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case221.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@BubbleBrain](https://x.com/BubbleBrain/status/2046115431144902732)",
+      "originalPrompt": "[中文]\n模拟35毫米胶片摄影，柔和轻盈的日系美学，温柔漫射的自然窗户光，轻微过曝，柔和色调，低对比度，柔和的高光，靠近窗户配有白色窗帘的极简室内环境，干净的浅色墙壁，自然构图，平视视角，略微紧凑的全身取景（大腿中部到头部），年轻东亚女性，自然极简妆容，柔和真实的皮肤纹理，长长的微乱黑发，超大号白色纽扣衬衫，浅色休闲短裤，赤脚，简单放松的造型，自然站立姿势放松，双臂自然下垂或略微放在身后，面朝镜头，温柔柔和的微笑，微妙的静止感，专注于光线、空气和安静的日常氛围，柔和的胶片颗粒，梦幻而低调的氛围 --ar 9:16\n\n[English]\nAnalog 35mm film photography, soft airy Japanese-style aesthetic, gentle diffused natural window light, slight overexposure, pastel tones, low contrast, soft highlights,  minimal indoor setting near a window with white curtains, clean light-colored wall, natural composition, eye-level, slightly closer full-body framing (mid-thigh to head),  young East Asian woman, natural minimal makeup, soft realistic skin texture, long slightly messy dark hair,  oversized white button-up shirt, light casual shorts, barefoot, simple and relaxed styling,  standing naturally with relaxed posture, arms loosely at sides or slightly behind, facing camera, gentle soft smile, subtle stillness,  focus on light, air, and quiet everyday mood, soft film grain, dreamy and understated atmosphere --ar 9:16",
+      "revision": "Create a new window-side film photograph with a different time of day, seated pose, room detail, and reflection pattern. Keep the candid Japanese-film feeling while changing the composition.",
+      "revisedPrompt": "[中文]\n模拟35毫米胶片摄影，柔和轻盈的日系美学，温柔漫射的自然窗户光，轻微过曝，柔和色调，低对比度，柔和的高光，靠近窗户配有白色窗帘的极简室内环境，干净的浅色墙壁，自然构图，平视视角，略微紧凑的全身取景（大腿中部到头部），年轻东亚女性，自然极简妆容，柔和真实的皮肤纹理，长长的微乱黑发，超大号白色纽扣衬衫，浅色休闲短裤，赤脚，简单放松的造型，自然站立姿势放松，双臂自然下垂或略微放在身后，面朝镜头，温柔柔和的微笑，微妙的静止感，专注于光线、空气和安静的日常氛围，柔和的胶片颗粒，梦幻而低调的氛围 --ar 9:16\n\n[English]\nAnalog 35mm film photography, soft airy Japanese-style aesthetic, gentle diffused natural window light, slight overexposure, pastel tones, low contrast, soft highlights,  minimal indoor setting near a window with white curtains, clean light-colored wall, natural composition, eye-level, slightly closer full-body framing (mid-thigh to head),  young East Asian woman, natural minimal makeup, soft realistic skin texture, long slightly messy dark hair,  oversized white button-up shirt, light casual shorts, barefoot, simple and relaxed styling,  standing naturally with relaxed posture, arms loosely at sides or slightly behind, facing camera, gentle soft smile, subtle stillness,  focus on light, air, and quiet everyday mood, soft film grain, dreamy and understated atmosphere --ar 9:16\n\nOriginality adjustment for this regeneration:\nCreate a new window-side film photograph with a different time of day, seated pose, room detail, and reflection pattern. Keep the candid Japanese-film feeling while changing the composition."
+    },
+    {
+      "num": 383,
+      "title": "AI 日常生活 iPhone 抓拍",
+      "sceneType": "生活摄影",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case383.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@Ciri_ai](https://x.com/Ciri_ai/status/2051292618248904809)",
+      "originalPrompt": "I want to see what you really look like.\nDraw a snapshot of your everyday life as if it were accidentally taken on an iPhone.\nMake it feel like a very ordinary, imperfect candid shot.\nThe photo should have slight motion blur, with uneven, natural lighting.",
+      "revision": "Keep the iPhone daily-life snapshot premise, but choose a different ordinary moment, framing, and foreground obstruction. Preserve casual authenticity and avoid recreating the source gesture or setting.",
+      "revisedPrompt": "I want to see what you really look like.\nDraw a snapshot of your everyday life as if it were accidentally taken on an iPhone.\nMake it feel like a very ordinary, imperfect candid shot.\nThe photo should have slight motion blur, with uneven, natural lighting.\n\nOriginality adjustment for this regeneration:\nKeep the iPhone daily-life snapshot premise, but choose a different ordinary moment, framing, and foreground obstruction. Preserve casual authenticity and avoid recreating the source gesture or setting."
+    },
+    {
+      "num": 414,
+      "title": "室内晨间写实摄影",
+      "sceneType": "生活摄影",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case414.jpg",
+      "originalCategory": "📷 摄影与写实",
+      "source": "[@ToroJushiAi](https://x.com/ToroJushiAi/status/2053078195482632421)",
+      "originalPrompt": "A close-medium shot of a young Japanese woman in her bedroom on an ordinary morning, captured in authentic daily life photography as a natural candid moment. She is seated sideways on the edge of the bed, not fully awake yet, photographed from a slightly elevated three-quarter angle with cool-to-warm morning window light entering from the left.\nEast Asian young woman in her early 20s. Almond-shaped eyes with soft natural single eyelids, slightly elongated eye corners, still carrying the heaviness of just waking. Straight refined nose with a delicate bridge. Skin tone fair to light beige — skin subsurface scattering visible under the soft directional morning window light, specular micro-highlights catching gently on her cheekbone and nose ridge, fine skin texture perceptible, no makeup. Naturally straight fine black hair loosely gathered, slightly disheveled from sleep.\nShe wears a loose oversized cotton sleep shirt and soft shorts, nothing styled. Her gaze drifts toward the window, posture relaxed and unhurried, one hand resting on her knee, the other barely holding a phone face-down. The bedroom background suggests real life — slightly unmade linen, a potted plant near the window partially in shadow, small cluttered bedside items. Two or three stray hairs fall across her cheek in natural asymmetric displacement, not geometrically placed.\nSoft directional morning light from a side window, cool-to-warm transition across her face and shoulder, long gentle shadows on the bedding behind her. The mood is quietly adrift — not sad, not performing, just suspended in the unhurried first minutes of the day. Subtle ISO 400 film grain in shadow areas, photographic noise texture not CG render smoothness. Aspect ratio 2:3. No watermark, no text overlay, not cartoon, not digitally painted, not illustration, not anime.",
+      "revision": "Reframe the morning interior photograph around a different domestic action, camera height, and light patch. Keep the quiet realistic atmosphere but change the room arrangement and subject placement.",
+      "revisedPrompt": "A close-medium shot of a young Japanese woman in her bedroom on an ordinary morning, captured in authentic daily life photography as a natural candid moment. She is seated sideways on the edge of the bed, not fully awake yet, photographed from a slightly elevated three-quarter angle with cool-to-warm morning window light entering from the left.\nEast Asian young woman in her early 20s. Almond-shaped eyes with soft natural single eyelids, slightly elongated eye corners, still carrying the heaviness of just waking. Straight refined nose with a delicate bridge. Skin tone fair to light beige — skin subsurface scattering visible under the soft directional morning window light, specular micro-highlights catching gently on her cheekbone and nose ridge, fine skin texture perceptible, no makeup. Naturally straight fine black hair loosely gathered, slightly disheveled from sleep.\nShe wears a loose oversized cotton sleep shirt and soft shorts, nothing styled. Her gaze drifts toward the window, posture relaxed and unhurried, one hand resting on her knee, the other barely holding a phone face-down. The bedroom background suggests real life — slightly unmade linen, a potted plant near the window partially in shadow, small cluttered bedside items. Two or three stray hairs fall across her cheek in natural asymmetric displacement, not geometrically placed.\nSoft directional morning light from a side window, cool-to-warm transition across her face and shoulder, long gentle shadows on the bedding behind her. The mood is quietly adrift — not sad, not performing, just suspended in the unhurried first minutes of the day. Subtle ISO 400 film grain in shadow areas, photographic noise texture not CG render smoothness. Aspect ratio 2:3. No watermark, no text overlay, not cartoon, not digitally painted, not illustration, not anime.\n\nOriginality adjustment for this regeneration:\nReframe the morning interior photograph around a different domestic action, camera height, and light patch. Keep the quiet realistic atmosphere but change the room arrangement and subject placement."
+    },
+    {
+      "num": 224,
+      "title": "机甲少女立于废弃海城",
+      "sceneType": "奇幻叙事",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case224.jpg",
+      "originalCategory": "🎬 场景与叙事",
+      "source": "[@old\\_pgmrs\\_will](https://x.com/old_pgmrs_will/status/2046144801071079612)",
+      "originalPrompt": "[中文]\n一名十几岁的机甲少女，苍白的肌肤上沾着烟尘与海水飞沫，锐利的琥珀色眼眸中映出发光的 HUD 瞄准标线；及腰的灰白色长发扎成高马尾，在海风中肆意飞扬。哑光枪灰色外骨骼装甲覆盖双肩、前臂与小腿，关节处裸露着液压活塞，胸挂布有发光的青蓝色冷却管线。一件沾着油污的超大号机库外套半滑落在一侧肩头，一门巨型轨道炮架在右肩，衣领处挂着士兵牌与磨损的红色丝带。\n她站在向左略微偏移的位置，立于倾斜钢铁平台的锈蚀边缘，平台向外延伸至漆黑海面之上；重心落在单腿上，左手紧握炮带，头部微转向镜头，投来沉静而桀骜的目光。背部推进器不断喷出蒸汽，马尾与外套在咸腥海风里向一侧狂乱飘动。\n背景是黄昏时分广袤的废弃海上都市，用途不明的巨型超级建筑从海洋中拔地而起，形成错落的剪影；骨白色的巨型塔楼与附着藤壶的钢铁结构融为一体，巨大的环形建筑以破碎的角度倾斜矗立，锈蚀的桁架骨架间缠绕着废弃线缆，深色浪涛在支撑柱间翻涌，数艘沉船半淹在柱脚。厚重的海雾萦绕在建筑底部，高耸的结构直刺入暗沉的天空，塔楼高处零星闪烁着微弱灯光，宛如遥远的眼眸。\n画面采用阴郁低调的光影：阴沉天空透出冷调青蓝环境光，画面右侧远处建筑漏出温暖的琥珀色钠灯光晕，塔楼后方低垂的太阳形成强烈逆光，勾勒出她的轮廓；体积光穿透海雾，装甲上呈现湿润的镜面高光。\n镜头使用 35mm 变形宽银幕镜头，略微低角度仰拍，越过她的肩膀望向远处建筑群；中全景构图，浅景深使前景的锈蚀景物虚化，带有横向镜头眩光，细腻的大气薄雾将远处巨型建筑压缩为层次分明的剪影。\n整体为电影感动漫主视觉风格，绘画感数字插画搭配利落线稿，采用青蓝、骨白与铁锈色为主的低饱和海洋色调，点缀少量暖色调高光；添加胶片颗粒，呈现高对比度的艺术海报质感，画幅比例 16:9。\n\n[English]\nA mecha girl mid-teens, pale skin smudged with soot and salt spray, sharp amber eyes with glowing HUD reticles, waist-length ash-white hair tied in a high ponytail whipping in the sea wind, matte gunmetal exoskeleton armor plating her shoulders, forearms and shins, exposed hydraulic pistons at the joints, chest rig with glowing cyan coolant lines, oversized oil-stained hangar jacket half slipping off one shoulder, a massive rail cannon resting on her right shoulder, dog tags and frayed red ribbon at her collar , standing off-center to the left on the rusted edge of a tilted steel platform jutting out over dark water, weight shifted onto one leg, left hand gripping the cannon strap, head turned slightly toward camera with a quiet defiant stare, steam venting from her back thrusters, her ponytail and jacket streaming sideways in the salt wind , a vast derelict sea-city at dusk, colossal megastructures of unknown purpose rising from the ocean in staggered silhouettes, bone-white monolithic towers fused with barnacled steel, cyclopean ring-shaped constructs canted at broken angles, rusted skeletal gantries threaded with dead cables, dark swells rolling between the pylons, shipwrecks half-swallowed at their feet, thick sea fog clinging to the bases while the upper structures pierce into a bruised sky, scattered faint lights blinking high in the towers like distant eyes , moody low-key lighting, cold teal ambient from the overcast sky, warm amber sodium glow leaking from a distant structure camera-right, hard backlight from a low sun behind the towers carving her silhouette, volumetric god rays cutting through sea mist, wet specular highlights on her armor , 35mm anamorphic lens, slight low angle looking up past her shoulder toward the structures, medium-wide shot, shallow depth of field with foreground rust in soft focus, horizontal lens flares, fine atmospheric haze compressing the distant megastructures into layered silhouettes , cinematic anime key visual, painterly digital illustration with crisp line art, desaturated oceanic palette of teal, bone-white and rust punched by small warm accent lights, film grain, high-contrast editorial poster aesthetic . Format 16:9.",
+      "revision": "Keep the abandoned-sea-city mecha narrative, but change the machine silhouette, weather event, character stance, and storytelling focal point. Preserve a clear cinematic scene without repeating the original arrangement.",
+      "revisedPrompt": "[中文]\n一名十几岁的机甲少女，苍白的肌肤上沾着烟尘与海水飞沫，锐利的琥珀色眼眸中映出发光的 HUD 瞄准标线；及腰的灰白色长发扎成高马尾，在海风中肆意飞扬。哑光枪灰色外骨骼装甲覆盖双肩、前臂与小腿，关节处裸露着液压活塞，胸挂布有发光的青蓝色冷却管线。一件沾着油污的超大号机库外套半滑落在一侧肩头，一门巨型轨道炮架在右肩，衣领处挂着士兵牌与磨损的红色丝带。\n她站在向左略微偏移的位置，立于倾斜钢铁平台的锈蚀边缘，平台向外延伸至漆黑海面之上；重心落在单腿上，左手紧握炮带，头部微转向镜头，投来沉静而桀骜的目光。背部推进器不断喷出蒸汽，马尾与外套在咸腥海风里向一侧狂乱飘动。\n背景是黄昏时分广袤的废弃海上都市，用途不明的巨型超级建筑从海洋中拔地而起，形成错落的剪影；骨白色的巨型塔楼与附着藤壶的钢铁结构融为一体，巨大的环形建筑以破碎的角度倾斜矗立，锈蚀的桁架骨架间缠绕着废弃线缆，深色浪涛在支撑柱间翻涌，数艘沉船半淹在柱脚。厚重的海雾萦绕在建筑底部，高耸的结构直刺入暗沉的天空，塔楼高处零星闪烁着微弱灯光，宛如遥远的眼眸。\n画面采用阴郁低调的光影：阴沉天空透出冷调青蓝环境光，画面右侧远处建筑漏出温暖的琥珀色钠灯光晕，塔楼后方低垂的太阳形成强烈逆光，勾勒出她的轮廓；体积光穿透海雾，装甲上呈现湿润的镜面高光。\n镜头使用 35mm 变形宽银幕镜头，略微低角度仰拍，越过她的肩膀望向远处建筑群；中全景构图，浅景深使前景的锈蚀景物虚化，带有横向镜头眩光，细腻的大气薄雾将远处巨型建筑压缩为层次分明的剪影。\n整体为电影感动漫主视觉风格，绘画感数字插画搭配利落线稿，采用青蓝、骨白与铁锈色为主的低饱和海洋色调，点缀少量暖色调高光；添加胶片颗粒，呈现高对比度的艺术海报质感，画幅比例 16:9。\n\n[English]\nA mecha girl mid-teens, pale skin smudged with soot and salt spray, sharp amber eyes with glowing HUD reticles, waist-length ash-white hair tied in a high ponytail whipping in the sea wind, matte gunmetal exoskeleton armor plating her shoulders, forearms and shins, exposed hydraulic pistons at the joints, chest rig with glowing cyan coolant lines, oversized oil-stained hangar jacket half slipping off one shoulder, a massive rail cannon resting on her right shoulder, dog tags and frayed red ribbon at her collar , standing off-center to the left on the rusted edge of a tilted steel platform jutting out over dark water, weight shifted onto one leg, left hand gripping the cannon strap, head turned slightly toward camera with a quiet defiant stare, steam venting from her back thrusters, her ponytail and jacket streaming sideways in the salt wind , a vast derelict sea-city at dusk, colossal megastructures of unknown purpose rising from the ocean in staggered silhouettes, bone-white monolithic towers fused with barnacled steel, cyclopean ring-shaped constructs canted at broken angles, rusted skeletal gantries threaded with dead cables, dark swells rolling between the pylons, shipwrecks half-swallowed at their feet, thick sea fog clinging to the bases while the upper structures pierce into a bruised sky, scattered faint lights blinking high in the towers like distant eyes , moody low-key lighting, cold teal ambient from the overcast sky, warm amber sodium glow leaking from a distant structure camera-right, hard backlight from a low sun behind the towers carving her silhouette, volumetric god rays cutting through sea mist, wet specular highlights on her armor , 35mm anamorphic lens, slight low angle looking up past her shoulder toward the structures, medium-wide shot, shallow depth of field with foreground rust in soft focus, horizontal lens flares, fine atmospheric haze compressing the distant megastructures into layered silhouettes , cinematic anime key visual, painterly digital illustration with crisp line art, desaturated oceanic palette of teal, bone-white and rust punched by small warm accent lights, film grain, high-contrast editorial poster aesthetic . Format 16:9.\n\nOriginality adjustment for this regeneration:\nKeep the abandoned-sea-city mecha narrative, but change the machine silhouette, weather event, character stance, and storytelling focal point. Preserve a clear cinematic scene without repeating the original arrangement."
+    },
+    {
+      "num": 238,
+      "title": "星云巨鲤与小人的奇幻对话",
+      "sceneType": "奇幻叙事",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case238.jpg",
+      "originalCategory": "🎬 场景与叙事",
+      "source": "[@liyue\\_ai](https://x.com/liyue_ai/status/2045875219307655337)",
+      "originalPrompt": "[中文]\n一幅超现实主义数字插画风格，采用低角度仰拍视角。画面描绘了一条巨型彩色锦鲤遨游在梦幻般的星云中，四周环绕着色彩鲜艳的星云与气泡。 \n画面中央还站着一个小人，背对观众，神情平静地仰望空中这条巨大的锦鲤，锦鲤头向下看着小人。 \n整体画面呈现出强烈的大小对比，氛围空灵又梦幻。比例9:16\n\n[English]\nA surrealist digital illustration style, adopting a low-angle upward perspective. The picture depicts a giant colorful koi swimming in a dreamy nebula, surrounded by colorful nebulae and bubbles. In the center of the picture stands a small figure, with their back to the audience, calmly looking up at this huge koi in the air, and the koi is looking down at the small figure. The overall picture presents a strong size contrast, and the atmosphere is ethereal and dreamy. Aspect ratio 9:16",
+      "revision": "Retain the cosmic fish-and-small-person dialogue idea, but alter the scale relationship, light source, surrounding celestial forms, and emotional beat. Make the scene’s visual metaphor newly composed.",
+      "revisedPrompt": "[中文]\n一幅超现实主义数字插画风格，采用低角度仰拍视角。画面描绘了一条巨型彩色锦鲤遨游在梦幻般的星云中，四周环绕着色彩鲜艳的星云与气泡。 \n画面中央还站着一个小人，背对观众，神情平静地仰望空中这条巨大的锦鲤，锦鲤头向下看着小人。 \n整体画面呈现出强烈的大小对比，氛围空灵又梦幻。比例9:16\n\n[English]\nA surrealist digital illustration style, adopting a low-angle upward perspective. The picture depicts a giant colorful koi swimming in a dreamy nebula, surrounded by colorful nebulae and bubbles. In the center of the picture stands a small figure, with their back to the audience, calmly looking up at this huge koi in the air, and the koi is looking down at the small figure. The overall picture presents a strong size contrast, and the atmosphere is ethereal and dreamy. Aspect ratio 9:16\n\nOriginality adjustment for this regeneration:\nRetain the cosmic fish-and-small-person dialogue idea, but alter the scale relationship, light source, surrounding celestial forms, and emotional beat. Make the scene’s visual metaphor newly composed."
+    },
+    {
+      "num": 392,
+      "title": "头发里的微型城市",
+      "sceneType": "奇幻叙事",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case392.jpg",
+      "originalCategory": "🎬 场景与叙事",
+      "source": "[@krafterlab](https://x.com/krafterlab/status/2051399740986740986)",
+      "originalPrompt": "Macro photograph of a miniature city hidden in human hair, clearly on a real human head, with part of the forehead and hairline visible, realistic skin texture with pores, tiny people walking through the streets between the hair strands, extremely small but realistic proportions, macro photography, 85mm lens, shallow depth of field, natural lighting, neutral colors, no warm tones, ultra realistic hair with visible roots, natural imperfections, slightly messy strands, realistic materials, slightly dirty buildings, no perfect surfaces, photorealistic, looks like a real photo, no illustration, no CGI, no glow",
+      "revision": "Keep the miniature-city-inside-hair premise, but redesign the city type, viewpoint, and cause-and-effect relationship between hair and architecture. Preserve the surreal storytelling while changing the visual logic.",
+      "revisedPrompt": "Macro photograph of a miniature city hidden in human hair, clearly on a real human head, with part of the forehead and hairline visible, realistic skin texture with pores, tiny people walking through the streets between the hair strands, extremely small but realistic proportions, macro photography, 85mm lens, shallow depth of field, natural lighting, neutral colors, no warm tones, ultra realistic hair with visible roots, natural imperfections, slightly messy strands, realistic materials, slightly dirty buildings, no perfect surfaces, photorealistic, looks like a real photo, no illustration, no CGI, no glow\n\nOriginality adjustment for this regeneration:\nKeep the miniature-city-inside-hair premise, but redesign the city type, viewpoint, and cause-and-effect relationship between hair and architecture. Preserve the surreal storytelling while changing the visual logic."
+    },
+    {
+      "num": 537,
+      "title": "地下档案馆暗黑概念海报",
+      "sceneType": "奇幻叙事",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case537.jpg",
+      "originalCategory": "🎬 场景与叙事",
+      "source": "[@PromptSin](https://x.com/PromptSin/status/2092390329890849163)",
+      "originalPrompt": "Use case: stylized-concept\nAsset type: vertical social-media artwork for the “Your Dark Side” theme\n\nCreate an original psychological dark-surrealist scene in a colossal underground archive. Endless shelves of sealed black books rise like skyscrapers and vanish into fog. In the central aisle, a solitary human figure in bone-white clothing kneels before one open book on the floor. No words are visible. From the blank pages rises a delicate life-size figure made entirely of dense black smoke, standing face-to-face with the kneeling person. The smoke figure has no eyes or mouth; instead, its chest contains a small locked crimson door. Thin threads connect that door to the kneeling person’s hands, suggesting a secret self finally acknowledged.\n\nVertical 9:16 framing, towering shelves create a narrow symmetrical canyon, high-angle shaft of cold silver light, the two figures positioned small in the lower center, immense oppressive scale above them. Black paper, aged stone, floating ash, volumetric fog, subtle polished-floor reflections, premium photorealistic dark concept art, refined editorial composition, quiet dread and introspection rather than horror spectacle.\n\nColor palette: obsidian black, graphite, bone white, cold silver, a single muted crimson accent at the tiny door.\n\nConstraints: entirely original metaphor; blank book pages with absolutely no writing; no recognizable person; no text, symbols, logos, signatures, borders, or watermark.\n\nAvoid: visible letters or runes, portrait close-up, split face, black substance on skin, glowing eyes, gore, skulls, conventional ghosts, fantasy wizard styling, imitation of any named artist.",
+      "revision": "Keep the underground-archive introspection theme, but change the figure relationship, symbolic object, aisle geometry, and light direction. Retain the quiet psychological tension without copying the source metaphor.",
+      "revisedPrompt": "Use case: stylized-concept\nAsset type: vertical social-media artwork for the “Your Dark Side” theme\n\nCreate an original psychological dark-surrealist scene in a colossal underground archive. Endless shelves of sealed black books rise like skyscrapers and vanish into fog. In the central aisle, a solitary human figure in bone-white clothing kneels before one open book on the floor. No words are visible. From the blank pages rises a delicate life-size figure made entirely of dense black smoke, standing face-to-face with the kneeling person. The smoke figure has no eyes or mouth; instead, its chest contains a small locked crimson door. Thin threads connect that door to the kneeling person’s hands, suggesting a secret self finally acknowledged.\n\nVertical 9:16 framing, towering shelves create a narrow symmetrical canyon, high-angle shaft of cold silver light, the two figures positioned small in the lower center, immense oppressive scale above them. Black paper, aged stone, floating ash, volumetric fog, subtle polished-floor reflections, premium photorealistic dark concept art, refined editorial composition, quiet dread and introspection rather than horror spectacle.\n\nColor palette: obsidian black, graphite, bone white, cold silver, a single muted crimson accent at the tiny door.\n\nConstraints: entirely original metaphor; blank book pages with absolutely no writing; no recognizable person; no text, symbols, logos, signatures, borders, or watermark.\n\nAvoid: visible letters or runes, portrait close-up, split face, black substance on skin, glowing eyes, gore, skulls, conventional ghosts, fantasy wizard styling, imitation of any named artist.\n\nOriginality adjustment for this regeneration:\nKeep the underground-archive introspection theme, but change the figure relationship, symbolic object, aisle geometry, and light direction. Retain the quiet psychological tension without copying the source metaphor."
+    },
+    {
+      "num": 44,
+      "title": "古风历史题材图",
+      "sceneType": "历史古风",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case44.jpg",
+      "originalCategory": "🏮 历史与古风题材",
+      "source": "[@liyue\\_ai](https://x.com/liyue_ai)",
+      "originalPrompt": "Generate avatars of various emperors from the {argument name=\"dynasty\" default=\"Ming Dynasty\"} based on the style of the uploaded image, with their posthumous names and personal names listed below the avatars.",
+      "revision": "Keep the historical-period subject, but choose a different moment of action, viewpoint, costume detail, and surrounding setting. Preserve period atmosphere without reproducing the source scene.",
+      "revisedPrompt": "Generate avatars of various emperors from the {argument name=\"dynasty\" default=\"Ming Dynasty\"} based on the style of the uploaded image, with their posthumous names and personal names listed below the avatars.\n\nOriginality adjustment for this regeneration:\nKeep the historical-period subject, but choose a different moment of action, viewpoint, costume detail, and surrounding setting. Preserve period atmosphere without reproducing the source scene."
+    },
+    {
+      "num": 206,
+      "title": "国风工笔八仙长卷插画",
+      "sceneType": "历史古风",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case206.jpg",
+      "originalCategory": "🏮 历史与古风题材",
+      "source": "[@GeekCatX](https://x.com/GeekCatX/status/2046559605074076112)",
+      "originalPrompt": "[中文]\n（国风卷轴插画师）你是一位顶尖的中国传统工笔人物画师，擅长将经典人物群像绘制成长卷式百科海报。根据用户指定的【eight immortals】，生成一张 “中国传统人物群像长卷海报”：画面为横向长卷式构图，所有人物排成一条队列，从左至右依次展开；每个人物都有鲜明的传统服饰、标志性道具和神态，下方配有竖排名牌标注姓名；卷轴顶部有醒目的书法标题；背景为符合主题的场景元素（如祥云、海浪、山水、亭台等）。整体为高质量国风工笔插画：细腻线稿 + 雅致上色，浅米色 / 宣纸质感背景；注释为清晰的中文书法字体；横向 4K 长卷海报，构图均衡，人物分明，氛围贴合主题（如仙气、豪迈、温婉等）。直接出图，人物群像为【eight immortals】。\n\n[English]\n(Guofeng scroll illustrator) You are a top Chinese traditional Gongbi figure painter, skilled in painting classic character group portraits into long-scroll-style encyclopedia posters. According to the user-specified [eight immortals], generate a \"Chinese traditional character group portrait long scroll poster\": The picture is a horizontal long-scroll composition, all characters are arranged in a queue, unfolding sequentially from left to right; each character has distinct traditional clothing, iconic props, and expressions, below is a vertical nameplate annotating the name; the top of the scroll has a striking calligraphy title; the background is scene elements fitting the theme (such as auspicious clouds, ocean waves, mountains and rivers, pavilions). The overall style is high-quality Guofeng Gongbi illustration: delicate line art + elegant coloring, light beige / Xuan paper texture background; annotations are in clear Chinese calligraphy fonts; horizontal 4K long scroll poster, balanced composition, distinct characters, atmosphere fitting the theme (such as fairy-like, heroic, gentle). Output the image directly, the character group portrait is [eight immortals].",
+      "revision": "Recompose the classical figure scroll as a new horizontal narrative with a different character grouping, gesture rhythm, and landscape breaks. Keep the traditional-scroll purpose while changing the sequence.",
+      "revisedPrompt": "[中文]\n（国风卷轴插画师）你是一位顶尖的中国传统工笔人物画师，擅长将经典人物群像绘制成长卷式百科海报。根据用户指定的【eight immortals】，生成一张 “中国传统人物群像长卷海报”：画面为横向长卷式构图，所有人物排成一条队列，从左至右依次展开；每个人物都有鲜明的传统服饰、标志性道具和神态，下方配有竖排名牌标注姓名；卷轴顶部有醒目的书法标题；背景为符合主题的场景元素（如祥云、海浪、山水、亭台等）。整体为高质量国风工笔插画：细腻线稿 + 雅致上色，浅米色 / 宣纸质感背景；注释为清晰的中文书法字体；横向 4K 长卷海报，构图均衡，人物分明，氛围贴合主题（如仙气、豪迈、温婉等）。直接出图，人物群像为【eight immortals】。\n\n[English]\n(Guofeng scroll illustrator) You are a top Chinese traditional Gongbi figure painter, skilled in painting classic character group portraits into long-scroll-style encyclopedia posters. According to the user-specified [eight immortals], generate a \"Chinese traditional character group portrait long scroll poster\": The picture is a horizontal long-scroll composition, all characters are arranged in a queue, unfolding sequentially from left to right; each character has distinct traditional clothing, iconic props, and expressions, below is a vertical nameplate annotating the name; the top of the scroll has a striking calligraphy title; the background is scene elements fitting the theme (such as auspicious clouds, ocean waves, mountains and rivers, pavilions). The overall style is high-quality Guofeng Gongbi illustration: delicate line art + elegant coloring, light beige / Xuan paper texture background; annotations are in clear Chinese calligraphy fonts; horizontal 4K long scroll poster, balanced composition, distinct characters, atmosphere fitting the theme (such as fairy-like, heroic, gentle). Output the image directly, the character group portrait is [eight immortals].\n\nOriginality adjustment for this regeneration:\nRecompose the classical figure scroll as a new horizontal narrative with a different character grouping, gesture rhythm, and landscape breaks. Keep the traditional-scroll purpose while changing the sequence."
+    },
+    {
+      "num": 226,
+      "title": "古风明朝帝王群像长卷",
+      "sceneType": "历史古风",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case226.jpg",
+      "originalCategory": "🏮 历史与古风题材",
+      "source": "[@liyue\\_ai](https://x.com/liyue_ai/status/2045071977279635962)",
+      "originalPrompt": "[中文]\n根据上传图片的风格，生成明朝各个皇帝的头像，头像下面有他们的谥号和名字\n\n[English]\nBased on the style of the uploaded image, generate portraits of the emperors of the Ming Dynasty, with their posthumous titles and names below the portraits",
+      "revision": "Create a new imperial-portrait panorama with a different lineup logic, architectural backdrop, and title placement. Preserve historical illustration clarity and avoid copying the original procession.",
+      "revisedPrompt": "[中文]\n根据上传图片的风格，生成明朝各个皇帝的头像，头像下面有他们的谥号和名字\n\n[English]\nBased on the style of the uploaded image, generate portraits of the emperors of the Ming Dynasty, with their posthumous titles and names below the portraits\n\nOriginality adjustment for this regeneration:\nCreate a new imperial-portrait panorama with a different lineup logic, architectural backdrop, and title placement. Preserve historical illustration clarity and avoid copying the original procession."
+    },
+    {
+      "num": 337,
+      "title": "《短歌行》诗词意境图",
+      "sceneType": "历史古风",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case337.png",
+      "originalCategory": "🏮 历史与古风题材",
+      "source": "苍何原创实测（公众号文章《我逆向了 329 条 GPT-Image2 提示词模板，全部开源！》）",
+      "originalPrompt": "帮我生成一张《短歌行》的意境图，带整篇《短歌行》文字",
+      "revision": "Keep the classical-poetry mood, but translate the poem into a different season, viewpoint, spatial depth, and symbolic object. Preserve the literary atmosphere without repeating the source image structure.",
+      "revisedPrompt": "帮我生成一张《短歌行》的意境图，带整篇《短歌行》文字\n\nOriginality adjustment for this regeneration:\nKeep the classical-poetry mood, but translate the poem into a different season, viewpoint, spatial depth, and symbolic object. Preserve the literary atmosphere without repeating the source image structure."
+    },
+    {
+      "num": 193,
+      "title": "千手观音化身打工人",
+      "sceneType": "实验艺术",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case193.jpg",
+      "originalCategory": "🎨 插画与艺术",
+      "source": "[@johnAGI168](https://x.com/johnAGI168/status/2046565555025367392)",
+      "originalPrompt": "[中文]\n一幅高度详细的千手观音菩萨工笔画。\n\n然而，千手并没有拿着神圣的宗教法器，而是拿着现代办公和家用物品：**笔记本电脑、智能手机、成堆的文件、咖啡杯、印章、计算器、拖把和奶瓶**。它代表了终极的多任务处理现代工作者。\n\n脑后的金色光环由旋转的时钟齿轮组成。\n\n**在右下角，一个单一的红色竖排艺术家印章写着“吴先生”（Mr. Wu），风格化得像水印一样。** --ar 3:4\n\n[English]\nA highly detailed Gongbi painting of the Bodhisattva \"Guanyin of a Thousand Hands\".\n\nHowever, instead of sacred religious artifacts, the thousand hands are holding modern office and household items: **laptops, smartphones, stacks of paperwork, coffee cups, stamps, calculators, mops, and baby bottles**. It represents the ultimate multi-tasking modern worker.\n\nThe golden aura behind the head is made of spinning clock gears.\n\n**In the bottom right corner, a single red vertical artist chop seal reads \"吴先生\" (Mr. Wu), stylized like a watermark.** --ar 3:4",
+      "revision": "Keep the contemporary-worker transformation concept, but change the central gesture, surrounding workplace details, material treatment, and visual contrast. Preserve the conceptual humor without recreating the original image.",
+      "revisedPrompt": "[中文]\n一幅高度详细的千手观音菩萨工笔画。\n\n然而，千手并没有拿着神圣的宗教法器，而是拿着现代办公和家用物品：**笔记本电脑、智能手机、成堆的文件、咖啡杯、印章、计算器、拖把和奶瓶**。它代表了终极的多任务处理现代工作者。\n\n脑后的金色光环由旋转的时钟齿轮组成。\n\n**在右下角，一个单一的红色竖排艺术家印章写着“吴先生”（Mr. Wu），风格化得像水印一样。** --ar 3:4\n\n[English]\nA highly detailed Gongbi painting of the Bodhisattva \"Guanyin of a Thousand Hands\".\n\nHowever, instead of sacred religious artifacts, the thousand hands are holding modern office and household items: **laptops, smartphones, stacks of paperwork, coffee cups, stamps, calculators, mops, and baby bottles**. It represents the ultimate multi-tasking modern worker.\n\nThe golden aura behind the head is made of spinning clock gears.\n\n**In the bottom right corner, a single red vertical artist chop seal reads \"吴先生\" (Mr. Wu), stylized like a watermark.** --ar 3:4\n\nOriginality adjustment for this regeneration:\nKeep the contemporary-worker transformation concept, but change the central gesture, surrounding workplace details, material treatment, and visual contrast. Preserve the conceptual humor without recreating the original image."
+    },
+    {
+      "num": 281,
+      "title": "赛博朋克科幻曼荼罗",
+      "sceneType": "实验艺术",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case281.jpg",
+      "originalCategory": "🎨 插画与艺术",
+      "source": "[@4WEB1](https://x.com/4WEB1/status/2045390207072256179)",
+      "originalPrompt": "[中文]\nでChatGPTで画像を作成してもらって、今日また作成してもらったらGPT image 2かもしれず、出来が変わったように見えるのでメモ\n\n左の水色と黄色のが先週\n右の紫のが今日\n\n右のは透明感とか解像度、緻密さが違うような気がする…\n\nプロンプト\n曼荼羅の近未来SF版を描いて\n\n[English]\nI had ChatGPT create images, and when I had it create them again today, it might be GPT image 2, and it seems like the quality has changed, so I'm making a note of it\n\nThe light blue and yellow one on the left is from last week\nThe purple one on the right is from today\n\nI feel like the transparency, resolution, and fineness are different for the one on the right.\n\nPrompt\nDraw a near-future sci-fi version of a mandala",
+      "revision": "Retain the cyber-mandala idea, but construct a different radial logic, symbol family, depth structure, and focal center. Keep the experimental artwork legible and avoid named-artist imitation.",
+      "revisedPrompt": "[中文]\nでChatGPTで画像を作成してもらって、今日また作成してもらったらGPT image 2かもしれず、出来が変わったように見えるのでメモ\n\n左の水色と黄色のが先週\n右の紫のが今日\n\n右のは透明感とか解像度、緻密さが違うような気がする…\n\nプロンプト\n曼荼羅の近未来SF版を描いて\n\n[English]\nI had ChatGPT create images, and when I had it create them again today, it might be GPT image 2, and it seems like the quality has changed, so I'm making a note of it\n\nThe light blue and yellow one on the left is from last week\nThe purple one on the right is from today\n\nI feel like the transparency, resolution, and fineness are different for the one on the right.\n\nPrompt\nDraw a near-future sci-fi version of a mandala\n\nOriginality adjustment for this regeneration:\nRetain the cyber-mandala idea, but construct a different radial logic, symbol family, depth structure, and focal center. Keep the experimental artwork legible and avoid named-artist imitation."
+    },
+    {
+      "num": 356,
+      "title": "过度思考超现实街头 Campaign",
+      "sceneType": "实验艺术",
+      "role": "main",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case356.jpg",
+      "originalCategory": "🎨 插画与艺术",
+      "source": "[@AIwithAliya](https://x.com/AIwithAliya/status/2049044716642316758)",
+      "originalPrompt": "Ultra-realistic conceptual portrait of a young woman with long wavy hair and soft defined features, wearing rose-tinted rectangular sunglasses, an oversized ivory cropped t-shirt, fitted light-wash denim jeans, and clean white sneakers. She is sitting casually with a confident yet relaxed posture.\n\nThe twist: she is seated on a large, hyper-realistic version of her own detached head placed on the ground. The head is scaled up, lying sideways, with the same facial features and sunglasses, creating a surreal self-reflection concept.\n\nComposition: centered, full-body shot, neutral studio background with soft blush and cream tones, minimal aesthetic. Clean negative space.\n\nTypography integrated into the background:\n\nHandwritten-style text at the top: \"OVERTHINKING\"\n\nBelow it, smaller text: \"TRAPPED IN MY OWN HEART\" with \"HEART\" crossed out\n\nLarge, rough, scribbled text in deep pink: \"MIND\"\n\nLighting: soft diffused studio lighting, subtle shadows, high detail, fashion editorial quality.\n\nStyle: blend of surrealism and modern luxury streetwear campaign, pastel feminine aesthetic, minimal yet expressive, high-resolution, 8k, sharp focus, natural skin texture.\n\nMood: introspective, emotional weight, identity, self-awareness, quiet confidence.",
+      "revision": "Keep the overthinking street-campaign premise, but change the public-space setting, visual metaphor, typography relationship, and figure placement. Preserve the campaign concept while making the composition new.",
+      "revisedPrompt": "Ultra-realistic conceptual portrait of a young woman with long wavy hair and soft defined features, wearing rose-tinted rectangular sunglasses, an oversized ivory cropped t-shirt, fitted light-wash denim jeans, and clean white sneakers. She is sitting casually with a confident yet relaxed posture.\n\nThe twist: she is seated on a large, hyper-realistic version of her own detached head placed on the ground. The head is scaled up, lying sideways, with the same facial features and sunglasses, creating a surreal self-reflection concept.\n\nComposition: centered, full-body shot, neutral studio background with soft blush and cream tones, minimal aesthetic. Clean negative space.\n\nTypography integrated into the background:\n\nHandwritten-style text at the top: \"OVERTHINKING\"\n\nBelow it, smaller text: \"TRAPPED IN MY OWN HEART\" with \"HEART\" crossed out\n\nLarge, rough, scribbled text in deep pink: \"MIND\"\n\nLighting: soft diffused studio lighting, subtle shadows, high detail, fashion editorial quality.\n\nStyle: blend of surrealism and modern luxury streetwear campaign, pastel feminine aesthetic, minimal yet expressive, high-resolution, 8k, sharp focus, natural skin texture.\n\nMood: introspective, emotional weight, identity, self-awareness, quiet confidence.\n\nOriginality adjustment for this regeneration:\nKeep the overthinking street-campaign premise, but change the public-space setting, visual metaphor, typography relationship, and figure placement. Preserve the campaign concept while making the composition new."
+    },
+    {
+      "num": 409,
+      "title": "拙劣 MS Paint 风重绘",
+      "sceneType": "实验艺术",
+      "role": "backup",
+      "image": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case409.jpg",
+      "originalCategory": "🎨 插画与艺术",
+      "source": "[@Ciri_ai](https://x.com/Ciri_ai/status/2052969749878059362)",
+      "originalPrompt": "Please redraw the attached image in the most clumsy, messy, and hopelessly pathetic way possible. Use a white background and make it look like it was drawn in MS Paint with a mouse. It should vaguely resemble the original, but not really — like it’s kind of correct in some places yet strangely off and awkward overall. Emphasize a low-quality, pixelated look, and make it appear ridiculously badly drawn. …Actually, never mind — just draw it however you want in a sloppy way.",
+      "revision": "Keep the intentionally rough MS Paint redraw direction, but use a different subject crop, primitive shape vocabulary, color blocking, and awkward detail. Do not reproduce the original redraw or exact pixels.",
+      "revisedPrompt": "Please redraw the attached image in the most clumsy, messy, and hopelessly pathetic way possible. Use a white background and make it look like it was drawn in MS Paint with a mouse. It should vaguely resemble the original, but not really — like it’s kind of correct in some places yet strangely off and awkward overall. Emphasize a low-quality, pixelated look, and make it appear ridiculously badly drawn. …Actually, never mind — just draw it however you want in a sloppy way.\n\nOriginality adjustment for this regeneration:\nKeep the intentionally rough MS Paint redraw direction, but use a different subject crop, primitive shape vocabulary, color blocking, and awkward detail. Do not reproduce the original redraw or exact pixels."
+    }
+  ]
+}

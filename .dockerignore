@@ -1,0 +1,16 @@
+.git
+node_modules
+.env
+*.tar
+*.tar.gz
+data
+design-ref
+docs
+tests
+coverage
+.next/*
+!.next/standalone/
+!.next/standalone/**
+.next/standalone/.env
+!.next/static/
+!.next/static/**

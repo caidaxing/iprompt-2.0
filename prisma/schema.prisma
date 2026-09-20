@@ -1,0 +1,145 @@
+// iPrompt Studio 数据模型
+// 开发期 SQLite，上线切 PostgreSQL：改 provider 一行 + DATABASE_URL
+// 多模型：Model/Category 为注册配置表（加模型 = 插数据），Case.modelId 是每条案例的模型归属
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// 用户（邮箱 + 密码注册，超管审核制：pending → active / rejected）
+model User {
+  id             String   @id @default(cuid())
+  email          String   @unique
+  passwordHash   String // scrypt 加盐，格式 scrypt$N$r$p$saltB64$hashB64
+  nickname       String?
+  nicknameEdited Boolean  @default(false) // 昵称仅可修改一次
+  status         String   @default("pending") // pending 待审 | active 通过 | rejected 拒绝
+  role           String   @default("user") // user | admin
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  refreshTokens RefreshToken[]
+  favorites     Favorite[]
+}
+
+// 刷新令牌（服务端存储、可吊销、旋转使用）
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique // sha256，不存明文
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// 模型注册表（加模型 = 插一行配置，零代码改动）
+model Model {
+  id             String  @id // 同时是 ?model= URL 参数值，如 "gpt-image-2"
+  name           String // 筛选项显示名
+  active         Boolean @default(true) // 灰度开关：false 不出现在筛选/导航
+  isDefault      Boolean @default(false) // URL 不带 model 参数时的默认模型
+  sortOrder      Int     @default(0) // 筛选项排序
+  dataSource     String? // 案例数据源文件（data/cases-<id>.json），导入脚本用
+  imageDir       String? // 案例图片目录（public/images/<id>/）
+  descriptionTpl String? // 案例描述模板，占位符 {title} {category} {modelName}
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  categories Category[]
+  cases      Case[]
+}
+
+// 模型展示分类（分类 Tab 配置 + 原始分类映射，跟着模型走）
+model Category {
+  id         String @id @default(cuid())
+  modelId    String
+  name       String // Tab 显示名，如 "产品静物"
+  rawAliases String @default("[]") // 原始分类别名 JSON 数组，导入时映射用
+  sortOrder  Int    @default(0) // Tab 排序
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  model Model @relation(fields: [modelId], references: [id], onDelete: Cascade)
+
+  @@unique([modelId, name])
+  @@index([modelId, sortOrder])
+}
+
+// 案例（多模型；modelId+num 唯一；id 为代理主键供收藏引用）
+model Case {
+  id              String   @id @default(cuid())
+  modelId         String
+  num             Int // 模型内业务编号（对外仍叫案例编号）
+  title           String
+  category        String // 数据源的原始分类
+  displayCategory String // 主类型（取值 = 类型标签名，导入时按 Category 映射写入）
+  source          String
+  sourceRepo      String? // 来源仓库（生态接入语料用，如 "jau123/nanobanana-trending-prompts"）
+  image           String
+  prompt          String
+  description     String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  model     Model      @relation(fields: [modelId], references: [id])
+  favorites Favorite[]
+  caseTags  CaseTag[]
+
+  @@unique([modelId, num])
+  @@index([modelId, displayCategory, num])
+}
+
+// 标签（类型/风格/场景等可多值维度；模型维度走 Model 表不在此列）
+model Tag {
+  id        String @id @default(cuid())
+  slug      String @unique // URL 参数值，如 "portrait-photography"
+  name      String // 显示名，如 "人像摄影"
+  kind      String // "type"(12大类) | "style" | "scene" | …
+  sortOrder Int    @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  caseTags CaseTag[]
+}
+
+// 案例↔标签 多对多
+model CaseTag {
+  caseId String
+  tagId  String
+
+  case Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@unique([caseId, tagId])
+  @@index([tagId])
+}
+
+// 收藏（引用 Case.id，跨模型不歧义）
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  caseId    String
+  createdAt DateTime @default(now())
+
+  user    User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  caseRef Case @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, caseId])
+  @@index([userId, createdAt])
+}
+
+// AI 匹配上线订阅（仅收集，重复邮箱去重）
+model Subscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}

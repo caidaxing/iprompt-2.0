@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ===== iPrompt Studio 设计 token（PRD §6，源自用户效果图） ===== */
+@theme {
+  --color-paper: #f7f4ee; /* 米白宣纸底 */
+  --color-ink: #1a1a18; /* 墨黑 */
+  --color-ink-soft: #6e6a60; /* 次级文字 */
+  --color-ink-mute: #a8a399; /* 辅助灰 */
+  --color-line: #e5e0d5; /* 细描边 */
+  --color-moss: #7a8b7f; /* 低饱和青绿灰点缀 */
+  --color-sage-deep: #4d6257;
+  --color-vermilion: #a75b4e;
+  --color-paper-deep: #eee9df;
+  --shadow-paper: 0 20px 70px rgba(56, 51, 42, 0.08);
+
+  --font-serif-sc: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  --font-sans-sc: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans-sc);
+  /* 极细纸纹噪点 */
+  background-image: radial-gradient(ellipse at 12% 0%, rgba(122, 139, 127, 0.08), transparent 42%),
+    radial-gradient(ellipse at 88% 100%, rgba(167, 91, 78, 0.035), transparent 36%),
+    repeating-linear-gradient(0deg, rgba(26, 26, 24, 0.012) 0, rgba(26, 26, 24, 0.012) 1px, transparent 1px, transparent 4px);
+  background-attachment: fixed;
+}
+
+::selection { background: var(--color-ink); color: var(--color-paper); }
+*:focus-visible { outline: 1px solid var(--color-sage-deep); outline-offset: 3px; }
+
+.site-shell { width: min(100% - 3rem, 1200px); margin-inline: auto; }
+.hairline { border-color: color-mix(in srgb, var(--color-line) 82%, var(--color-ink)); }
+.editorial-button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 2.75rem; padding: .7rem 1.25rem; font-size: .8rem; letter-spacing: .06em; transition: all .2s ease; }
+.editorial-button-dark { background: var(--color-ink); color: var(--color-paper); }
+.editorial-button-dark:hover { background: var(--color-sage-deep); }
+.editorial-button-light { border: 1px solid var(--color-ink); }
+.editorial-button-light:hover { background: var(--color-ink); color: var(--color-paper); }
+.paper-panel { background: rgba(255, 255, 255, .28); border: 1px solid var(--color-line); box-shadow: var(--shadow-paper); }
+.image-frame { background: var(--color-paper-deep); overflow: hidden; }
+.image-frame img { transition: transform .5s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
+.image-frame:hover img { transform: scale(1.025); filter: saturate(.9); }
+.section-rule { display: flex; align-items: center; gap: 1rem; color: var(--color-ink-mute); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; }
+.section-rule::after { content: ""; height: 1px; flex: 1; background: var(--color-line); }
+
+/* 英文装饰小字 */
+.eyebrow {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ink-mute);
+}
+
+/* 案例标题衬线字 */
+.serif-title {
+  font-family: var(--font-serif-sc);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .site-shell { width: min(100% - 2rem, 1200px); }
+}

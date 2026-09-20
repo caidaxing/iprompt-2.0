@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: promptmaster-app
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      HOSTNAME: "0.0.0.0"
+      NODE_OPTIONS: "--max-old-space-size=768"
+      DATABASE_URL: "file:/app/prisma/prod.db"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./prisma:/app/prisma
+    restart: unless-stopped
