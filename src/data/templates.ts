@@ -1,3 +1,850 @@
+// 模板卡片数据(22 张,双语):逆向整理自 freestylefly/awesome-gpt-image-2(MIT)data/style-library.json
+// 封面图指向其开源仓库原图;Copy Template 的提示词格式与其官网 formatTemplatePrompt 中文分支一致
+
+export interface TemplateCard {
+  id: string;
+  num: number;
+  anchor: string;
+  cover: string;
+  titleZh: string;
+  titleEn: string;
+  descZh: string;
+  categoryEn: string;
+  categoryZh: string;
+  styles: string[];
+  scenes: string[];
+  tags: string[];
+  useWhenZh: string;
+  guidanceZh: string[];
+  pitfallsZh: string[];
+  exampleCases: number[];
+}
+
+export function formatCardPrompt(card: TemplateCard): string {
+  const tags = [card.categoryZh, ...card.styles, ...card.scenes, ...card.tags].filter(Boolean);
+  return [
+    `模板:${card.titleZh}`,
+    `用途:${card.useWhenZh}`,
+    `视觉方向:${[...new Set(tags)].join(' / ')}`,
+    '',
+    '请基于以下结构生成一条可直接用于 GPT Image 2 的图片 Prompt:',
+    '- 主体:[要生成的产品、人物、空间、界面或信息主题]',
+    '- 场景:[使用环境、叙事背景、受众语境]',
+    '- 构图:[画面比例、镜头距离、主体位置、层级关系]',
+    '- 风格:[材质、光线、色彩、时代感、品牌气质]',
+    '- 文本:[必须准确显示的标题、标签、按钮或说明文字]',
+    '- 细节:[关键装饰、辅助元素、信息标注、交互层]',
+    '- 输出:[清晰度、比例、完成度、可读性要求]',
+    '',
+    '核心约束:',
+    ...card.guidanceZh.map((line) => `- ${line}`),
+    '',
+    '需要避免:',
+    ...card.pitfallsZh.map((line) => `- ${line}`),
+  ].join('\n');
+}
+
+export const templateCards: TemplateCard[] = [
+  {
+    "id": "ui-screenshot-system",
+    "num": 1,
+    "anchor": "tpl-ui",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case17.jpg",
+    "titleZh": "UI 截图系统",
+    "titleEn": "UI Screenshot System",
+    "descZh": "生成 App、网页、仪表盘、社媒截图等高保真界面。",
+    "categoryEn": "UI & Interfaces",
+    "categoryZh": "UI 与界面",
+    "styles": [
+      "UI"
+    ],
+    "scenes": [
+      "Tech",
+      "Social"
+    ],
+    "tags": [
+      "UI",
+      "Dashboard",
+      "Screenshot"
+    ],
+    "useWhenZh": "用于 App 截图、仪表盘、社媒截图和直播界面。",
+    "guidanceZh": [
+      "锁定平台、比例、层级和画面文字。",
+      "明确状态栏、Tab、操作区、评论层等 UI 元素。"
+    ],
+    "pitfallsZh": [
+      "避免平台描述过泛。",
+      "约束文字可读性和平台特征。"
+    ],
+    "exampleCases": [
+      17,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "infographic-engine",
+    "num": 2,
+    "anchor": "tpl-infographic",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case334.png",
+    "titleZh": "信息图引擎",
+    "titleEn": "Infographic Engine",
+    "descZh": "生成结构化图解、时间线、知识图谱和技术解释图。",
+    "categoryEn": "Charts & Infographics",
+    "categoryZh": "图表与信息可视化",
+    "styles": [
+      "Infographic",
+      "Charts"
+    ],
+    "scenes": [
+      "Education",
+      "Tech"
+    ],
+    "tags": [
+      "Infographic",
+      "Chart",
+      "Education"
+    ],
+    "useWhenZh": "用于解释图、技术图解、时间线和知识卡片。",
+    "guidanceZh": [
+      "定义 3-5 个模块、信息流、层级和短标签。",
+      "用色块、箭头、图标和留白控制复杂度。"
+    ],
+    "pitfallsZh": [
+      "避免把长段正文塞进画面。",
+      "先限制模块数量，再补视觉细节。"
+    ],
+    "exampleCases": [
+      334,
+      1,
+      8
+    ]
+  },
+  {
+    "id": "scientific-scale-diagram",
+    "num": 3,
+    "anchor": "tpl-infographic",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case341.jpg",
+    "titleZh": "科学尺度缩放图",
+    "titleEn": "Scientific Scale Diagram",
+    "descZh": "生成多尺度科学信息图，强调层级、标签和可读性。",
+    "categoryEn": "Charts & Infographics",
+    "categoryZh": "图表与信息可视化",
+    "styles": [
+      "Infographic",
+      "Charts",
+      "Realistic"
+    ],
+    "scenes": [
+      "Education",
+      "Tech"
+    ],
+    "tags": [
+      "Infographic",
+      "Chart",
+      "Education"
+    ],
+    "useWhenZh": "用于需要从微观到宏观展示尺度变化的科普主题。",
+    "guidanceZh": [
+      "使用 6-8 个尺度框，每个标签保持短句。",
+      "展示单位、倍率和不同尺度的细节。"
+    ],
+    "pitfallsZh": [
+      "避免所有尺度框长得一样。",
+      "避免通用放大镜式布局。"
+    ],
+    "exampleCases": [
+      341
+    ]
+  },
+  {
+    "id": "poster-layout-system",
+    "num": 4,
+    "anchor": "tpl-poster",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case345.jpg",
+    "titleZh": "海报排版系统",
+    "titleEn": "Poster Layout System",
+    "descZh": "生成活动、产品、电影和社媒传播海报。",
+    "categoryEn": "Posters & Typography",
+    "categoryZh": "海报与排版",
+    "styles": [
+      "Poster"
+    ],
+    "scenes": [
+      "Commerce",
+      "Social"
+    ],
+    "tags": [
+      "Poster",
+      "Typography",
+      "Campaign"
+    ],
+    "useWhenZh": "用于活动海报、电影海报、封面和社媒传播视觉。",
+    "guidanceZh": [
+      "锁定主体、标题、版式、配色和比例。",
+      "突出标题层级和主视觉。"
+    ],
+    "pitfallsZh": [
+      "需要成品海报时，避免生成拼贴展示板。",
+      "约束多余文字和装饰符号。"
+    ],
+    "exampleCases": [
+      345,
+      5,
+      10
+    ]
+  },
+  {
+    "id": "sports-campaign-poster",
+    "num": 5,
+    "anchor": "tpl-poster",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case350.jpg",
+    "titleZh": "运动商业 Campaign",
+    "titleEn": "Sports Campaign Poster",
+    "descZh": "生成运动员、道具、品牌色统一的商业运动海报。",
+    "categoryEn": "Posters & Typography",
+    "categoryZh": "海报与排版",
+    "styles": [
+      "Poster",
+      "Realistic"
+    ],
+    "scenes": [
+      "Commerce",
+      "Fashion"
+    ],
+    "tags": [
+      "Poster",
+      "Campaign",
+      "Typography"
+    ],
+    "useWhenZh": "用于运动品牌 Campaign、运动员海报和运动产品视觉。",
+    "guidanceZh": [
+      "定义运动项目、姿态、核心道具、标题和品牌色。",
+      "使用强光影、干净构图和可读数据层。"
+    ],
+    "pitfallsZh": [
+      "避免错误运动器材和杂乱拼贴。",
+      "让运动员和核心道具占据主导。"
+    ],
+    "exampleCases": [
+      350,
+      3
+    ]
+  },
+  {
+    "id": "conceptual-typography-poster",
+    "num": 6,
+    "anchor": "tpl-poster",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case355.jpg",
+    "titleZh": "概念字体海报",
+    "titleEn": "Conceptual Typography Poster",
+    "descZh": "生成以标题文字为主视觉的高级字体海报。",
+    "categoryEn": "Posters & Typography",
+    "categoryZh": "海报与排版",
+    "styles": [
+      "Poster"
+    ],
+    "scenes": [
+      "Creative",
+      "Social"
+    ],
+    "tags": [
+      "Typography",
+      "Poster",
+      "Style"
+    ],
+    "useWhenZh": "用于标题文字需要成为主视觉结构的海报。",
+    "guidanceZh": [
+      "让字体成为画面主角，并保证标题拼写准确。",
+      "人物、物体或风景需要服务标题含义。"
+    ],
+    "pitfallsZh": [
+      "避免默认字效、无关图标和标题错字。",
+      "控制配色数量，保持克制。"
+    ],
+    "exampleCases": [
+      355
+    ]
+  },
+  {
+    "id": "ink-double-exposure-poster",
+    "num": 7,
+    "anchor": "tpl-poster",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case359.jpg",
+    "titleZh": "水墨双重曝光海报",
+    "titleEn": "Ink Double Exposure Poster",
+    "descZh": "生成水墨、人像与层叠氛围结合的视觉海报。",
+    "categoryEn": "Posters & Typography",
+    "categoryZh": "海报与排版",
+    "styles": [
+      "Poster",
+      "Illustration",
+      "Classical"
+    ],
+    "scenes": [
+      "Story",
+      "History"
+    ],
+    "tags": [
+      "Poster",
+      "Classical",
+      "Style"
+    ],
+    "useWhenZh": "用于诗意人像海报、水墨氛围和文化主题视觉。",
+    "guidanceZh": [
+      "融合人像剪影、水墨质感、氛围和留白。",
+      "保持构图克制、高级、可读。"
+    ],
+    "pitfallsZh": [
+      "避免廉价奇幻拼贴和景物堆叠。",
+      "非必要时减少文字。"
+    ],
+    "exampleCases": [
+      359
+    ]
+  },
+  {
+    "id": "nature-science-poster",
+    "num": 8,
+    "anchor": "tpl-poster",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case339.jpg",
+    "titleZh": "自然科普海报",
+    "titleEn": "Nature Science Poster",
+    "descZh": "生成极简产品感自然科普海报。",
+    "categoryEn": "Posters & Typography",
+    "categoryZh": "海报与排版",
+    "styles": [
+      "Poster",
+      "Infographic"
+    ],
+    "scenes": [
+      "Education"
+    ],
+    "tags": [
+      "Poster",
+      "Education",
+      "Style"
+    ],
+    "useWhenZh": "用于自然主题的高级、干净科普海报。",
+    "guidanceZh": [
+      "使用清晰主体、少量文案、柔和阴影和充足留白。",
+      "让科普标签短而清楚。"
+    ],
+    "pitfallsZh": [
+      "避免广告感太重。",
+      "避免密集百科正文。"
+    ],
+    "exampleCases": [
+      339
+    ]
+  },
+  {
+    "id": "product-commerce-visual",
+    "num": 9,
+    "anchor": "tpl-product",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case373.jpg",
+    "titleZh": "商品商业视觉",
+    "titleEn": "Product Commerce Visual",
+    "descZh": "生成商品图、包装、详情页和卖点排版。",
+    "categoryEn": "Products & E-commerce",
+    "categoryZh": "商品与电商",
+    "styles": [
+      "Product",
+      "Realistic"
+    ],
+    "scenes": [
+      "Commerce",
+      "Food"
+    ],
+    "tags": [
+      "Product",
+      "Commerce",
+      "Packaging"
+    ],
+    "useWhenZh": "用于商品主图、包装视觉、详情页和销售卖点排版。",
+    "guidanceZh": [
+      "定义商品、卖点、材质、场景、光线和版块。",
+      "区分主商品、卖点标签和辅助道具。"
+    ],
+    "pitfallsZh": [
+      "避免无关道具削弱商品识别。",
+      "约束包装文字和卖点表达。"
+    ],
+    "exampleCases": [
+      373,
+      358
+    ]
+  },
+  {
+    "id": "personalized-beauty-report",
+    "num": 10,
+    "anchor": "tpl-product",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case353.jpg",
+    "titleZh": "个性化美妆报告",
+    "titleEn": "Personalized Beauty Report",
+    "descZh": "生成美妆与生活方式产品的推荐报告版式。",
+    "categoryEn": "Products & E-commerce",
+    "categoryZh": "商品与电商",
+    "styles": [
+      "Product",
+      "UI"
+    ],
+    "scenes": [
+      "Commerce",
+      "Fashion"
+    ],
+    "tags": [
+      "Product",
+      "Layout",
+      "Style"
+    ],
+    "useWhenZh": "用于美妆推荐、肤质报告、导购助手和生活方式商品卡片。",
+    "guidanceZh": [
+      "使用诊断、推荐和商品卡片的报告层级。",
+      "对齐商品图、标签和评分。"
+    ],
+    "pitfallsZh": [
+      "避免医疗化结论和难读小字。",
+      "保持推荐逻辑清楚。"
+    ],
+    "exampleCases": [
+      353
+    ]
+  },
+  {
+    "id": "brand-identity-package",
+    "num": 11,
+    "anchor": "tpl-brand",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case354.jpg",
+    "titleZh": "品牌身份包",
+    "titleEn": "Brand Identity Package",
+    "descZh": "生成 Logo、配色、字体、应用触点与品牌系统。",
+    "categoryEn": "Brand & Logos",
+    "categoryZh": "品牌与标志",
+    "styles": [
+      "Brand"
+    ],
+    "scenes": [
+      "Commerce"
+    ],
+    "tags": [
+      "Brand",
+      "Logo",
+      "Identity"
+    ],
+    "useWhenZh": "用于 Logo 系统、品牌板、VI 套件和应用样机。",
+    "guidanceZh": [
+      "定义品牌名、定位、配色、字体、Logo 用法和触点。",
+      "要求视觉板中的应用统一对齐。"
+    ],
+    "pitfallsZh": [
+      "避免无关 Logo 变体和混乱配色。",
+      "保持品牌文字准确。"
+    ],
+    "exampleCases": [
+      354
+    ]
+  },
+  {
+    "id": "brand-touchpoint-board",
+    "num": 12,
+    "anchor": "tpl-brand",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case362.jpg",
+    "titleZh": "品牌触点视觉板",
+    "titleEn": "Brand Touchpoint Board",
+    "descZh": "生成包装、社媒、网页和展示场景里的品牌触点板。",
+    "categoryEn": "Brand & Logos",
+    "categoryZh": "品牌与标志",
+    "styles": [
+      "Brand",
+      "Product"
+    ],
+    "scenes": [
+      "Commerce",
+      "Social"
+    ],
+    "tags": [
+      "Brand",
+      "Identity",
+      "Campaign"
+    ],
+    "useWhenZh": "用于多触点 Campaign 展示和品牌落地预览。",
+    "guidanceZh": [
+      "指定触点清单、统一视觉规则和样机排列。",
+      "让所有面板共享配色和字体逻辑。"
+    ],
+    "pitfallsZh": [
+      "避免混入多个无关 Campaign 风格。",
+      "可读性下降时减少触点数量。"
+    ],
+    "exampleCases": [
+      362
+    ]
+  },
+  {
+    "id": "architecture-space",
+    "num": 13,
+    "anchor": "tpl-architecture",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case331.png",
+    "titleZh": "建筑与空间",
+    "titleEn": "Architecture & Space",
+    "descZh": "生成室内、建筑、城市地图和空间概念视觉。",
+    "categoryEn": "Architecture & Spaces",
+    "categoryZh": "建筑与空间",
+    "styles": [
+      "Architecture"
+    ],
+    "scenes": [
+      "Travel",
+      "Commerce"
+    ],
+    "tags": [
+      "Architecture",
+      "Interior",
+      "Map"
+    ],
+    "useWhenZh": "用于室内、建筑表现、城市地图、空间规划和环境概念图。",
+    "guidanceZh": [
+      "定义视角、尺度、材质、光线和空间功能。",
+      "地图需要指定地标、标签、边框装饰和准确度。"
+    ],
+    "pitfallsZh": [
+      "概念图之外要避免不合理透视。",
+      "锁定地图标签语言和相对位置。"
+    ],
+    "exampleCases": [
+      331,
+      11
+    ]
+  },
+  {
+    "id": "realistic-photography",
+    "num": 14,
+    "anchor": "tpl-photo",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case377.jpg",
+    "titleZh": "写实摄影",
+    "titleEn": "Realistic Photography",
+    "descZh": "控制镜头、光线、胶片质感和纪实摄影效果。",
+    "categoryEn": "Photography & Realism",
+    "categoryZh": "摄影与写实",
+    "styles": [
+      "Photography",
+      "Realistic"
+    ],
+    "scenes": [
+      "Fashion",
+      "Commerce"
+    ],
+    "tags": [
+      "Photography",
+      "Realistic",
+      "Lens"
+    ],
+    "useWhenZh": "用于人像、街拍、商品摄影和电影感写实。",
+    "guidanceZh": [
+      "指定机位、镜头、光源、质感、背景和动作。",
+      "加入可信的小瑕疵增强纪实感。"
+    ],
+    "pitfallsZh": [
+      "商业美妆之外，避免过度磨皮。",
+      "需要时加入手部、文字、结构类负面约束。"
+    ],
+    "exampleCases": [
+      377
+    ]
+  },
+  {
+    "id": "street-accident-moment",
+    "num": 15,
+    "anchor": "tpl-photo",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case376.jpg",
+    "titleZh": "街头意外瞬间摄影",
+    "titleEn": "Street Accident Moment",
+    "descZh": "生成手机纪实风街头瞬间，并加入负面约束。",
+    "categoryEn": "Photography & Realism",
+    "categoryZh": "摄影与写实",
+    "styles": [
+      "Photography",
+      "Realistic"
+    ],
+    "scenes": [
+      "Travel",
+      "Social"
+    ],
+    "tags": [
+      "Photography",
+      "Realistic",
+      "Scene"
+    ],
+    "useWhenZh": "用于街头抓拍、意外泼洒、手机纪实和快速动作。",
+    "guidanceZh": [
+      "描述具体瞬间、机位高度、运动模糊和街景。",
+      "加入避免摆拍和广告棚拍感的限制。"
+    ],
+    "pitfallsZh": [
+      "避免画面过于干净。",
+      "让事件看起来可信。"
+    ],
+    "exampleCases": [
+      376
+    ]
+  },
+  {
+    "id": "illustration-art-style",
+    "num": 16,
+    "anchor": "tpl-illustration",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case346.jpg",
+    "titleZh": "插画与艺术风格",
+    "titleEn": "Illustration & Art Style",
+    "descZh": "生成动漫、水彩、水墨、材质实验和艺术风格图。",
+    "categoryEn": "Illustration & Art",
+    "categoryZh": "插画与艺术",
+    "styles": [
+      "Illustration"
+    ],
+    "scenes": [
+      "Story",
+      "Creative"
+    ],
+    "tags": [
+      "Illustration",
+      "Art",
+      "Style"
+    ],
+    "useWhenZh": "用于动漫、水彩、水墨、装饰画和风格实验。",
+    "guidanceZh": [
+      "定义构图、主体、配色、笔触材质、情绪和完成度。",
+      "参考图任务需要说明保留哪些特征。"
+    ],
+    "pitfallsZh": [
+      "避免只写风格，不写构图。",
+      "使用参考图时锁定角色识别。"
+    ],
+    "exampleCases": [
+      346,
+      6
+    ]
+  },
+  {
+    "id": "character-design-sheet",
+    "num": 17,
+    "anchor": "tpl-character",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case347.jpg",
+    "titleZh": "角色设定表",
+    "titleEn": "Character Design Sheet",
+    "descZh": "生成角色设定、动作分解和一致性参考。",
+    "categoryEn": "Characters & People",
+    "categoryZh": "人物与角色",
+    "styles": [
+      "Character",
+      "Illustration"
+    ],
+    "scenes": [
+      "Story"
+    ],
+    "tags": [
+      "Character",
+      "Pose",
+      "Style"
+    ],
+    "useWhenZh": "用于角色设定表、动作网格、动作拆解和一致性参考。",
+    "guidanceZh": [
+      "定义身份锚点、服装、比例、动作数量和版式。",
+      "保持脸、发型和服装细节一致。"
+    ],
+    "pitfallsZh": [
+      "避免不同动作里服装细节变化。",
+      "画面拥挤时减少动作数量。"
+    ],
+    "exampleCases": [
+      347
+    ]
+  },
+  {
+    "id": "3d-collectible-toy",
+    "num": 18,
+    "anchor": "tpl-character",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case378.jpg",
+    "titleZh": "3D 收藏玩具",
+    "titleEn": "3D Collectible Toy",
+    "descZh": "把参考图转换成高级 3D 收藏玩具效果。",
+    "categoryEn": "Characters & People",
+    "categoryZh": "人物与角色",
+    "styles": [
+      "3D",
+      "Character"
+    ],
+    "scenes": [
+      "Commerce",
+      "Creative"
+    ],
+    "tags": [
+      "Character",
+      "3D",
+      "Style"
+    ],
+    "useWhenZh": "用于高级收藏玩具、头像公仔、潮玩角色和 3D 展示图。",
+    "guidanceZh": [
+      "保留参考图中的脸和服装锚点。",
+      "指定材质、包装、底座、光线和收藏比例。"
+    ],
+    "pitfallsZh": [
+      "避免没有身份细节的通用玩具。",
+      "包装文字保持少量且准确。"
+    ],
+    "exampleCases": [
+      378
+    ]
+  },
+  {
+    "id": "scene-storytelling",
+    "num": 19,
+    "anchor": "tpl-scene",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case330.png",
+    "titleZh": "场景叙事",
+    "titleEn": "Scene Storytelling",
+    "descZh": "生成分镜、世界观、故事场景和情绪节奏。",
+    "categoryEn": "Scenes & Storytelling",
+    "categoryZh": "场景与叙事",
+    "styles": [
+      "Scenes",
+      "Illustration"
+    ],
+    "scenes": [
+      "Story",
+      "Social"
+    ],
+    "tags": [
+      "Scene",
+      "Story",
+      "Storyboard"
+    ],
+    "useWhenZh": "用于分镜、世界观、直播场景和情绪叙事画面。",
+    "guidanceZh": [
+      "定义人物、地点、时间、冲突、情绪和机位。",
+      "让场景细节服务故事。"
+    ],
+    "pitfallsZh": [
+      "避免通用幻想背景。",
+      "让故事线索在画面里可见。"
+    ],
+    "exampleCases": [
+      330
+    ]
+  },
+  {
+    "id": "history-classical-themes",
+    "num": 20,
+    "anchor": "tpl-history",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case375.jpg",
+    "titleZh": "历史与古风题材",
+    "titleEn": "History & Classical Themes",
+    "descZh": "生成朝代服饰、长卷叙事、诗词和传统题材。",
+    "categoryEn": "History & Classical Themes",
+    "categoryZh": "历史与古风题材",
+    "styles": [
+      "History",
+      "Classical",
+      "Illustration"
+    ],
+    "scenes": [
+      "History",
+      "Story"
+    ],
+    "tags": [
+      "History",
+      "Classical",
+      "Scroll"
+    ],
+    "useWhenZh": "用于古风题材、长卷、朝代服饰、诗词视觉和历史场景。",
+    "guidanceZh": [
+      "指定朝代、服饰制度、器物参考、版式和文化气质。",
+      "明确长卷、册页或海报形式。"
+    ],
+    "pitfallsZh": [
+      "需要历史准确时，避免朝代混搭。",
+      "约束随机现代物件。"
+    ],
+    "exampleCases": [
+      375,
+      338
+    ]
+  },
+  {
+    "id": "document-publishing",
+    "num": 21,
+    "anchor": "tpl-document",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case360.jpg",
+    "titleZh": "文档与出版物",
+    "titleEn": "Document & Publishing",
+    "descZh": "生成白皮书、手册、百科图鉴和页面系统。",
+    "categoryEn": "Documents & Publishing",
+    "categoryZh": "文档与出版物",
+    "styles": [
+      "Documents",
+      "Infographic"
+    ],
+    "scenes": [
+      "Education",
+      "Tech"
+    ],
+    "tags": [
+      "Document",
+      "Publishing",
+      "Layout"
+    ],
+    "useWhenZh": "用于白皮书、手册、百科图鉴、报告页面和出版系统。",
+    "guidanceZh": [
+      "定义页面尺寸、分栏、目录、图表系统和字体层级。",
+      "使用可读标题、表格、标签和页面节奏。"
+    ],
+    "pitfallsZh": [
+      "避免密集小字。",
+      "让图表和说明对齐页面网格。"
+    ],
+    "exampleCases": [
+      360
+    ]
+  },
+  {
+    "id": "concept-product-breakdown",
+    "num": 22,
+    "anchor": "tpl-other",
+    "cover": "https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case370.jpg",
+    "titleZh": "概念产品研发拆解",
+    "titleEn": "Concept Product Breakdown",
+    "descZh": "生成研发板、拆解图、混合任务和特殊输出。",
+    "categoryEn": "Other Use Cases",
+    "categoryZh": "其他应用场景",
+    "styles": [
+      "Other Use Cases",
+      "Product"
+    ],
+    "scenes": [
+      "Creative",
+      "Tech"
+    ],
+    "tags": [
+      "Creative",
+      "R&D",
+      "Special"
+    ],
+    "useWhenZh": "用于实验型任务、研发视觉板、拆解图和特殊视觉系统。",
+    "guidanceZh": [
+      "定义产物类型、组件、标签、材质逻辑和展示格式。",
+      "使用清晰标注和受控技术风格。"
+    ],
+    "pitfallsZh": [
+      "避免任务边界过泛。",
+      "标签要短，组件关系要清楚。"
+    ],
+    "exampleCases": [
+      370,
+      361
+    ]
+  }
+];
+
 // 模板库数据:13 分类 / 47 个模板块 / 48 条防坑指南
 // 内容逆向整理自 freestylefly/awesome-gpt-image-2(MIT License)docs/templates.md,遵循其许可协议并致谢
 // 每个分类含:文本填空模板([占位符] 开箱即用)、JSON 进阶模板(Agent 调用)、避坑指南
