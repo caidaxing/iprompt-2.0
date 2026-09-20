@@ -90,6 +90,25 @@ export function AdminUsers() {
     );
   };
 
+  const adjustCredits = (id: string, email: string) => {
+    const raw = window.prompt(`调整 ${email} 的积分（输入正数充值、负数扣减，如 +50 或 -10）：`);
+    if (!raw) return;
+    const delta = parseInt(raw.trim(), 10);
+    if (!Number.isInteger(delta) || delta === 0) {
+      setError("积分调整量必须是非零整数");
+      return;
+    }
+    const reason = window.prompt("调整原因（将记入积分流水）：");
+    if (!reason) return;
+    act(id, () =>
+      fetch(`/api/admin/users/${id}/credits`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ delta, reason }),
+      }),
+    );
+  };
+
   return (
     <div className="site-shell py-10">
       <p className="eyebrow text-[10px] mb-2">ADMIN</p>
@@ -166,6 +185,13 @@ export function AdminUsers() {
                   className="text-xs px-3 py-1 text-ink-mute hover:text-ink transition-colors disabled:opacity-40"
                 >
                   重置密码
+                </button>
+                <button
+                  onClick={() => adjustCredits(u.id, u.email)}
+                  disabled={actingId === u.id}
+                  className="text-xs px-3 py-1 text-ink-mute hover:text-ink transition-colors disabled:opacity-40"
+                >
+                  调积分
                 </button>
               </div>
             </div>

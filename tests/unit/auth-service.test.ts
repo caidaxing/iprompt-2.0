@@ -22,14 +22,22 @@ const env = {
 const envWithAdmin = { ...env, ADMIN_EMAIL: "boss@test.com" };
 
 /** 内存假仓储 */
-function fakeRepo(): AuthRepo & { users: Map<string, UserRef>; tokenHashesByUser: Map<string, string[]> } {
+interface FakeCreditLog { userId: string; delta: number; reason: string; balanceAfter: number }
+
+function fakeRepo(): AuthRepo & {
+  users: Map<string, UserRef>;
+  tokenHashesByUser: Map<string, string[]>;
+  creditLogs: FakeCreditLog[];
+} {
   const users = new Map<string, UserRef>();
   const tokens = new Map<string, { userId: string; expiresAt: number; revoked: boolean }>();
   const tokenHashesByUser = new Map<string, string[]>();
+  const creditLogs: FakeCreditLog[] = [];
   let seq = 0;
   return {
     users,
     tokenHashesByUser,
+    creditLogs,
     async findUserByEmail(email) {
       return users.get(email) ?? null;
     },
@@ -39,7 +47,7 @@ function fakeRepo(): AuthRepo & { users: Map<string, UserRef>; tokenHashesByUser
     },
     async createUser(email, passwordHash, status, role) {
       seq += 1;
-      const user: UserRef = { id: `u-${seq}`, email, nickname: null, passwordHash, status, role, createdAt: new Date() };
+      const user: UserRef = { id: `u-${seq}`, email, nickname: null, passwordHash, status, role, credits: 20, createdAt: new Date() };
       users.set(email, user);
       return user;
     },
@@ -69,6 +77,9 @@ function fakeRepo(): AuthRepo & { users: Map<string, UserRef>; tokenHashesByUser
         if (t) tokens.set(h, { ...t, revoked: true });
       }
     },
+    async createCreditLog(userId, delta, reason, balanceAfter) {
+      creditLogs.push({ userId, delta, reason, balanceAfter });
+    },
   };
 }
 
@@ -82,7 +93,9 @@ describe("register", () => {
     expect(r.role).toBe("user");
     const stored = await repo.findUserByEmail("a@b.com");
     expect(stored?.status).toBe("pending");
+    expect(stored?.credits).toBe(20);
     expect(await verifyPassword("password123", stored!.passwordHash)).toBe(true);
+    expect(repo.creditLogs[0]).toMatchObject({ userId: stored!.id, delta: 20, reason: "register_gift", balanceAfter: 20 });
   });
 
   it("邮箱大写统一转小写", async () => {

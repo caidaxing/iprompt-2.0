@@ -23,6 +23,7 @@ export interface UserRef {
   passwordHash: string;
   status: string;
   role: string;
+  credits: number;
   createdAt: Date;
 }
 
@@ -37,6 +38,7 @@ export interface AuthRepo {
   findRefreshToken(tokenHash: string): Promise<{ userId: string; expiresAt: number; revoked: boolean } | null>;
   revokeRefreshToken(tokenHash: string): Promise<void>;
   revokeUserRefreshTokens(userId: string): Promise<void>;
+  createCreditLog(userId: string, delta: number, reason: string, balanceAfter: number): Promise<void>;
 }
 
 export interface AuthResult {
@@ -68,6 +70,7 @@ export async function register(
   const passwordHash = await hashPassword(input.password);
   const isAdmin = !!env.ADMIN_EMAIL && email === env.ADMIN_EMAIL.toLowerCase();
   const user = await repo.createUser(email, passwordHash, isAdmin ? "active" : "pending", isAdmin ? "admin" : "user");
+  await repo.createCreditLog(user.id, user.credits, "register_gift", user.credits); // 注册赠分入账流水
   return { status: user.status as UserStatus, role: user.role as UserRole };
 }
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#1B3A4B"/>
+  <rect x="48" y="48" width="928" height="928" fill="none" stroke="#7FA8A0" stroke-width="3"/>
+  <circle cx="880" cy="140" r="46" fill="#7FA8A0"/>
+  <text x="72" y="300" font-size="30" fill="#E8E3D5" font-family="serif">Use the &quot;Yellow Graffiti Fisheye Manga</text>
+  <text x="72" y="356" font-size="30" fill="#E8E3D5" font-family="serif">Street Poster Style&quot; visual style as</text>
+  <text x="72" y="412" font-size="30" fill="#E8E3D5" font-family="serif">the locked</text>
+  <text x="72" y="920" font-size="20" fill="#E8E3D5" opacity="0.65" font-family="monospace">iPrompt Studio · mock · 92ae9e914ad5</text>
+</svg>

@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import { getSessionPayload } from "@/lib/session";
 import { prisma } from "@/server/lib/prisma";
 import { favoriteCount } from "@/server/services/favorite-service";
@@ -38,6 +39,20 @@ export default async function MePage() {
         <div className="flex items-center justify-between text-sm border-t border-line pt-4">
           <span className="text-ink-soft">收藏案例</span>
           <span className="serif-title">{count} 个</span>
+        </div>
+
+        <div className="flex items-center justify-between text-sm border-t border-line pt-4">
+          <span className="text-ink-soft">积分余额</span>
+          <span className="serif-title">{user.credits}</span>
+        </div>
+
+        <div className="flex items-center justify-between text-sm border-t border-line pt-4">
+          <Link href="/studio" className="text-ink hover:text-sage-deep transition-colors">
+            → AI 工作台
+          </Link>
+          <Link href="/me/generations" className="text-ink hover:text-sage-deep transition-colors">
+            我的作品 →
+          </Link>
         </div>
       </div>
     </div>

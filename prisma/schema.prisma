@@ -20,11 +20,48 @@ model User {
   nicknameEdited Boolean  @default(false) // 昵称仅可修改一次
   status         String   @default("pending") // pending 待审 | active 通过 | rejected 拒绝
   role           String   @default("user") // user | admin
+  credits        Int      @default(20) // 积分：注册即赠 20，生成一张扣 1
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
   refreshTokens RefreshToken[]
   favorites     Favorite[]
+  generations   Generation[]
+  creditLogs    CreditLog[]
+}
+
+// 生成记录（AI 工作台产出 = 用户作品）
+model Generation {
+  id         String   @id @default(cuid())
+  userId     String
+  caseId     String? // 关联案例；自由创作时为空
+  prompt     String // 实际发送的最终提示词（占位符已替换）
+  provider   String // mock | 远程供应商（预留）
+  status     String   @default("pending") // pending | succeeded | failed
+  imagePath  String? // 成品相对路径 generations/<id>.svg（挂在 public 下）
+  params     String? // 占位符替换记录（JSON，便于复现）
+  creditCost Int      @default(0) // 本条消耗积分（失败退还后记 0）
+  error      String?
+  createdAt  DateTime @default(now())
+
+  user    User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  caseRef Case? @relation(fields: [caseId], references: [id])
+
+  @@index([userId, createdAt])
+}
+
+// 积分流水（每笔余额变动可追溯）
+model CreditLog {
+  id           String   @id @default(cuid())
+  userId       String
+  delta        Int // 正=入账（赠送/退款/调整） 负=消耗
+  reason       String // register_gift | generation | generation_refund | admin_adjust
+  balanceAfter Int
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
 }
 
 // 刷新令牌（服务端存储、可吊销、旋转使用）
@@ -93,6 +130,7 @@ model Case {
   model     Model      @relation(fields: [modelId], references: [id])
   favorites Favorite[]
   caseTags  CaseTag[]
+  generations Generation[]
 
   @@unique([modelId, num])
   @@index([modelId, displayCategory, num])

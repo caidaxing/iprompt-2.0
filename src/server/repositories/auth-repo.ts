@@ -9,6 +9,7 @@ const toRef = (u: {
   passwordHash: string;
   status: string;
   role: string;
+  credits: number;
   createdAt: Date;
 }): UserRef => ({ ...u });
 
@@ -50,5 +51,8 @@ export const prismaAuthRepo: AuthRepo = {
   },
   async revokeUserRefreshTokens(userId) {
     await prisma.refreshToken.updateMany({ where: { userId }, data: { revoked: true } });
+  },
+  async createCreditLog(userId, delta, reason, balanceAfter) {
+    await prisma.creditLog.create({ data: { userId, delta, reason, balanceAfter } });
   },
 };
