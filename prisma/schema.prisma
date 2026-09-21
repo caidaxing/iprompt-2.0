@@ -3,7 +3,9 @@
 // 多模型：Model/Category 为注册配置表（加模型 = 插数据），Case.modelId 是每条案例的模型归属
 
 generator client {
-  provider = "prisma-client-js"
+  provider     = "prisma-client-js"
+  // native = 本机开发;debian-openssl-3.0.x = 阿里云 Ubuntu 22.04 部署机引擎(standalone 部署必须)
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
