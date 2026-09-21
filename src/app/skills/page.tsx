@@ -37,18 +37,7 @@ export default function SkillsPage() {
       </div>
 
       <div className="border border-dashed border-line rounded-sm p-5 text-xs text-ink-mute leading-5">
-        <p>
-          参考实现:上游项目 awesome-gpt-image-2 已开源同思路的{" "}
-          <a
-            href="https://github.com/freestylefly/awesome-gpt-image-2/tree/main/agents/skills"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-ink"
-          >
-            gpt-image-2-style-library 技能包
-          </a>
-          。上线后我们会提供中文案例版的一键安装命令。
-        </p>
+        <p>同类开源实现已有先例(style-library 技能包模式)。上线后我们会提供中文案例版的一键安装命令。</p>
       </div>
 
       <Link href="/templates" className="inline-block mt-8 editorial-button editorial-button-dark min-h-9 px-4">

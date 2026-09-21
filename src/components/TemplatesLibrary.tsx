@@ -3,6 +3,7 @@
 // 模板库:22 张工业级模板卡片(封面+编号+标签)+ 详情浮层(适用场景/核心指引/避坑/一键复制)
 // 卡片数据逆向整理自上游 awesome-gpt-image-2(MIT)style-library.json,交互对其官网 /#templates
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { templateCards, formatCardPrompt, type TemplateCard } from "@/data/templates";
 import { templateCategories, type PromptTemplate } from "@/data/templates";
 
@@ -19,11 +20,6 @@ const CHECK_ICON = (
 const CLOSE_ICON = (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M18 6 6 18M6 6l12 12" />
-  </svg>
-);
-const EXTERNAL_ICON = (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M7 17 17 7M7 7h10v10" />
   </svg>
 );
 
@@ -202,14 +198,14 @@ export function TemplatesLibrary() {
                     label="复制模板 Prompt"
                     className="bg-ink text-paper text-xs px-4 py-2 rounded-sm hover:opacity-85"
                   />
-                  <a
-                    href={`https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/templates.md#${detail.anchor}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs px-4 py-2 border border-line rounded-sm hover:border-ink transition-colors"
-                  >
-                    上游文档 {EXTERNAL_ICON}
-                  </a>
+                  {detail.exampleCases.length > 0 && (
+                    <Link
+                      href={`/case/${detail.exampleCases[0]}`}
+                      className="inline-flex items-center gap-1.5 text-xs px-4 py-2 border border-line rounded-sm hover:border-ink transition-colors"
+                    >
+                      看站内同类案例
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
