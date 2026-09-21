@@ -82,11 +82,10 @@ export default async function LandingPage() {
       {/* 2.0 板块入口 */}
       <section className="mt-14">
         <div className="flex items-center gap-4 mb-5"><h2 className="serif-title text-xl">不止于看</h2><span className="h-px flex-1 bg-line" /></div>
-        <div className="grid sm:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 gap-5">
           {[
             { href: "/studio", eyebrow: "AI STUDIO", title: "AI 工作台", desc: "挑一条案例改占位符,或直接描述想法——1 积分出一张图,作品自动留存。" },
             { href: "/templates", eyebrow: "TEMPLATES", title: "工业级模板库", desc: "22 套成熟模板,填空即用;附 Agent JSON 与防坑指南。" },
-            { href: "/compare", eyebrow: "COMPARE", title: "2.5 对比专区", desc: "同一提示词,看 GPT-Image 2 与 2.5 的细节差异,并排或滑动对比。" },
           ].map((card) => (
             <Link key={card.href} href={card.href} className="group border border-line rounded-sm p-5 transition-all hover:border-ink hover:-translate-y-0.5 hover:shadow-md bg-white/40">
               <p className="eyebrow text-[9px] mb-3">{card.eyebrow}</p>
@@ -96,6 +95,9 @@ export default async function LandingPage() {
             </Link>
           ))}
         </div>
+        <p className="mt-4 text-xs text-ink-mute">
+          更多:<Link href="/compare" className="underline hover:text-ink">2.5 对比专区</Link>(灰度体验中)
+        </p>
       </section>
     </div>
   );
