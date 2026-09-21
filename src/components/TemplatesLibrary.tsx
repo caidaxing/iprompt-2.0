@@ -117,9 +117,6 @@ export function TemplatesLibrary() {
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform"
               />
-              <span className="absolute top-2 left-2 text-[11px] px-2 py-0.5 bg-paper/90 border border-line rounded-sm">
-                Template {String(card.num).padStart(2, "0")}
-              </span>
             </div>
             <div className="p-4">
               <p className="text-[10px] tracking-wide text-ink-mute mb-1.5">
