@@ -20,7 +20,7 @@ export async function SiteNav() {
             AI 工作台
           </Link>
           <Link href="/compare" className="relative py-2 hover:text-sage-deep transition-colors after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-ink after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
-            2.5 对比
+            模型比对
           </Link>
           <Link href="/templates" className="relative py-2 hover:text-sage-deep transition-colors after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-ink after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
             模板库

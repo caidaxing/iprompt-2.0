@@ -91,7 +91,7 @@ export function CompareWorkspace() {
   };
 
   const figure = (side: "before" | "after") => {
-    const label = side === "before" ? "GPT-Image 2 · 图库原图" : item.status === "demo" ? "示意图" : "GPT-Image 2.5 · 待实测";
+    const label = side === "before" ? "图库原图" : item.status === "demo" ? "示意图" : "AI 复现 · 待实测";
     return (
       <figure className="relative min-w-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -111,7 +111,7 @@ export function CompareWorkspace() {
   return (
     <div className="site-shell py-10">
       <p className="eyebrow text-[10px] mb-2">COMPARE ZONE</p>
-      <h1 className="serif-title text-2xl mb-2">GPT-Image 2.5 对比专区</h1>
+      <h1 className="serif-title text-2xl mb-2">模型比对</h1>
       <p className="text-sm text-ink-soft mb-8">同一提示词,从细节看变化。</p>
 
       <div className="grid lg:grid-cols-[3fr_2fr] gap-8 items-start">
@@ -244,7 +244,7 @@ export function CompareWorkspace() {
               <h2 className="text-sm font-medium">实测计划</h2>
               <dl className="text-xs space-y-2">
                 <div className="flex justify-between gap-4"><dt className="text-ink-mute">对比状态</dt><dd>{STATUS_BADGE[item.status].text}</dd></div>
-                <div className="flex justify-between gap-4"><dt className="text-ink-mute">计划对比</dt><dd className="text-right">gpt-image-2 ↔ gpt-image-2.5</dd></div>
+                <div className="flex justify-between gap-4"><dt className="text-ink-mute">计划对比</dt><dd className="text-right">同一提示词 × 不同模型</dd></div>
                 <div className="flex justify-between gap-4"><dt className="text-ink-mute">尺寸/质量/成本</dt><dd className="text-ink-mute">实测完成后公开</dd></div>
               </dl>
               <p className="text-[11px] text-ink-mute leading-5">
@@ -311,7 +311,7 @@ export function CompareWorkspace() {
           <p className="eyebrow text-[10px] mb-4">COMING SOON</p>
           <h1 className="serif-title text-3xl mb-4">敬请期待</h1>
           <p className="text-sm text-ink-soft leading-6 mb-8 max-w-xs mx-auto">
-            2.5 实测对比正在准备中,完成后此处开放。
+            多模型实测对比正在准备中,完成后此处开放。
           </p>
           <Link href="/" className="editorial-button editorial-button-dark min-h-9 px-5">
             返回首页
