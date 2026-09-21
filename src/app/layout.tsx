@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   creator: siteName,
   publisher: siteName,
   category: "AI 图像创作",
-  alternates: { canonical: absoluteUrl("/") },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   openGraph: {
     type: "website", locale: "zh_CN", url: absoluteUrl("/"), siteName,

@@ -21,6 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     { url: absoluteUrl("/"), lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
     { url: absoluteUrl("/explore"), lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
+    { url: absoluteUrl("/templates"), lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     ...cases.map((item) => ({
       url: absoluteUrl(`/case/${item.num}?model=${encodeURIComponent(item.modelId)}`),
       lastModified: item.updatedAt,

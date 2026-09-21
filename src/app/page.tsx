@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { CaseImage } from "@/components/CaseImage";
 import { prisma } from "@/server/lib/prisma";
+import { absoluteUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: absoluteUrl("/") },
+};
 
 export default async function LandingPage() {
   // 首页精选：一张主视觉 + 三张小型索引卡，避免首屏只剩一张孤立图片

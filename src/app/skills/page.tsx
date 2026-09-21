@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Agent Skills(即将上线)",
   description: "把 iPrompt Studio 的案例库与模板库打包成标准 Agent Skills,一键安装到你的 AI 助手。",
+  // 占位页(即将上线):内容上线前不参与索引,上线后改回 index 并加入 sitemap
+  robots: { index: false, follow: true },
+  alternates: { canonical: absoluteUrl("/skills") },
 };
 
 /** 技能中心:占位页,后续把案例库/模板库打包为标准 Agent Skills 分发 */
