@@ -14,10 +14,7 @@ export async function SiteNav() {
         </Link>
         <div className="flex items-center gap-4 md:gap-7 text-[13px]">
           <Link href="/explore" className="relative py-2 hover:text-sage-deep transition-colors after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-ink after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
-            案例浏览
-          </Link>
-          <Link href="/match" className="relative py-2 hover:text-sage-deep transition-colors after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-ink after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
-            AI 匹配
+            案例库
           </Link>
           <Link href="/studio" className="relative py-2 hover:text-sage-deep transition-colors after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-ink after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
             AI 工作台
