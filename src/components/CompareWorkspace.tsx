@@ -304,6 +304,20 @@ export function CompareWorkspace() {
           </div>
         </div>
       )}
+
+      {/* 敬请期待蒙层:压暗+毛玻璃,盖住全部内容与交互 */}
+      <div className="fixed inset-0 z-[60] bg-paper/70 backdrop-blur-sm flex items-center justify-center">
+        <div className="text-center px-6">
+          <p className="eyebrow text-[10px] mb-4">COMING SOON</p>
+          <h1 className="serif-title text-3xl mb-4">敬请期待</h1>
+          <p className="text-sm text-ink-soft leading-6 mb-8 max-w-xs mx-auto">
+            2.5 实测对比正在准备中,完成后此处开放。
+          </p>
+          <Link href="/" className="editorial-button editorial-button-dark min-h-9 px-5">
+            返回首页
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

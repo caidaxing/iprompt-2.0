@@ -96,7 +96,7 @@ export default async function LandingPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-ink-mute">
-          更多:<Link href="/compare" className="underline hover:text-ink">2.5 对比专区</Link>(灰度体验中)
+          更多:<Link href="/compare" className="underline hover:text-ink">2.5 对比专区</Link>(敬请期待)
         </p>
       </section>
     </div>
