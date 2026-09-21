@@ -305,8 +305,8 @@ export function CompareWorkspace() {
         </div>
       )}
 
-      {/* 敬请期待蒙层:压暗+毛玻璃,盖住全部内容与交互 */}
-      <div className="fixed inset-0 z-[60] bg-paper/70 backdrop-blur-sm flex items-center justify-center">
+      {/* 敬请期待蒙层:只盖内容区(z-30 低于头部 z-40),头部导航保持清晰可点 */}
+      <div className="fixed inset-x-0 top-[4.5rem] bottom-0 z-30 bg-paper/70 backdrop-blur-sm flex items-center justify-center">
         <div className="text-center px-6">
           <p className="eyebrow text-[10px] mb-4">COMING SOON</p>
           <h1 className="serif-title text-3xl mb-4">敬请期待</h1>
