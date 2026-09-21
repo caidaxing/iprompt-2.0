@@ -9,7 +9,7 @@ export async function GET() {
     if (!user) return NextResponse.json({ error: "请先登录" }, { status: 401 });
 
     const cases = await prisma.case.findMany({
-      select: { id: true, num: true, title: true, prompt: true, modelId: true },
+      select: { id: true, num: true, title: true, prompt: true, modelId: true, image: true },
       orderBy: { createdAt: "desc" },
       take: 60,
     });

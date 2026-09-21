@@ -107,7 +107,7 @@ export function TemplatesLibrary() {
           <button
             key={card.id}
             onClick={() => setDetail(card)}
-            className="text-left border border-line rounded-sm overflow-hidden hover:border-ink transition-colors group"
+            className="text-left border border-line rounded-sm overflow-hidden transition-all hover:border-ink hover:-translate-y-0.5 hover:shadow-md group"
           >
             <div className="relative aspect-[4/3] bg-ink/5 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}

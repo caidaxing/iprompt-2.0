@@ -139,3 +139,9 @@ ADMIN_EMAIL 命中注册 → 自动 active+admin(超管引导)
 3. **Skills 分发**:案例风格库 + 模板包打包为标准 Agent Skill(参考上游 agents/skills)
 4. **基础设施**:生成产物迁对象存储;SQLite → PostgreSQL;运营指标看板
 5. **内容扩展**:2.5 实测结果填充(`comparisons.ts` status→tested);更多模型语料接入
+
+> ⚠️ **本地预览正确姿势**(2026-09-21 踩坑记录):因 `output: standalone` 配置,`npm run start` 官方不支持——页面能渲染但水合失败(整页不可交互)。本地两种正确方式:
+> ① 开发预览:`npm run dev`;
+> ② 生产预览:`npm run build` 后执行
+> `cp -r public .next/standalone/public && cp -r .next/static .next/standalone/.next/static && PORT=3000 node .next/standalone/server.js`
+> (Docker 部署不受影响,Dockerfile 本就按 standalone 组装。)

@@ -43,7 +43,7 @@ export default async function LandingPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/explore" className="editorial-button editorial-button-dark">探索案例 <span>↗</span></Link>
-            <Link href="/match" className="editorial-button editorial-button-light">开始 AI 匹配 <span>→</span></Link>
+            <Link href="/studio" className="editorial-button editorial-button-light">进入 AI 工作台 <span>→</span></Link>
           </div>
           <p className="hidden md:block absolute -left-8 top-[22rem] text-[10px] tracking-[.25em] text-ink-mute [writing-mode:vertical-rl]">IDEAS · STRUCTURE · IMAGE</p>
         </div>
@@ -74,6 +74,25 @@ export default async function LandingPage() {
             <Link key={item.num} href={`/case/${item.num}?model=${encodeURIComponent(item.modelId)}`} className="group grid grid-cols-[5rem_1fr] sm:block border-b border-line pb-4">
               <div className="image-frame sm:mb-3"><CaseImage src={item.image} alt={item.title} num={item.num} className="w-full aspect-square sm:aspect-[4/3]" /></div>
               <div className="pl-4 sm:pl-0"><div className="flex items-baseline justify-between gap-2 mb-1"><span className="eyebrow text-[9px]">0{index + 2} / CASE</span><span className="text-[10px] text-ink-mute">{item.category}</span></div><p className="serif-title text-sm leading-snug group-hover:underline underline-offset-2">{item.title}</p></div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* 2.0 板块入口 */}
+      <section className="mt-14">
+        <div className="flex items-center gap-4 mb-5"><h2 className="serif-title text-xl">不止于看</h2><span className="h-px flex-1 bg-line" /></div>
+        <div className="grid sm:grid-cols-3 gap-5">
+          {[
+            { href: "/studio", eyebrow: "AI STUDIO", title: "AI 工作台", desc: "挑一条案例改占位符,或直接描述想法——1 积分出一张图,作品自动留存。" },
+            { href: "/templates", eyebrow: "TEMPLATES", title: "工业级模板库", desc: "22 套成熟模板,填空即用;附 Agent JSON 与防坑指南。" },
+            { href: "/compare", eyebrow: "COMPARE", title: "2.5 对比专区", desc: "同一提示词,看 GPT-Image 2 与 2.5 的细节差异,并排或滑动对比。" },
+          ].map((card) => (
+            <Link key={card.href} href={card.href} className="group border border-line rounded-sm p-5 transition-all hover:border-ink hover:-translate-y-0.5 hover:shadow-md bg-white/40">
+              <p className="eyebrow text-[9px] mb-3">{card.eyebrow}</p>
+              <h3 className="serif-title text-lg mb-2">{card.title}</h3>
+              <p className="text-xs text-ink-soft leading-5 mb-4">{card.desc}</p>
+              <span className="text-xs text-ink-soft group-hover:text-ink group-hover:underline underline-offset-2 transition-colors">进入 →</span>
             </Link>
           ))}
         </div>
