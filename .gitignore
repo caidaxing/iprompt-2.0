@@ -60,3 +60,6 @@ prisma/dev.db.backup-*
 
 # 本地备份(不进仓库)
 .backup/
+
+# AI 生成产物(运行时数据,不进仓库)
+/public/generations/
