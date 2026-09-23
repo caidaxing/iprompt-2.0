@@ -10,6 +10,8 @@ const envSchema = z.object({
   REFRESH_TOKEN_TTL_DAYS: z.coerce.number().int().positive().default(30),
   // 超管引导：用该邮箱注册的账号自动置为 active + role=admin
   ADMIN_EMAIL: z.string().email().optional(),
+  // 邀请码签名密钥：未设置时由 AUTH_JWT_SECRET 派生（见 src/server/lib/invite-code.ts）
+  INVITE_SIGNING_SECRET: z.string().min(16).optional(),
   // 生图供应商：mock=本地确定性出图（默认，零成本打通链路）；远程供应商后续版本扩展
   IMAGE_PROVIDER: z.enum(["mock"]).default("mock"),
   CODE_TTL_MIN: z.coerce.number().int().positive().default(5),

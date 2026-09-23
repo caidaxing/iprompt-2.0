@@ -92,42 +92,33 @@ test("不存在的案例返回 404 页", async ({ page }) => {
   await expect(page.getByText("返回案例浏览")).toBeVisible();
 });
 
-// A1 + F3 + F4：登录 → 收藏 → 我的
-test("注册待审：超管通过后可登录并收藏", async ({ page, request }) => {
+// A1 + F3 + F4：邀请码注册 → 直接激活 → 登录 → 收藏 → 我的
+test("邀请码注册：签发后直接激活登录并收藏", async ({ page, request }) => {
   const email = `e2e-${Date.now()}@test.local`;
   const password = "password123";
 
-  // 注册 → 进入待审
-  const reg = await request.post("/api/auth/register", { data: { email, password } });
-  expect(reg.ok()).toBeTruthy();
-  expect((await reg.json()).message).toContain("审核");
-
-  // 待审账号登录被拒
-  const early = await request.post("/api/auth/login", { data: { email, password } });
-  expect(early.status()).toBe(403);
-  expect((await early.json()).code).toBe("AUTH_PENDING");
-
-  // 超管（ADMIN_EMAIL 引导，注册即激活）登录并审核通过该用户
+  // 超管（ADMIN_EMAIL 引导，注册即超管）登录并签发一张邀请码
   // 首跑需先注册超管账号；重复注册对响应无影响（防枚举设计）
   await request.post("/api/auth/register", { data: { email: E2E_ADMIN_EMAIL, password: "password123" } });
   const adminLogin = await request.post("/api/auth/login", {
     data: { email: E2E_ADMIN_EMAIL, password: "password123" },
   });
   expect(adminLogin.ok()).toBeTruthy();
-  const pending = await request.get("/api/admin/users?status=pending");
-  const list = (await pending.json()).users as { id: string; email: string }[];
-  const target = list.find((u) => u.email === email);
-  expect(target).toBeTruthy();
-  const approve = await request.patch(`/api/admin/users/${target!.id}`, {
-    data: { action: "approve" },
+  const created = await request.post("/api/invites", {
+    data: { maxUses: 10, expiresDays: 30, note: "e2e" },
   });
-  expect(approve.ok()).toBeTruthy();
+  expect(created.ok()).toBeTruthy();
+  const code = (await created.json()).invite.code as string;
+
+  // 携码注册 → 直接激活（免审核）
+  const reg = await request.post("/api/auth/register", { data: { email, password, inviteCode: code } });
+  expect(reg.ok()).toBeTruthy();
 
   // UI 登录：注册过的邮箱 + 密码
   await page.goto("/login");
   await page.getByPlaceholder("you@example.com").fill(email);
   await page.getByPlaceholder("输入密码").fill(password);
-  await page.getByRole("button", { name: "登录", exact: true }).click();
+  await page.getByPlaceholder("输入密码").press("Enter");
   await page.waitForURL(/explore/);
 
   // 导航栏出现脱敏邮箱
@@ -165,7 +156,16 @@ test("订阅邮箱：首次成功，重复提示已留过", async ({ request }) 
 // A1 错误密码
 test("错误密码提示且不产生登录态", async ({ request }) => {
   const email = `e2e-wrong-${Date.now()}@test.local`;
-  await request.post("/api/auth/register", { data: { email, password: "password123" } });
+  await request.post("/api/auth/register", { data: { email: E2E_ADMIN_EMAIL, password: "password123" } });
+  const adminLogin = await request.post("/api/auth/login", {
+    data: { email: E2E_ADMIN_EMAIL, password: "password123" },
+  });
+  expect(adminLogin.ok()).toBeTruthy();
+  const created = await request.post("/api/invites", {
+    data: { maxUses: 10, expiresDays: 30, note: "e2e-wrong" },
+  });
+  const code = (await created.json()).invite.code as string;
+  await request.post("/api/auth/register", { data: { email, password: "password123", inviteCode: code } });
   const login = await request.post("/api/auth/login", {
     data: { email, password: "wrong-password" },
   });

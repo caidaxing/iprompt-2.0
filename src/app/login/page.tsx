@@ -15,6 +15,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
+  const [inviteCode, setInviteCode] = useState("");
   const [registered, setRegistered] = useState(false); // 注册提交成功 → 显示待审核说明
   const [msg, setMsg] = useState<{ text: string; ok: boolean } | null>(null);
   const [busy, setBusy] = useState(false);
@@ -31,13 +32,19 @@ export default function LoginPage() {
       setMsg({ text: "两次输入的密码不一致", ok: false });
       return;
     }
+    if (tab === "register" && !inviteCode.trim()) {
+      setMsg({ text: "请输入邀请码", ok: false });
+      return;
+    }
     setBusy(true);
     setMsg(null);
     try {
       const res = await fetch(`/api/auth/${tab}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify(
+          tab === "register" ? { email, password, inviteCode: inviteCode.trim() } : { email, password },
+        ),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -87,7 +94,7 @@ export default function LoginPage() {
         {tab === "login" ? "登录" : "申请注册"}
       </h1>
       <p className="text-sm text-ink-soft text-center mb-8">
-        {tab === "login" ? "使用邮箱和密码登录" : "注册后需管理员审核通过方可登录"}
+        {tab === "login" ? "使用邮箱和密码登录" : "凭平台发放的邀请码注册,即刻激活"}
       </p>
 
       {/* Tab 切换 */}
@@ -130,17 +137,27 @@ export default function LoginPage() {
         </div>
 
         {tab === "register" && (
-          <div>
-            <label className="block text-xs text-ink-mute mb-1.5">确认密码</label>
-            <input
-              type="password"
-              value={confirm}
-              onChange={(e) => setConfirm(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && submit()}
-              placeholder="再次输入密码"
-              className={inputCls}
-            />
-          </div>
+          <>
+            <div>
+              <label className="block text-xs text-ink-mute mb-1.5">确认密码</label>
+              <input
+                type="password"
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+                placeholder="再次输入密码"
+                className={inputCls}
+              />
+            </div>
+            <div>
+              <label className="block text-xs text-ink-mute mb-1.5">邀请码</label>
+              <input
+                value={inviteCode}
+                onChange={(e) => setInviteCode(e.target.value)}
+                placeholder="请输入平台发放的邀请码"
+                className={inputCls}
+              />
+            </div>
+          </>
         )}
 
         {msg && <p className={`text-xs ${msg.ok ? "text-moss" : "text-red-700"}`}>{msg.text}</p>}

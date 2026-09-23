@@ -63,3 +63,7 @@ prisma/dev.db.backup-*
 
 # AI 生成产物(运行时数据,不进仓库)
 /public/generations/
+
+# 案例图本地化产物(约 7000 张 / 2GB,由 scripts/localize-case-images.mjs + manifest 重建,不进仓库)
+# 该目录随 rsync 发版,不依赖 git 分发；如要版本化，应走对象存储/CDN，而不是提交进 git
+/public/images/cases/localized/

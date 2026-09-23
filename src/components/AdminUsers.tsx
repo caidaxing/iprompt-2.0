@@ -110,10 +110,7 @@ export function AdminUsers() {
   };
 
   return (
-    <div className="site-shell py-10">
-      <p className="eyebrow text-[10px] mb-2">ADMIN</p>
-      <h1 className="serif-title text-2xl mb-6">用户审核</h1>
-
+    <div>
       <div className="flex gap-2 mb-6 text-sm">
         {(
           [

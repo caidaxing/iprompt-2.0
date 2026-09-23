@@ -1,17 +1,18 @@
 import { redirect } from "next/navigation";
+import type { Metadata } from "next";
 import { getSessionUser } from "@/lib/session";
-import { AdminUsers } from "@/components/AdminUsers";
+import { AdminConsole } from "@/components/AdminConsole";
 
-export const metadata = {
-  title: "用户审核",
+export const metadata: Metadata = {
+  title: "管理后台",
   robots: { index: false, follow: false },
 };
 
-/** 超管用户管理：服务端守卫，非 admin 直接跳登录 */
-export default async function AdminUsersPage() {
+/** 管理后台:用户审核 + 邀请码;仅 admin */
+export default async function AdminPage() {
   const user = await getSessionUser();
   if (!user) redirect("/login");
   if (user.role !== "admin") redirect("/");
 
-  return <AdminUsers />;
+  return <AdminConsole />;
 }

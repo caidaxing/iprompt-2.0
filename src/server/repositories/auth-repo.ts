@@ -10,6 +10,7 @@ const toRef = (u: {
   status: string;
   role: string;
   credits: number;
+  inviteCodeId: string | null;
   createdAt: Date;
 }): UserRef => ({ ...u });
 
@@ -22,8 +23,10 @@ export const prismaAuthRepo: AuthRepo = {
     const row = await prisma.user.findUnique({ where: { id: userId } });
     return row ? toRef(row) : null;
   },
-  async createUser(email, passwordHash, status: UserStatus, role: UserRole) {
-    return toRef(await prisma.user.create({ data: { email, passwordHash, status, role } }));
+  async createUser(email, passwordHash, status: UserStatus, role: UserRole, inviteCodeId?: string | null) {
+    return toRef(
+      await prisma.user.create({ data: { email, passwordHash, status, role, inviteCodeId: inviteCodeId ?? null } }),
+    );
   },
   async setUserStatus(userId, status) {
     await prisma.user.update({ where: { id: userId }, data: { status } });
@@ -54,5 +57,25 @@ export const prismaAuthRepo: AuthRepo = {
   },
   async createCreditLog(userId, delta, reason, balanceAfter) {
     await prisma.creditLog.create({ data: { userId, delta, reason, balanceAfter } });
+  },
+  async consumeInvite(normalizedCode, now) {
+    const inv = await prisma.inviteCode.findUnique({ where: { code: normalizedCode } });
+    if (!inv) return null;
+    const r = await prisma.inviteCode.updateMany({
+      where: {
+        id: inv.id,
+        status: "active",
+        usedCount: { lt: inv.maxUses },
+        expiresAt: { gt: now },
+      },
+      data: { usedCount: { increment: 1 } },
+    });
+    return r.count > 0 ? inv.id : null;
+  },
+  async refundInvite(normalizedCode) {
+    await prisma.inviteCode.updateMany({
+      where: { code: normalizedCode, usedCount: { gt: 0 } },
+      data: { usedCount: { decrement: 1 } },
+    });
   },
 };

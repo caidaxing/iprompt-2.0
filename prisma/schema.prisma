@@ -30,6 +30,8 @@ model User {
   favorites     Favorite[]
   generations   Generation[]
   creditLogs    CreditLog[]
+  inviteCode    InviteCode? @relation("InviteCodeUsers", fields: [inviteCodeId], references: [id])
+  inviteCodeId  String?
 }
 
 // 生成记录（AI 工作台产出 = 用户作品）
@@ -64,6 +66,25 @@ model CreditLog {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, createdAt])
+}
+
+// 邀请码（平台签名码,持有效码注册即激活;过期/禁用/用尽均拒绝)
+model InviteCode {
+  id        String    @id @default(cuid())
+  code      String    @unique // 归一化完整串(前缀+载荷+签名,无连字符),注册校验键
+  prefix    String             // 展示用前缀(超管自定义,默认 IP)
+  payload   String             // 随机载荷(验签输入,落库重验)
+  createdBy String             // 生成者 userId
+  maxUses   Int       @default(5)
+  usedCount Int       @default(0)
+  expiresAt DateTime            // 必填:有效期(签发时确定,过期即拒)
+  note      String              // 发放对象备注
+  status    String    @default("active") // active | disabled
+  createdAt DateTime  @default(now())
+
+  users User[] @relation("InviteCodeUsers")
+
+  @@index([status])
 }
 
 // 刷新令牌（服务端存储、可吊销、旋转使用）
