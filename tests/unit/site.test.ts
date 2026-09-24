@@ -17,7 +17,7 @@ describe("site url 基准", () => {
   it("未配置时回退到线上真实入口(https,无端口)", async () => {
     delete process.env.NEXT_PUBLIC_SITE_URL;
     const { siteUrl } = await import("@/lib/site");
-    expect(siteUrl).toBe("https://<SERVER_IP>");
+    expect(siteUrl).toBe("https://116.62.64.108");
   });
 
   it("配置后以配置为准,并去掉尾斜杠", async () => {
