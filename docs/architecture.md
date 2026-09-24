@@ -129,7 +129,7 @@ ADMIN_EMAIL 命中注册 → 自动 active+admin(超管引导)
 ## 7. 质量与运维
 
 - **质量门(每次交付必过)**:vitest(47 单测,服务层全 DI)→ eslint(0 error)→ tsc → production build → 运行时 curl 冒烟(注册→审核→生成→扣费→作品→调分)
-- **部署**:阿里云 ECS 单机(Ubuntu 22.04,1.6G 内存),`docker compose build && up -d`,nginx 443 反代;SQLite 单写够用;内存红线:不加常驻服务
+- **部署**:单机云服务器(Ubuntu 22.04,小内存),standalone + systemd 模式,nginx 443 反代;SQLite 单写够用;内存红线:不加常驻服务
 - **备份**:改库/改配置前先备份;`prisma/prod.db.bak` 类文件不进仓库
 
 ## 8. 3.0 演进路线(边界明确,不混入 2.0)

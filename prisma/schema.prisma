@@ -4,7 +4,7 @@
 
 generator client {
   provider     = "prisma-client-js"
-  // native = 本机开发;debian-openssl-3.0.x = 阿里云 Ubuntu 22.04 部署机引擎(standalone 部署必须)
+  // native = 本机开发;debian-openssl-3.0.x = Linux x64 部署机引擎(standalone 部署必须)
   binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 

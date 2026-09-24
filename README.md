@@ -70,7 +70,7 @@ npm run build && npm start     # 生产(standalone 构建预览方式见 docs/ar
 
 ## 部署
 
-单机 **standalone + systemd** 模式(适配 1.6G 内存小机器;禁止在服务器上构建),完整流程、rsync 安全规则(排除 data/.env、尾部斜杠、同步后必须重启)与踩坑记录见 **`docs/architecture.md`** §7。
+单机 **standalone + systemd** 模式(小内存单机;禁止在服务器上构建),完整流程、rsync 安全规则(排除 data/.env、尾部斜杠、同步后必须重启)与踩坑记录见 **`docs/architecture.md`** §7。
 
 ## 文档
 
