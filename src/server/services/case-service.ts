@@ -6,6 +6,8 @@ import { getModelConfigService } from "@/server/repositories/model-config-repo";
 export const PAGE_SIZE = 18;
 
 const VISIBLE_PROMPT_WHERE: Prisma.CaseWhereInput = {
+  // 仅展示原创语料(freestylefly/awesome-gpt-image-2 项目);生态接入语料(带 sourceRepo)整体隐藏
+  sourceRepo: null,
   NOT: {
     OR: [
       { prompt: { contains: "**作者**:" } },
@@ -116,13 +118,18 @@ export async function listCases(query: ListQuery): Promise<ListResult> {
 
 export async function getCase(num: number, model?: string): Promise<CaseFull | null> {
   const modelId = await getModelConfigService().resolveModelId(model);
-  return prisma.case.findFirst({
+  const found = await prisma.case.findFirst({
     where: { modelId, num, ...VISIBLE_PROMPT_WHERE },
     include: {
-      model: { select: { name: true } },
+      model: { select: { name: true, active: true } },
       caseTags: { include: { tag: { select: { slug: true, name: true, kind: true } } } },
     },
   });
+  // 隐藏(active=false)的模型:详情页一并下线
+  if (!found || !found.model.active) return null;
+  // 显式指定了模型参数但解析后落到别的模型(如已隐藏模型的旧链接):防串号
+  if (model && found.modelId !== model) return null;
+  return found;
 }
 
 /** 同展示分类内的上一篇 / 下一篇（num 升序） */

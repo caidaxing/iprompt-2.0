@@ -15,7 +15,11 @@ export const prismaTagProvider: TagProvider = {
     const grouped = await prisma.caseTag.groupBy({
       by: ["tagId"],
       _count: { _all: true },
-      where: kind ? { tag: { kind } } : undefined,
+      // 仅统计可见(active)模型的案例,隐藏模型不计入标签数
+      where: {
+        ...(kind ? { tag: { kind } } : {}),
+        case: { model: { active: true }, sourceRepo: null },
+      },
     });
     if (grouped.length === 0) return {};
     const tagRows = await prisma.tag.findMany({

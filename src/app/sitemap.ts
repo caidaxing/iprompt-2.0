@@ -13,7 +13,7 @@ const hiddenPromptWhere = {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const cases = await prisma.case.findMany({
-    where: { image: { not: "" }, ...hiddenPromptWhere },
+    where: { image: { not: "" }, sourceRepo: null, model: { active: true }, ...hiddenPromptWhere },
     select: { modelId: true, num: true, updatedAt: true },
     orderBy: { updatedAt: "desc" },
   });
