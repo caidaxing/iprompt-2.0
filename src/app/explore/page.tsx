@@ -22,6 +22,30 @@ interface Props {
 // 注意：title 由根布局模板统一追加「 · iPrompt Studio」，此处不要重复写站点名
 export const metadata = { title: "案例浏览" };
 
+// 焦点区选例:按展示分类优先挑"气质契合"的案例(标题命中核心词),避免排序巧合把不相关气质的内容顶上焦点位
+const SPOTLIGHT_PREFERENCE: Record<string, RegExp> = {
+  电商广告: /广告|产品|商品|转化|带货|商业|好物|详情页/,
+  海报插画: /海报|插画|排版|字体/,
+  UI与社媒: /界面|UI|App|截图|社媒|仪表盘/,
+  人像摄影: /摄影|写实|人像|肖像|写真/,
+  角色手办: /角色|手办|人物设定|玩偶|盲盒/,
+  教育信息图: /信息图|图表|科普|图解|拆解/,
+  室内设计: /建筑|空间|室内|户型/,
+  风格迁移: /风格迁移|风格转换|变成/,
+  编辑修复: /修复|编辑|替换|去除/,
+  视频提示词: /视频|分镜/,
+  日常趣味: /创意|趣味|玩法/,
+};
+
+function pickSpotlightFor<T extends { num: number; title: string }>(category: string | undefined, items: T[]): T | undefined {
+  const pref = category ? SPOTLIGHT_PREFERENCE[category] : undefined;
+  if (pref) {
+    const hit = items.find((it) => pref.test(it.title));
+    if (hit) return hit;
+  }
+  return items[0];
+}
+
 export default async function ExplorePage({ searchParams }: Props) {
   const sp = await searchParams;
   const modelSvc = getModelConfigService();
@@ -90,7 +114,8 @@ export default async function ExplorePage({ searchParams }: Props) {
   ]);
   const favIds = session ? await favoriteSetOf(session.uid) : new Set<string>();
 
-  const focus = result.items[0];
+  // 焦点区:优先选气质契合的案例(见 SPOTLIGHT_PREFERENCE)
+  const focus = pickSpotlightFor(result.items[0]?.displayCategory, result.items);
   const rest = result.items.slice(1);
 
   const modelChips: ChipItem[] = activeModels.map((m) => ({
